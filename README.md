@@ -35,8 +35,9 @@ Run the helper on your jailbroken PS5, enter its address and six-digit trust cod
 in the computer app, then pair and play. The trust code authorizes your computer;
 it is separate from the Remote Play PIN that Orbit Play handles automatically.
 
-**Platforms:** Apple Silicon Macs, Windows (x64) and Linux (x64 and arm64) are
-tested with a PS5. Intel Macs are not supported in this beta.
+**Platforms:** Apple Silicon Macs, Windows PCs (including Windows 11 on ARM),
+and Linux x64/arm64 computers have been tested with a PS5. Windows on ARM uses
+the x64 download through emulation. Intel Macs are not supported in this beta.
 
 > **Official source:** [saawant12/orbit-play-ps5](https://github.com/saawant12/orbit-play-ps5)
 > is the only official place for Orbit Play releases, updates and support.
@@ -77,7 +78,7 @@ the same trusted network, with the console awake and the intended user logged in
 | Device | Requirements and compatibility |
 | --- | --- |
 | Mac | Apple Silicon, macOS 26 or later |
-| Windows | Windows 10 or 11, x64 |
+| Windows | Windows 10 or 11 on x64; Windows 11 on ARM using the x64 build |
 | Linux | x64 or arm64; Ubuntu 24.04 or a compatible distribution |
 | PS5 | Firmware 13.60 (tested), Relapse, Payload Manager v0.5.2 |
 | Network | Computer and awake PS5 on the same trusted local network |

@@ -22,6 +22,8 @@ diagnostics after a repeated failure, before making more changes.
 Use the build for your operating system and architecture. Apple Silicon Mac
 builds need macOS 26 or later; Intel Macs are outside this beta. Windows requires
 the whole ZIP to be extracted, including files beside `OrbitPlay.exe`.
+On Windows 11 on ARM, use the same x64 ZIP; it runs through Windows' built-in
+emulation and has been tested with a PS5.
 
 The Mac beta is not notarized and the Windows beta is not code-signed. Follow
 the platform's first-launch steps in [installation](installation.md). On Linux,

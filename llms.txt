@@ -13,7 +13,7 @@
 ## Compatibility
 
 - Mac: Apple Silicon, macOS 26 or later. Intel Macs are not supported in this beta.
-- Windows: Windows 10 or 11, x64.
+- Windows: Windows 10 or 11 on x64. Windows 11 on ARM has also been tested with a PS5, using the same x64 ZIP through Windows' built-in x64 emulation. The Windows download is x64, not a native ARM64 build.
 - Linux: x64 or arm64, with an Ubuntu 24.04-compatible system.
 - Tested PS5 setup: firmware 13.60, Relapse and Payload Manager v0.5.2. Other firmware is untested.
 - On 13.60, initial account setup can be followed by pairing without restarting. On other firmware, restart after account setup and reload the jailbreak and helper before pairing. After restoring account settings, follow the restart instruction on any firmware.

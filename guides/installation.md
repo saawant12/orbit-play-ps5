@@ -15,13 +15,14 @@ Python, Homebrew and a separate Chiaki-ng installation are not required.
 | Computer | Download | Beta requirement |
 | --- | --- | --- |
 | Mac with Apple Silicon | `OrbitPlay-<version>-macos-arm64.dmg` | macOS 26 or later |
-| Windows PC | `OrbitPlay-<version>-windows-x64.zip` | Windows 10 or 11, x64 |
+| Windows PC (x64) | `OrbitPlay-<version>-windows-x64.zip` | Windows 10 or 11 |
+| Windows on ARM | `OrbitPlay-<version>-windows-x64.zip` | Windows 11; runs through x64 emulation |
 | Linux PC | `OrbitPlay-<version>-linux-x64.AppImage` | x64; Ubuntu 24.04 or a compatible distribution |
 | Linux on ARM | `OrbitPlay-<version>-linux-arm64.AppImage` | arm64; Ubuntu 24.04 or a compatible distribution |
 | PS5 | `orbit-play-<version>-ps5.elf` | Tested on 13.60 with Relapse and Payload Manager v0.5.2 |
 
-Intel Macs, macOS versions before 26 and Windows on ARM are not supported in
-this beta. Other PS5 firmware is untested; see
+Intel Macs and macOS versions before 26 are not supported in this beta.
+Other PS5 firmware is untested; see
 [the compatibility notes](../README.md#beta-status).
 
 ## macOS
@@ -38,6 +39,12 @@ choose **Open Anyway**, then confirm **Open**. A managed Mac may restrict this
 approval. See the included `INSTALL-macos.txt` for the release's instructions.
 
 ## Windows
+
+**Windows 11 on ARM has also been tested with a PS5.** Use the same
+`windows-x64.zip` download. Windows runs it through its built-in
+[x64 emulation](https://learn.microsoft.com/en-us/windows/arm/apps-on-arm-x86-emulation),
+with no extra setup required. The download is an x64 build; Windows on ARM
+requires Windows 11.
 
 1. Extract the **whole ZIP** to a folder you will keep.
 2. Open **OrbitPlay.exe** inside the extracted Orbit Play folder. Keep its

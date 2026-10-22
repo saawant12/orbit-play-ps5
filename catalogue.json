@@ -16,7 +16,13 @@
     },
     "windows": {
       "architecture": "x64",
-      "minimumOS": "Windows 10"
+      "minimumOS": "Windows 10",
+      "armCompatibility": {
+        "architecture": "arm64",
+        "minimumOS": "Windows 11",
+        "execution": "x64 emulation using the same Windows x64 download",
+        "tested": true
+      }
     },
     "linux": {
       "architectures": [
