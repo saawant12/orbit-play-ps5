@@ -9,7 +9,7 @@
 <p align="center"><strong>Remote Play for your jailbroken PS5.</strong><br>
 Play on your Mac, Windows or Linux computer over your local network, without PSN sign-in.</p>
 
-[Releases](https://github.com/saawant12/orbit-play-ps5/releases) · [Get started](#get-started) ·
+[Download](https://github.com/saawant12/orbit-play-ps5/releases/tag/v0.2.0-beta.1) · [Get started](#get-started) ·
 [Guides](#guides) · [Release notes](release-notes/0.2.0-beta.1.md) · [Beta status](#beta-status) · [Account setup](guides/account-setup.md) ·
 [Payload Manager](#payload-manager) · [Troubleshooting](guides/troubleshooting.md) ·
 [Report a bug](https://github.com/saawant12/orbit-play-ps5/issues/new?template=bug_report.md)
@@ -64,9 +64,9 @@ tested with a PS5. Intel Macs are not supported in this beta.
 
 ## Beta status
 
-**Version 0.2.0-beta.1. Downloads are not available yet.** They will appear on
-this repository's Releases page. See the [release notes](release-notes/0.2.0-beta.1.md)
-for features, downloads and requirements.
+**Version 0.2.0-beta.1 is available.** [Download the app and PS5 helper](https://github.com/saawant12/orbit-play-ps5/releases/tag/v0.2.0-beta.1).
+See the [release notes](release-notes/0.2.0-beta.1.md) for features, downloads and
+requirements.
 
 **This beta works on your local network only.** Your computer and PS5 must be on
 the same trusted network, with the console awake and the intended user logged in.
@@ -97,8 +97,8 @@ code-signed, so SmartScreen may ask you to choose **More info → Run anyway**.
 
 ## Get started
 
-Download the **app and PS5 helper from the same release** when the first public
-beta is available. The app includes the player and a copy of the matching helper.
+Download the **app and PS5 helper from the [same release](https://github.com/saawant12/orbit-play-ps5/releases/tag/v0.2.0-beta.1)**.
+The app includes the player and a copy of the matching helper.
 
 1. **Install the app** for [Mac, Windows or Linux](guides/installation.md).
 2. **Run the PS5 helper** through your payload loader and stay logged into the
@@ -148,6 +148,8 @@ keyboard and mouse inputs. See the
 
 ## Accounts and saves
 
+**For account setup, we recommend a separate new PS5 profile with no saves.**
+
 If your profile already has an account ID, Orbit Play keeps it. If it needs a new
 local ID, the app asks you to review and accept the risk: **creating an ID may
 make existing saves inaccessible**. You can choose an existing or primary profile,
@@ -160,13 +162,18 @@ before using this feature.
 
 ## Payload Manager
 
-[payloads.json](payloads.json) is the Orbit Play custom repository feed. It is
-currently empty; the helper will appear there after the first release is published.
+[payloads.json](payloads.json) is the Orbit Play custom repository feed. It
+includes the **0.2.0-beta.1** PS5 helper.
 
-When a release is published and added to the feed, open **Settings → Manage
-Sources → Add Source** in Payload Manager and paste the **raw URL** of this
-repository's `payloads.json`. Choose Orbit Play, download the helper, then run it.
-Use the app from the same release. The feed will include the exact helper
+Open **Settings → Manage Sources → Add Source** in Payload Manager and paste
+this URL:
+
+```text
+https://raw.githubusercontent.com/saawant12/orbit-play-ps5/main/payloads.json
+```
+
+Choose Orbit Play, download the helper, then run it.
+Use the app from the same release. The feed includes the exact helper
 version and SHA-256 checksum. See [the helper guide](guides/ps5-helper.md#add-the-payload-manager-source)
 for the steps.
 

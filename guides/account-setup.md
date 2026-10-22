@@ -21,8 +21,9 @@ may behave differently.
 | An earlier setup was interrupted | Recover account settings | Requires a recovery review before setup or pairing continues. |
 
 Creating a new local ID **may make existing saves on that profile inaccessible**.
-Using a new PS5 profile with no saves avoids that risk. You can choose an existing
-or primary profile, but check and back up its saves before continuing.
+**We recommend a separate new PS5 profile with no saves for account setup.** You
+can choose an existing or primary profile, but check and back up its saves before
+continuing.
 
 **Back up your saves separately.** Orbit Play backs up affected account settings
 and related account files, not games or saves. It does not create a new PS5 user,

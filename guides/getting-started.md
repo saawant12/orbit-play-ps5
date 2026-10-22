@@ -14,6 +14,10 @@ or a separate tool to generate the Remote Play PIN.
 
 ## Before you start
 
+If account setup is needed, **we recommend a separate new PS5 profile with no
+saves**. Creating a new local account ID may make existing saves on that profile
+inaccessible. Read [account setup and recovery](account-setup.md) before continuing.
+
 - Install the [computer app](installation.md) and use the PS5 helper from the
   **same release**.
 - Keep the computer and PS5 on the same trusted local network. Keep the PS5 awake.

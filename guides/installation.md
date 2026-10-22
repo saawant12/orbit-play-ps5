@@ -6,9 +6,9 @@ Download the desktop app and PS5 helper from the **same release**.
 The app includes its streaming engine, libraries and a copy of that helper.
 Python, Homebrew and a separate Chiaki-ng installation are not required.
 
-> Check [download availability](../README.md#beta-status), then use the
-> **Download** link in the project README. Follow the install notes included
-> with your release.
+> [Download Orbit Play 0.2.0-beta.1](https://github.com/saawant12/orbit-play-ps5/releases/tag/v0.2.0-beta.1)
+> and check the [requirements](../README.md#beta-status). Follow the install notes
+> included with your release.
 
 ## Choose your download
 

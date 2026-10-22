@@ -5,7 +5,7 @@
   "version": "0.2.0-beta.1",
   "repository": "https://github.com/saawant12/orbit-play-ps5",
   "status": "beta",
-  "publicReleaseAvailable": false,
+  "publicReleaseAvailable": true,
   "hardwareVerified": true,
   "macSigning": "ad-hoc",
   "notarized": false,
@@ -72,6 +72,7 @@
     "Tested on PS5 firmware 13.60 only; other firmware is untested and needs a restart after account setup before pairing",
     "Account setup is experimental; new-profile setup and recovery have been tested on 13.60",
     "Account-settings backups do not contain games or saves",
+    "We recommend a separate new PS5 profile with no saves for account setup",
     "Existing account IDs are kept; creating a new ID requires accepting the risk to existing saves",
     "No internet remote access, wake from Rest Mode, HDR, microphone, haptics, login-passcode prompts or account migration in this beta",
     "Intel Macs and macOS versions before 26 are not supported",
@@ -90,5 +91,85 @@
     "releaseNotes": "release-notes/0.2.0-beta.1.md"
   },
   "payloadFeed": "payloads.json",
-  "releases": []
+  "releases": [
+    {
+      "version": "0.2.0-beta.1",
+      "url": "https://github.com/saawant12/orbit-play-ps5/releases/tag/v0.2.0-beta.1",
+      "hardwareVerified": true,
+      "artifacts": [
+        {
+          "file": "INSTALL-linux.txt",
+          "bytes": 1168,
+          "sha256": "bb9ab39922d28c3cc0db4f62e2e67dcd1f48bf33e2e41cc56327a36ee7290310",
+          "url": "https://github.com/saawant12/orbit-play-ps5/releases/download/v0.2.0-beta.1/INSTALL-linux.txt"
+        },
+        {
+          "file": "INSTALL-macos.txt",
+          "bytes": 2583,
+          "sha256": "f290666ea1b8b7fef0a6c356ff580ef933db59a55577054ce211b99765f36c06",
+          "url": "https://github.com/saawant12/orbit-play-ps5/releases/download/v0.2.0-beta.1/INSTALL-macos.txt"
+        },
+        {
+          "file": "INSTALL-windows.txt",
+          "bytes": 1290,
+          "sha256": "5e76693c0e0fb3e61270c11a88a2f50e0735f7786b48e43795e4055ce3610625",
+          "url": "https://github.com/saawant12/orbit-play-ps5/releases/download/v0.2.0-beta.1/INSTALL-windows.txt"
+        },
+        {
+          "file": "OrbitPlay-0.2.0-beta.1-linux-arm64.AppImage",
+          "bytes": 231512584,
+          "sha256": "75fc8eb7f9ffbc741e7e7a8647ee398fbb41c44244908c0cdc4ce84406936825",
+          "url": "https://github.com/saawant12/orbit-play-ps5/releases/download/v0.2.0-beta.1/OrbitPlay-0.2.0-beta.1-linux-arm64.AppImage"
+        },
+        {
+          "file": "OrbitPlay-0.2.0-beta.1-linux-x64.AppImage",
+          "bytes": 240028152,
+          "sha256": "83974379ae23a70e64e3c29b4bb538c00c44c0e575734ce9828258f70102ce2d",
+          "url": "https://github.com/saawant12/orbit-play-ps5/releases/download/v0.2.0-beta.1/OrbitPlay-0.2.0-beta.1-linux-x64.AppImage"
+        },
+        {
+          "file": "OrbitPlay-0.2.0-beta.1-macos-arm64.dmg",
+          "bytes": 225941904,
+          "sha256": "4e88d80c84aa24f4dfe5a58a8855a2a8a70b9641f5cea4760a069e85c2be3abe",
+          "url": "https://github.com/saawant12/orbit-play-ps5/releases/download/v0.2.0-beta.1/OrbitPlay-0.2.0-beta.1-macos-arm64.dmg"
+        },
+        {
+          "file": "OrbitPlay-0.2.0-beta.1-windows-x64.zip",
+          "bytes": 244949885,
+          "sha256": "79f090710d869c917a3971b58c926eba7134f7de8296feb52c7d5f9c4c3544fb",
+          "url": "https://github.com/saawant12/orbit-play-ps5/releases/download/v0.2.0-beta.1/OrbitPlay-0.2.0-beta.1-windows-x64.zip"
+        },
+        {
+          "file": "SHA256SUMS",
+          "bytes": 1076,
+          "sha256": "68074d1bf8a681596f70a2eb292d1b61707b1e7d6309ac6ef6f10de89847a67b",
+          "url": "https://github.com/saawant12/orbit-play-ps5/releases/download/v0.2.0-beta.1/SHA256SUMS"
+        },
+        {
+          "file": "orbit-play-0.2.0-beta.1-ps5.elf",
+          "bytes": 3665960,
+          "sha256": "bf9f92c8ff44f78860a6018eaa58fa1ef5f1d689f30bcf53becb5d90cac2f47e",
+          "url": "https://github.com/saawant12/orbit-play-ps5/releases/download/v0.2.0-beta.1/orbit-play-0.2.0-beta.1-ps5.elf"
+        },
+        {
+          "file": "orbit-play-0.2.0-beta.1-source.tar.gz",
+          "bytes": 8153104,
+          "sha256": "836baf1d3fb03a265478a82ae51cd2348faab52a590b75f898089aee885fb5ff",
+          "url": "https://github.com/saawant12/orbit-play-ps5/releases/download/v0.2.0-beta.1/orbit-play-0.2.0-beta.1-source.tar.gz"
+        },
+        {
+          "file": "orbit-play-0.2.0-beta.1-third-party-source.tar",
+          "bytes": 160491520,
+          "sha256": "0f172c0dc02a3dda2443a72f9c91d2f8fcbdd6a63c5cb671e6fe220d3c2a1160",
+          "url": "https://github.com/saawant12/orbit-play-ps5/releases/download/v0.2.0-beta.1/orbit-play-0.2.0-beta.1-third-party-source.tar"
+        },
+        {
+          "file": "release.json",
+          "bytes": 2209,
+          "sha256": "75f9555d460ba1e34bc0bc046d2c4ead73a0bea727172cedd782b6fa68cc8441",
+          "url": "https://github.com/saawant12/orbit-play-ps5/releases/download/v0.2.0-beta.1/release.json"
+        }
+      ]
+    }
+  ]
 }

@@ -67,15 +67,16 @@ the helper again. Orbit Play does not wake a PS5 from Rest Mode in this beta.
 
 ## Add the Payload Manager source
 
-The [Payload Manager source](../payloads.json) is currently empty. Orbit Play
-will appear there after the first release is published.
+The [Payload Manager source](../payloads.json) includes the **0.2.0-beta.1** helper.
 
-Once the first release is published and listed in the feed:
-
-1. Open this repository's `payloads.json` on GitHub and copy its **Raw** URL.
+1. Copy the source URL below.
 2. In Payload Manager, open **Settings → Manage Sources → Add Source**.
 3. Paste that URL, choose Orbit Play and download the helper.
 4. Run it and use the computer app from the same release.
+
+```text
+https://raw.githubusercontent.com/saawant12/orbit-play-ps5/main/payloads.json
+```
 
 **Next:** [Trust, pair and play](getting-started.md#3-find-your-console) ·
 [Helper problems](troubleshooting.md#the-helper-icon-does-not-open)

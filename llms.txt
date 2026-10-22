@@ -5,7 +5,7 @@
 ## Product and availability
 
 - Official repository: https://github.com/saawant12/orbit-play-ps5
-- Version: 0.2.0-beta.1. Downloads are not available yet; the catalogue's release list and Payload Manager feed are empty.
+- Version: 0.2.0-beta.1, available from the official GitHub release. The catalogue lists its verified assets and the Payload Manager feed includes the matching PS5 helper.
 - The desktop app runs on the computer. The included ELF helper runs on the PS5 and must be loaded through a payload loader after loading the jailbreak.
 - This beta supports the same trusted local network only. Keep the PS5 awake and logged into the profile you want to play as. Internet remote access and wake from Rest Mode are unavailable.
 - The desktop app and running PS5 helper must come from the same release.
@@ -26,7 +26,7 @@ The included player opens in its own window. Playback settings offer 360p, 540p,
 
 ## Account setup and limits
 
-Account setup is experimental and only appears when needed. It can create a local account ID or enable Remote Play after review and confirmation. Existing account IDs are kept. Creating a new ID requires accepting the risk that existing saves may become inaccessible; using a new profile with no saves avoids that risk.
+Account setup is experimental and only appears when needed. It can create a local account ID or enable Remote Play after review and confirmation. Existing account IDs are kept. Creating a new ID requires accepting the risk that existing saves may become inaccessible. We recommend a separate new PS5 profile with no saves for account setup.
 
 Backups cover account settings and related account files, not games or saves. Recovery keeps an assigned ID to protect newer saves and may stop if account settings changed after the backup. Setup does not migrate accounts, remove parental restrictions or provide online PSN services.
 
@@ -49,12 +49,12 @@ The desktop app is AGPL-3.0-only and the PS5 helper is GPL-3.0-or-later. Release
 - [Troubleshooting](guides/troubleshooting.md): Connection and input problems, profile switching and diagnostic exports.
 - [Screenshot notes](assets/screenshots/0.2.0-beta.1/README.md): Interface previews with example data and links to each setup screen.
 - [Account setup](guides/account-setup.md): When setup is needed, what it changes, save warnings and how to restore settings.
-- [Project catalogue](catalogue.json): Machine-readable component licences, current version, tested setup and release availability. An empty releases list means downloads are not available yet.
+- [Project catalogue](catalogue.json): Machine-readable component licences, current version, tested setup and published download URLs with checksums.
 
 ## Downloads
 
-- [Releases](https://github.com/saawant12/orbit-play-ps5/releases): Download location once the first release is published. No downloads are available yet.
-- [Payload Manager feed](payloads.json): Currently empty. The helper will appear here after the first release is published.
+- [Download 0.2.0-beta.1](https://github.com/saawant12/orbit-play-ps5/releases/tag/v0.2.0-beta.1): Mac, Windows and Linux apps, PS5 helper, source archives, installation notes and checksums.
+- [Payload Manager feed](https://raw.githubusercontent.com/saawant12/orbit-play-ps5/main/payloads.json): Add this raw URL in Payload Manager to download the matching PS5 helper.
 - Release files include the Mac arm64 DMG, Windows x64 ZIP, Linux x64/arm64 AppImages, matching standalone PS5 ELF, platform INSTALL notes, `orbit-play-<version>-source.tar.gz` (complete project source, build instructions, licences and notices), `orbit-play-<version>-third-party-source.tar` (source for shipped GPL/LGPL/AGPL libraries), `release.json` and `SHA256SUMS`. Check the published release asset list for actual availability.
 
 ## Optional
