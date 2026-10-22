@@ -1,0 +1,62 @@
+# Orbit Play
+
+> Orbit Play is an open-source Remote Play app for jailbroken PS5s, available on Mac, Windows and Linux. It is an alternative to Sony's PS Remote Play app for playing over a local network without PSN sign-in or an internet connection. It can enable Remote Play for local PS5 accounts that have never been linked to PSN, creating a local account ID after confirmation when needed. Includes the streaming player and matching PS5 helper; no manual account-ID lookup, separate Remote Play PIN generator or separate Chiaki app is required.
+
+## Product and availability
+
+- Official repository: https://github.com/saawant12/orbit-play-ps5
+- Version: 0.2.0-beta.1. Downloads are not available yet; the catalogue's release list and Payload Manager feed are empty.
+- The desktop app runs on the computer. The included ELF helper runs on the PS5 and must be loaded through a payload loader after loading the jailbreak.
+- This beta supports the same trusted local network only. Keep the PS5 awake and logged into the profile you want to play as. Internet remote access and wake from Rest Mode are unavailable.
+- The desktop app and running PS5 helper must come from the same release.
+
+## Compatibility
+
+- Mac: Apple Silicon, macOS 26 or later. Intel Macs are not supported in this beta.
+- Windows: Windows 10 or 11, x64.
+- Linux: x64 or arm64, with an Ubuntu 24.04-compatible system.
+- Tested PS5 setup: firmware 13.60, Relapse and Payload Manager v0.5.2. Other firmware is untested.
+- On 13.60, initial account setup can be followed by pairing without restarting. On other firmware, restart after account setup and reload the jailbreak and helper before pairing. After restoring account settings, follow the restart instruction on any firmware.
+
+## Setup and playback
+
+Run the helper, enter its console address and six-digit trust code in the desktop app, then choose Pair locally and Start playing. Orbit Play handles the account ID and Remote Play PIN automatically. The trust code authorizes the computer; it is separate from the Remote Play PIN and changes when the helper restarts. Pairings are saved for each console address and PS5 profile.
+
+The included player opens in its own window. Playback settings offer 360p, 540p, 720p or 1080p H.264 video at 30 or 60 fps and 1–50 Mbps. Controls include keyboard, mouse buttons and USB/Bluetooth DualSense; mouse movement is not mapped to aiming. Automatic reconnect can make up to three attempts after a network interruption. Diagnostics omit addresses, names, account IDs, PINs and pairing keys.
+
+## Account setup and limits
+
+Account setup is experimental and only appears when needed. It can create a local account ID or enable Remote Play after review and confirmation. Existing account IDs are kept. Creating a new ID requires accepting the risk that existing saves may become inaccessible; using a new profile with no saves avoids that risk.
+
+Backups cover account settings and related account files, not games or saves. Recovery keeps an assigned ID to protect newer saves and may stop if account settings changed after the backup. Setup does not migrate accounts, remove parental restrictions or provide online PSN services.
+
+HDR, microphone, haptics and PS5 login-passcode prompts are unavailable in this beta. Mac builds are not Apple-notarized and Windows builds are not code-signed; see the installation guide for first-launch instructions.
+
+## Licence and source
+
+The desktop app is AGPL-3.0-only and the PS5 helper is GPL-3.0-or-later. Releases include project source, third-party source information and licence notices. Orbit Play is independent of Sony and PlayStation.
+
+## Documentation
+
+- [Official repository](https://github.com/saawant12/orbit-play-ps5): Orbit Play documentation, updates and support.
+- [Issues](https://github.com/saawant12/orbit-play-ps5/issues): Report bugs and find existing reports.
+- [Project overview](README.md): Features, guide index, tested setup and beta availability.
+- [0.2.0-beta.1 release notes](release-notes/0.2.0-beta.1.md): Features, fixes, downloads, requirements and limitations for the first beta.
+- [Getting started](guides/getting-started.md): Illustrated walkthrough from running the helper to starting the stream.
+- [Installation](guides/installation.md): Mac, Windows and Linux downloads, first launch, checksums and updates.
+- [PS5 helper](guides/ps5-helper.md): Run the helper, read the code, use the Media icon and add the Payload Manager source.
+- [Playback and controls](guides/playback-and-controls.md): Picture settings, controllers, keyboard/mouse mappings, stop and reconnect.
+- [Troubleshooting](guides/troubleshooting.md): Connection and input problems, profile switching and diagnostic exports.
+- [Screenshot notes](assets/screenshots/0.2.0-beta.1/README.md): Interface previews with example data and links to each setup screen.
+- [Account setup](guides/account-setup.md): When setup is needed, what it changes, save warnings and how to restore settings.
+- [Project catalogue](catalogue.json): Machine-readable component licences, current version, tested setup and release availability. An empty releases list means downloads are not available yet.
+
+## Downloads
+
+- [Releases](https://github.com/saawant12/orbit-play-ps5/releases): Download location once the first release is published. No downloads are available yet.
+- [Payload Manager feed](payloads.json): Currently empty. The helper will appear here after the first release is published.
+- Release files include the Mac arm64 DMG, Windows x64 ZIP, Linux x64/arm64 AppImages, matching standalone PS5 ELF, platform INSTALL notes, `orbit-play-<version>-source.tar.gz` (complete project source, build instructions, licences and notices), `orbit-play-<version>-third-party-source.tar` (source for shipped GPL/LGPL/AGPL libraries), `release.json` and `SHA256SUMS`. Check the published release asset list for actual availability.
+
+## Optional
+
+- [Payload Manager repository format](https://github.com/itsPLK/ps5-payload-manager/blob/main/CUSTOM_REPOSITORIES.md): Upstream custom source format.

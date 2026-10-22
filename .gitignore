@@ -1,0 +1,38 @@
+# Local files and credentials
+.DS_Store
+.cache/
+.state/
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+*.p12
+*.pfx
+*.log
+*.crash
+*.ips
+.idea/
+.vscode/
+AGENTS.md
+CLAUDE.md
+
+# Release assets belong on GitHub Releases, not in the documentation tree.
+build/
+dist/
+*.elf
+*.dmg
+*.AppImage
+*.exe
+*.msi
+*.zip
+*.tar
+*.tar.gz
+*.tar.xz
+*.7z
+
+# Local scripting environments
+.venv/
+__pycache__/
+*.py[cod]

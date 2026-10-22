@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "name": "Orbit Play",
+  "description": "A Remote Play app for jailbroken PS5s, available on Mac, Windows and Linux. An alternative to Sony's PS Remote Play app that can enable Remote Play for local PS5 accounts and stream over a local network without PSN sign-in or an internet connection. Includes the player and PS5 helper.",
+  "version": "0.2.0-beta.1",
+  "repository": "https://github.com/saawant12/orbit-play-ps5",
+  "status": "beta",
+  "publicReleaseAvailable": false,
+  "hardwareVerified": true,
+  "macSigning": "ad-hoc",
+  "notarized": false,
+  "testTarget": {
+    "mac": {
+      "architecture": "arm64",
+      "minimumOS": "macOS 26"
+    },
+    "windows": {
+      "architecture": "x64",
+      "minimumOS": "Windows 10"
+    },
+    "linux": {
+      "architectures": [
+        "x64",
+        "arm64"
+      ],
+      "baseline": "Ubuntu 24.04"
+    },
+    "ps5": {
+      "firmware": "13.60",
+      "jailbreak": "Relapse",
+      "loader": "Payload Manager v0.5.2"
+    },
+    "network": "same trusted LAN",
+    "consoleState": "awake, logged into the intended user"
+  },
+  "components": [
+    {
+      "id": "app",
+      "name": "Orbit Play desktop app",
+      "license": "AGPL-3.0-only",
+      "artifactPattern": "OrbitPlay-{version}-macos-arm64.dmg",
+      "includes": [
+        "Chiaki player",
+        "matching PS5 helper"
+      ],
+      "documentation": "README.md"
+    },
+    {
+      "id": "ps5",
+      "name": "Orbit Play PS5 helper",
+      "license": "GPL-3.0-or-later",
+      "artifactPattern": "orbit-play-{version}-ps5.elf",
+      "documentation": "README.md"
+    }
+  ],
+  "sourceCode": "Each release includes orbit-play-{version}-source.tar.gz with the complete source of both components, and orbit-play-{version}-third-party-source.tar with the source of the GPL, LGPL and AGPL libraries the apps ship",
+  "features": [
+    "Remote Play for jailbroken PS5s from a desktop app for Mac, Windows and Linux",
+    "Enable Remote Play for local PS5 accounts, creating a local account ID after confirmation when needed",
+    "Included streaming player and matching PS5 helper",
+    "Local trust-code pairing without PSN sign-in in Orbit Play",
+    "Automatic account-ID and Remote Play PIN exchange; no manual lookup, conversion or separate PIN tool",
+    "Separate pairing per console address and active user",
+    "360p, 540p, 720p or 1080p H.264; 30/60 fps; 1–50 Mbps",
+    "Up to three reconnect attempts after network interruptions",
+    "Account-settings recovery with review before confirmation",
+    "Diagnostics that omit connection secrets"
+  ],
+  "limitations": [
+    "Local network only: the computer and awake PS5 must be on the same trusted network",
+    "A jailbroken PS5 and payload loader are required to run the helper",
+    "Tested on PS5 firmware 13.60 only; other firmware is untested and needs a restart after account setup before pairing",
+    "Account setup is experimental; new-profile setup and recovery have been tested on 13.60",
+    "Account-settings backups do not contain games or saves",
+    "Existing account IDs are kept; creating a new ID requires accepting the risk to existing saves",
+    "No internet remote access, wake from Rest Mode, HDR, microphone, haptics, login-passcode prompts or account migration in this beta",
+    "Intel Macs and macOS versions before 26 are not supported",
+    "Mac builds are not notarized and Windows builds are not code-signed; first launch may need manual approval"
+  ],
+  "documentation": {
+    "readme": "README.md",
+    "agents": "llms.txt",
+    "accountSetup": "guides/account-setup.md",
+    "gettingStarted": "guides/getting-started.md",
+    "installation": "guides/installation.md",
+    "ps5Helper": "guides/ps5-helper.md",
+    "playbackAndControls": "guides/playback-and-controls.md",
+    "troubleshooting": "guides/troubleshooting.md",
+    "screenshots": "assets/screenshots/0.2.0-beta.1/README.md",
+    "releaseNotes": "release-notes/0.2.0-beta.1.md"
+  },
+  "payloadFeed": "payloads.json",
+  "releases": []
+}

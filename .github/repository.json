@@ -1,0 +1,21 @@
+{
+  "name": "orbit-play-ps5",
+  "description": "Remote Play app for jailbroken PS5s on Mac, Windows and Linux. Enables Remote Play for local PS5 accounts and streams over your local network without PSN sign-in or an internet connection. Includes the player and PS5 helper. Open source.",
+  "homepage": null,
+  "topics": [
+    "ps5",
+    "playstation5",
+    "remote-play",
+    "macos",
+    "apple-silicon",
+    "chiaki",
+    "homebrew",
+    "payload",
+    "local-network",
+    "open-source",
+    "windows",
+    "linux",
+    "desktop-app"
+  ],
+  "socialPreview": "assets/social-preview.png"
+}
