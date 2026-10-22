@@ -64,6 +64,7 @@ channel uses local HTTP on **TCP port 34179**; the computer app takes just
 Guest Wi-Fi, client isolation or a VPN can prevent the devices from reaching
 each other. If the PS5 has no address, connect it to your local network and run
 the helper again. Orbit Play does not wake a PS5 from Rest Mode in this beta.
+Support for waking the console is in development.
 
 ## Add the Payload Manager source
 

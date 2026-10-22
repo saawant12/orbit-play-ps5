@@ -33,7 +33,7 @@ Other controllers are untested.
 
 Keep the PS5 logged into the profile shown in Orbit Play. If you want another
 profile, stop the stream and [switch profiles](troubleshooting.md#switch-ps5-profiles)
-before reconnecting. Haptics are not supported in this beta.
+before reconnecting. Haptics are not supported in this beta; support is in development.
 
 ## Keyboard and mouse
 

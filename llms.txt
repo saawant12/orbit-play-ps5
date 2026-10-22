@@ -32,6 +32,8 @@ Backups cover account settings and related account files, not games or saves. Re
 
 HDR, microphone, haptics and PS5 login-passcode prompts are unavailable in this beta. Mac builds are not Apple-notarized and Windows builds are not code-signed; see the installation guide for first-launch instructions.
 
+We're working on support for waking the PS5 from Rest Mode, HDR, microphone input and haptics. These features are not available in the current release.
+
 ## Licence and source
 
 The desktop app is AGPL-3.0-only and the PS5 helper is GPL-3.0-or-later. Releases include project source, third-party source information and licence notices. Orbit Play is independent of Sony and PlayStation.

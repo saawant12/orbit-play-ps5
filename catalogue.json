@@ -78,6 +78,12 @@
     "Intel Macs and macOS versions before 26 are not supported",
     "Mac builds are not notarized and Windows builds are not code-signed; first launch may need manual approval"
   ],
+  "inDevelopment": [
+    "Wake the PS5 from Rest Mode",
+    "HDR",
+    "Microphone input",
+    "Haptics"
+  ],
   "documentation": {
     "readme": "README.md",
     "agents": "llms.txt",

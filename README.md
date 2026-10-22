@@ -208,6 +208,9 @@ that the helper's port is already in use.
 haptics, PS5 login-passcode prompts, wake from Rest Mode or account migration.
 Intel Macs are not supported, and PS5 firmware other than 13.60 is untested.
 
+We're working on support for waking the PS5 from Rest Mode, HDR, microphone
+input and haptics.
+
 **How do I report a problem?** Open an issue in this repository. Use **Export
 diagnostics** in **Console setup → Profile & connection options** and include the
 operating system and architecture, loader, controller connection and steps to
