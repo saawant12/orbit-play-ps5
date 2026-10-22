@@ -59,8 +59,8 @@ tested with a PS5. Intel Macs are not supported in this beta.
 - **Set up Remote Play when needed.** Review the changes before confirming them.
   Account setup is experimental; read the save warning if your profile needs a
   new local account ID.
-- **Get the matching helper.** Each app download includes the PS5 helper for
-  that version. Save it from **Get PS5 helper** in the main menu.
+- **PS5 helper included.** Choose **Get PS5 helper** in the app's main menu to
+  save the file, then run it on your PS5 using your payload loader.
 
 ## Beta status
 
