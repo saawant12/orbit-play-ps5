@@ -3,8 +3,9 @@
 [All guides](../README.md#guides) · [First connection](getting-started.md) · [Troubleshooting](troubleshooting.md)
 
 The helper shows the code used to trust your computer and handles the Remote
-Play PIN automatically. You do not need a separate PIN-generation tool. Keep it running while using Orbit Play. The computer
-app and helper must come from the **same release**.
+Play PIN automatically, so you don't need a separate PIN tool. Keep it running
+while you use Orbit Play. The computer app and helper must come from the
+**same release**.
 
 The tested PS5 setup is **firmware 13.60, Relapse and Payload Manager v0.5.2**.
 See [beta status](../README.md#beta-status) for the limits on other firmware.
@@ -17,9 +18,6 @@ Choose either copy from the same version:
   or send it through your payload loader.
 - **From a release:** download `orbit-play-<version>-ps5.elf` and
   [check its checksum](installation.md#check-your-downloads).
-
-Save the ELF on your computer, then run it on the console using the steps below.
-Check [download availability](../README.md#beta-status) for the current release.
 
 ## Run it on the console
 
@@ -52,19 +50,18 @@ payload**. After a PS5 reboot, load the jailbreak and run the helper again befor
 opening the icon or connecting the computer app.
 
 Replacing or deleting the ELF does not stop an older copy already running in
-memory. If the app reports the wrong helper version or the loader says the port
-is already in use, follow [the update steps](installation.md#update-the-app-and-helper-together).
+memory. If the app reports the wrong helper version, or the PS5 says the helper's port is
+already in use, follow [the update steps](installation.md#update-the-app-and-helper-together).
 
 ## Use it on your local network
 
 Keep the PS5 and computer on the same trusted network. The helper's control
-channel uses local HTTP on **TCP port 34179**; the computer app takes just
-`PS5_IP` in its address field. Do not forward the helper port to the internet.
+channel uses local HTTP on **TCP port 34179**. In the computer app, enter just the
+PS5's IP address, without the port. Do not forward the helper port to the internet.
 
 Guest Wi-Fi, client isolation or a VPN can prevent the devices from reaching
 each other. If the PS5 has no address, connect it to your local network and run
 the helper again. Orbit Play does not wake a PS5 from Rest Mode in this beta.
-Support for waking the console is in development.
 
 ## Add the Payload Manager source
 

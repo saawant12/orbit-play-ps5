@@ -2,12 +2,9 @@
 
 [All guides](../README.md#guides) · [Install the app](installation.md) · [Troubleshooting](troubleshooting.md)
 
-Orbit Play is a Remote Play app for jailbroken PS5s, available on Mac, Windows
-and Linux. It supports local PS5 accounts without PSN sign-in and can enable
-Remote Play when needed. Start the included helper on your PS5, enter its
-address and code in the app, then pair and play. You do not need a
-separate Chiaki app, a PSN sign-in in Orbit Play, an account ID to copy by hand,
-or a separate tool to generate the Remote Play PIN.
+This walkthrough takes you from starting the helper on your PS5 to your first
+stream. You don't need a separate Chiaki app, a PSN sign-in, an account ID to
+copy by hand or a tool to generate the Remote Play PIN.
 
 > See [download availability and requirements](../README.md#beta-status) before
 > installing. This beta connects over the same local network only.
@@ -53,9 +50,8 @@ helper is running. See [the helper guide](ps5-helper.md) if you do not see it.
 
 ## 3. Find your console
 
-In **Console address**, enter your PS5's local IP address (`PS5_IP` in these
-guides), then choose **Find console**. Enter only the address, without `http://`
-or a port number.
+In **Console address**, enter the IP address shown by the helper, then choose
+**Find console**. Enter only the address, without `http://` or a port number.
 
 ![Console setup with an example address entered and Find console beside it](../assets/screenshots/0.2.0-beta.1/03-console-address.jpg)
 

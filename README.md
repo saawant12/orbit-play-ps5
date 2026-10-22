@@ -9,7 +9,7 @@
 <p align="center"><strong>Remote Play for your jailbroken PS5.</strong><br>
 Play on your Mac, Windows or Linux computer over your local network, without PSN sign-in.</p>
 
-[Download](https://github.com/saawant12/orbit-play-ps5/releases/tag/v0.2.0-beta.1) · [Get started](#get-started) ·
+[Download](https://github.com/saawant12/orbit-play-ps5/releases/latest) · [Get started](#get-started) ·
 [Guides](#guides) · [Release notes](release-notes/0.2.0-beta.1.md) · [Beta status](#beta-status) · [Account setup](guides/account-setup.md) ·
 [Payload Manager](#payload-manager) · [Troubleshooting](guides/troubleshooting.md) ·
 [Report a bug](https://github.com/saawant12/orbit-play-ps5/issues/new?template=bug_report.md)
@@ -27,7 +27,7 @@ over your local network without PSN sign-in or an internet connection.
 - **Automatic account-ID and PIN handling.** Orbit Play reads the selected
   profile's account ID and exchanges the Remote Play PIN for you. There is no
   manual ID lookup or conversion, and no separate PIN generator to run.
-- **Setup, pairing and streaming in one app.** The desktop app includes the
+- **Setup, pairing and streaming in one app.** The computer app includes the
   streaming player and PS5 helper. You can set up the profile, pair and play
   without installing a separate Chiaki app.
 
@@ -52,8 +52,8 @@ the x64 download through emulation. Intel Macs are not supported in this beta.
 
 - **Pair with a code.** Trust your computer using the six-digit code shown by the PS5
   helper. Orbit Play handles the account ID and Remote Play PIN exchange.
-- **Keep it on your network.** The app's pairing and playback flow needs your
-  local network, with no PSN login or internet connection required by Orbit Play.
+- **Keep it on your network.** Pairing and playing happen on your home network.
+  Orbit Play never needs a PSN login or an internet connection.
 - **Choose your picture.** Select 360p, 540p, 720p or 1080p, 30 or 60 fps, and
   your bitrate. Start with the default 720p60 at 10 Mbps.
 - **Keep users separate.** Each console address and PS5 user has its own saved
@@ -68,7 +68,7 @@ the x64 download through emulation. Intel Macs are not supported in this beta.
 
 ## Beta status
 
-**Version 0.2.0-beta.1 is available.** [Download the app and PS5 helper](https://github.com/saawant12/orbit-play-ps5/releases/tag/v0.2.0-beta.1).
+**Version 0.2.0-beta.1 is available.** [Download the app and PS5 helper](https://github.com/saawant12/orbit-play-ps5/releases/latest).
 See the [release notes](release-notes/0.2.0-beta.1.md) for features, downloads and
 requirements.
 
@@ -87,21 +87,20 @@ the same trusted network, with the console awake and the intended user logged in
 Only PS5 firmware **13.60** has been tested. On 13.60, you can pair after initial
 account setup without restarting the console. Other firmware may work but is
 untested; after account setup, restart the PS5 and run the jailbreak and helper
-again before pairing. Follow the restart instruction after restoring account
-settings on any firmware.
+again before pairing. After restoring account settings, restart the PS5 when the
+app asks, whatever the firmware.
 
 Pairing, video and audio, keyboard controls, USB and Bluetooth DualSense controls,
 reconnecting, profile switching, picture settings, and new-profile setup and
 recovery have been tested on 13.60. Account setup remains experimental.
 
-Intel Macs and earlier macOS versions are not supported. Beta Mac builds are not
-Apple-notarized, so macOS asks you to approve the first launch in
+Beta Mac builds are not Apple-notarized, so macOS asks you to approve the first launch in
 **System Settings → Privacy & Security → Open Anyway**. Windows builds are not
 code-signed, so SmartScreen may ask you to choose **More info → Run anyway**.
 
 ## Get started
 
-Download the **app and PS5 helper from the [same release](https://github.com/saawant12/orbit-play-ps5/releases/tag/v0.2.0-beta.1)**.
+Download the **app and PS5 helper from the [same release](https://github.com/saawant12/orbit-play-ps5/releases/latest)**.
 The app includes the player and a copy of the matching helper.
 
 1. **Install the app** for [Mac, Windows or Linux](guides/installation.md).
@@ -205,12 +204,12 @@ deleting the ELF does not stop the running helper. Fully restart the PS5 (not
 Rest Mode), reload the jailbreak, then run the helper from the same release as
 your app. Enter the new trust code. **Console setup → Profile & connection
 options** shows both running versions and the PS5 firmware; the app blocks a
-mismatched helper before account setup. A duplicate launch also reports
-that the helper's port is already in use.
+mismatched helper before account setup. If you run the helper twice, the PS5
+says its port is in use and the first copy keeps running.
 
 **Which features are unavailable?** This beta does not support HDR, microphone,
 haptics, PS5 login-passcode prompts, wake from Rest Mode or account migration.
-Intel Macs are not supported, and PS5 firmware other than 13.60 is untested.
+PS5 firmware other than 13.60 is untested.
 
 We're working on support for waking the PS5 from Rest Mode, HDR, microphone
 input and haptics.

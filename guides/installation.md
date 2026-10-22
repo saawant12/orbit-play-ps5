@@ -2,11 +2,11 @@
 
 [All guides](../README.md#guides) · [First connection](getting-started.md) · [PS5 helper](ps5-helper.md)
 
-Download the desktop app and PS5 helper from the **same release**.
+Download the computer app and PS5 helper from the **same release**.
 The app includes its streaming engine, libraries and a copy of that helper.
 Python, Homebrew and a separate Chiaki-ng installation are not required.
 
-> [Download Orbit Play 0.2.0-beta.1](https://github.com/saawant12/orbit-play-ps5/releases/tag/v0.2.0-beta.1)
+> [Download the latest Orbit Play release](https://github.com/saawant12/orbit-play-ps5/releases/latest)
 > and check the [requirements](../README.md#beta-status). Follow the install notes
 > included with your release.
 
@@ -88,8 +88,8 @@ Replace `FILE` below with the exact filename, including its extension:
 
 All 64 characters must match; letter case does not matter. Check the PS5 ELF as
 well as the app download. A mismatch means you should download that file again
-before running it. A matching checksum checks the file against the published
-release; use the project's official release page for both files.
+before running it. A match only proves the file is the one published here, so
+download the file and `SHA256SUMS` from this repository's release page.
 
 ## Update the app and helper together
 

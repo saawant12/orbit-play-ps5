@@ -33,8 +33,8 @@ unavailable. A managed computer may restrict running the app.
 ## Find console does not connect
 
 1. Confirm the helper is running. The Media icon alone does not start it.
-2. Read the current PS5 address from the helper. Enter only `PS5_IP` in the app,
-   without a URL prefix or port.
+2. Read the current PS5 address from the helper. Enter just that address in the
+   app, without `http://` or a port.
 3. Keep both devices on the same trusted local network. Guest networks, Wi-Fi
    client isolation and VPN routing can prevent a connection.
 4. On Windows, check that Orbit Play is allowed on your private network.
@@ -60,8 +60,8 @@ already have Remote Play ready do not need setup again.
 
 On firmware 13.60, you can pair after initial setup without restarting the PS5.
 Other firmware is untested; after account setup, restart the PS5 and reload the
-jailbreak and helper before pairing. Follow the restart instruction after
-restoring account settings on any firmware.
+jailbreak and helper before pairing. After restoring account settings, restart
+the PS5 when the app asks, whatever the firmware.
 
 If pairing still fails, **export diagnostics** and report the exact error before
 changing account settings again.

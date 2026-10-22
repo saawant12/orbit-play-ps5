@@ -42,9 +42,15 @@
   "components": [
     {
       "id": "app",
-      "name": "Orbit Play desktop app",
+      "name": "Orbit Play computer app",
       "license": "AGPL-3.0-only",
       "artifactPattern": "OrbitPlay-{version}-macos-arm64.dmg",
+      "artifactPatterns": {
+        "macos-arm64": "OrbitPlay-{version}-macos-arm64.dmg",
+        "windows-x64": "OrbitPlay-{version}-windows-x64.zip",
+        "linux-x64": "OrbitPlay-{version}-linux-x64.AppImage",
+        "linux-arm64": "OrbitPlay-{version}-linux-arm64.AppImage"
+      },
       "includes": [
         "Chiaki player",
         "matching PS5 helper"
@@ -61,7 +67,7 @@
   ],
   "sourceCode": "Each release includes orbit-play-{version}-source.tar.gz with the complete source of both components, and orbit-play-{version}-third-party-source.tar with the source of the GPL, LGPL and AGPL libraries the apps ship",
   "features": [
-    "Remote Play for jailbroken PS5s from a desktop app for Mac, Windows and Linux",
+    "Remote Play for jailbroken PS5s from a computer app for Mac, Windows and Linux",
     "Enable Remote Play for local PS5 accounts, creating a local account ID after confirmation when needed",
     "Included streaming player and matching PS5 helper",
     "Local trust-code pairing without PSN sign-in in Orbit Play",
@@ -154,7 +160,7 @@
         {
           "file": "SHA256SUMS",
           "bytes": 1076,
-          "sha256": "68074d1bf8a681596f70a2eb292d1b61707b1e7d6309ac6ef6f10de89847a67b",
+          "sha256": "cc1d868dfc07ed88122258097bd02a3809e10e43195f0290a61f62692c5cdbbf",
           "url": "https://github.com/saawant12/orbit-play-ps5/releases/download/v0.2.0-beta.1/SHA256SUMS"
         },
         {
@@ -165,8 +171,8 @@
         },
         {
           "file": "orbit-play-0.2.0-beta.1-source.tar.gz",
-          "bytes": 8153104,
-          "sha256": "836baf1d3fb03a265478a82ae51cd2348faab52a590b75f898089aee885fb5ff",
+          "bytes": 8158749,
+          "sha256": "3a907efdd8dd705c6530986a7e49620606de01bf08f71c8b954d3badfe13483d",
           "url": "https://github.com/saawant12/orbit-play-ps5/releases/download/v0.2.0-beta.1/orbit-play-0.2.0-beta.1-source.tar.gz"
         },
         {
@@ -178,7 +184,7 @@
         {
           "file": "release.json",
           "bytes": 2209,
-          "sha256": "75f9555d460ba1e34bc0bc046d2c4ead73a0bea727172cedd782b6fa68cc8441",
+          "sha256": "519e87191277d5fa909fea309635ee902838a39d6e21a9c788d6d1e002c1f078",
           "url": "https://github.com/saawant12/orbit-play-ps5/releases/download/v0.2.0-beta.1/release.json"
         }
       ]

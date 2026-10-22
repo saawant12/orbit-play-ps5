@@ -18,7 +18,7 @@ playing, stop first, save the changes and start again.
 | Setting | Choices | How to choose |
 | --- | --- | --- |
 | Resolution | 360p, 540p, 720p, 1080p | Start at 720p. Try 1080p for a sharper picture; reduce it if playback is unstable. |
-| Frame rate | 30 or 60 fps | 60 fps gives smoother movement; 30 fps reduces the frame rate to process and send. |
+| Frame rate | 30 or 60 fps | 60 fps gives smoother movement; 30 fps halves the work for the PS5, the network and your computer. |
 | Bitrate | 1–50 Mbps in 0.5 Mbps steps | Start at 10 Mbps. A higher value uses more network capacity; lower it if the network struggles. |
 | Reconnect | On or off | When on, Orbit Play can make up to three attempts after a network interruption. |
 
@@ -33,7 +33,7 @@ Other controllers are untested.
 
 Keep the PS5 logged into the profile shown in Orbit Play. If you want another
 profile, stop the stream and [switch profiles](troubleshooting.md#switch-ps5-profiles)
-before reconnecting. Haptics are not supported in this beta; support is in development.
+before reconnecting. Haptics are not supported in this beta.
 
 ## Keyboard and mouse
 

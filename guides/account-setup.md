@@ -4,8 +4,8 @@
 
 Orbit Play only offers account setup when the selected PS5 profile needs a local
 account ID or needs Remote Play enabled. If the profile is already ready, you go
-straight to **Pair locally** or **Start playing**. There is no separate setup
-button you need to use every time.
+straight to **Pair locally** or **Start playing**. Once a profile is ready, you
+won't see setup again.
 
 Setup is **experimental** and has been tested with a new profile on PS5 firmware
 13.60, Relapse and Payload Manager v0.5.2. Other firmware and profile configurations
