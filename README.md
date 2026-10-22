@@ -18,15 +18,18 @@ Play on your Mac, Windows or Linux computer over your local network, without PSN
 Windows and Linux. It is an alternative to Sony's PS Remote Play app for playing
 over your local network without PSN sign-in or an internet connection.
 
-Orbit Play can also enable Remote Play for local PS5 accounts that have never
-been linked to PSN. If a local account ID is needed, it creates one after your
-confirmation. The streaming player and matching PS5 helper are included.
+## How Orbit Play is different
 
-- **No PSN sign-in in Orbit Play.** Set up and pair over your local network.
-- **No account-ID lookup or conversion.** Orbit Play reads the selected profile's
-  ID and guides you through setup if a local ID is needed.
-- **No separate PIN generator.** The helper exchanges the Remote Play PIN for you.
-- **No separate Chiaki app.** The player is included.
+- **Remote Play for local PS5 accounts.** Orbit Play can enable Remote Play for
+  profiles that have never been linked to PSN. If a local account ID is needed,
+  it creates one after you review and confirm the changes. Read the
+  [account setup and save risks](guides/account-setup.md) before continuing.
+- **Automatic account-ID and PIN handling.** Orbit Play reads the selected
+  profile's account ID and exchanges the Remote Play PIN for you. There is no
+  manual ID lookup or conversion, and no separate PIN generator to run.
+- **Setup, pairing and streaming in one app.** The desktop app includes the
+  streaming player and PS5 helper. You can set up the profile, pair and play
+  without installing a separate Chiaki app.
 
 Run the helper on your jailbroken PS5, enter its address and six-digit trust code
 in the computer app, then pair and play. The trust code authorizes your computer;
