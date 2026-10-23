@@ -1,12 +1,11 @@
 # Troubleshooting Orbit Play
 
-> The new **Start helper on PS5** option is part of 0.3.0, which is not yet published. In 0.2.0-beta.1, save the helper with **Get PS5 helper**, run it through your payload loader, then choose **Find console**.
-
 [All guides](../README.md#guides) · [First connection](getting-started.md) · [Account setup and recovery](account-setup.md)
 
 Start with the message shown in Orbit Play. Keep the PS5 awake and logged into
-the intended profile, and use an app and helper from the same release. Export
-diagnostics after a repeated failure, before making more changes.
+the intended profile. The desktop app includes the matching helper; choose
+**Start helper on PS5** to run it. Export diagnostics after a repeated failure,
+before making more changes.
 
 | Where you are stuck | Go to |
 | --- | --- |
@@ -94,7 +93,8 @@ Do not delete the profile or its backup as a troubleshooting step.
 
 If the helper could not read all account settings, export diagnostics. That error
 means setup stopped before changing them. If the app reports an incompatible
-helper or a version mismatch, update both components together before retrying.
+helper or a version mismatch, install the latest desktop app, stop the old helper
+and start the included helper before retrying. See [the update steps](installation.md#update-the-app-and-helper-together).
 
 Account setup does not remove parental restrictions or sign the profile into
 PSN. For parental-control or game-access errors, record the exact message and
@@ -116,9 +116,10 @@ connecting; it does not switch the PS5 user for you.
 
 ## The helper icon does not open
 
-Start the ELF through your payload loader first. The **Media** icon only opens
-the running helper's page. After a reboot you must load the jailbreak and helper
-again. If the icon reports an error while the helper runs, record its exact text
+Choose **Start helper on PS5** in the desktop app first. The **Media** icon only
+opens the running helper's page. After a reboot, load the jailbreak, open Payload
+Manager or enable your ELF loader, then start the helper again from the app.
+If the icon reports an error while the helper runs, record its exact text
 and test whether the computer app can still find the helper.
 
 ## The old helper version is still running

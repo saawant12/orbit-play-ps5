@@ -10,13 +10,17 @@
 Play on your Mac, Windows or Linux computer over your local network, without PSN sign-in.</p>
 
 [Download](https://github.com/saawant12/orbit-play-ps5/releases/latest) · [Get started](#get-started) ·
-[Guides](#guides) · [Release notes](release-notes/0.2.0-beta.1.md) · [Beta status](#beta-status) · [Account setup](guides/account-setup.md) ·
+[Guides](#guides) · [Release notes](release-notes/0.3.0.md) · [Beta status](#beta-status) · [Account setup](guides/account-setup.md) ·
 [Payload Manager](#payload-manager) · [Troubleshooting](guides/troubleshooting.md) ·
 [Report a bug](https://github.com/saawant12/orbit-play-ps5/issues/new?template=bug_report.md)
 
 **Orbit Play is a Remote Play app for jailbroken PS5s**, available on Mac,
 Windows and Linux. It is an alternative to Sony's PS Remote Play app for playing
 over your local network without PSN sign-in or an internet connection.
+
+**You only need to download the desktop app.** It includes the player and PS5
+helper, and can start the helper on your jailbroken PS5 through Payload Manager
+or an ELF loader. A separate helper download is optional.
 
 ## How Orbit Play is different
 
@@ -70,11 +74,8 @@ the x64 download through emulation. Intel Macs are not supported in this beta.
 
 ## Beta status
 
-**Orbit Play 0.3.0 (Beta) is prepared for release.** The helper-start instructions on this page apply to 0.3.0. See [what’s new](release-notes/0.3.0.md).
-
-**Version 0.2.0-beta.1 is available.** [Download the app and PS5 helper](https://github.com/saawant12/orbit-play-ps5/releases/latest).
-See the [release notes](release-notes/0.2.0-beta.1.md) for features, downloads and
-requirements.
+**Orbit Play 0.3.0 (Beta) is available.** [Download the desktop app](https://github.com/saawant12/orbit-play-ps5/releases/latest)
+and see [what’s new](release-notes/0.3.0.md).
 
 **This beta works on your local network only.** Your computer and PS5 must be on
 the same trusted network, with the console awake and the intended user logged in.
@@ -104,8 +105,8 @@ code-signed, so SmartScreen may ask you to choose **More info → Run anyway**.
 
 ## Get started
 
-Download the **[app](https://github.com/saawant12/orbit-play-ps5/releases/latest)** for your computer. It includes the player and
-the matching PS5 helper, which it starts for you.
+Download the **[desktop app](https://github.com/saawant12/orbit-play-ps5/releases/latest)** for your computer. It includes the player and
+matching PS5 helper; you do not need to download or send the ELF yourself.
 
 1. **Install the app** for [Mac, Windows or Linux](guides/installation.md).
 2. **Load your jailbreak** on the PS5 and open Payload Manager (or enable an ELF
@@ -169,9 +170,10 @@ before using this feature.
 
 ## Payload Manager
 
-Adding this source is optional. To download the helper from Payload Manager, [payloads.json](payloads.json) is the Orbit Play custom
-repository feed. It
-includes the **0.2.0-beta.1** PS5 helper.
+**Optional:** if you prefer to install and run the helper yourself, add
+[payloads.json](payloads.json) as a custom source in Payload Manager. It includes
+the **0.3.0** PS5 helper. You do not need to add this source when starting the
+included helper from the desktop app.
 
 Open **Settings → Manage Sources → Add Source** in Payload Manager and paste
 this URL:
@@ -189,6 +191,10 @@ for the steps.
 
 For step-by-step fixes, use the [troubleshooting guide](guides/troubleshooting.md).
 
+**Do I need to download the PS5 ELF?** No. The desktop app includes the helper
+and can start it through Payload Manager or an ELF loader on your jailbroken PS5.
+The standalone ELF is available if you prefer to run it yourself.
+
 **Do I need another Remote Play tool?** No. Orbit Play includes the player and
 PS5 helper, handles the account ID and Remote Play PIN, and offers account setup
 when needed. You still need a jailbroken PS5 and a payload loader to run the
@@ -205,8 +211,8 @@ a new trust code. An IP-address change needs a new pairing.
 same user while streaming. Orbit Play rechecks the active user before connecting.
 
 **I reinstalled, but the old version or error is still there.** Replacing or
-deleting the ELF does not stop the running helper, and Orbit Play won't start a
-second copy. Stop the old helper in Payload Manager, or fully restart the PS5
+deleting the ELF does not stop the running helper. Orbit Play checks for a
+responding helper before starting one. Stop the old helper in Payload Manager, or fully restart the PS5
 (not Rest Mode) and reload the jailbreak, then choose **Start helper on PS5**.
 Enter the new trust code. **Console setup → Profile & connection
 options** shows both running versions and the PS5 firmware; the app blocks a

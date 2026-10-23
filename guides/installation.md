@@ -1,11 +1,10 @@
 # Install and update Orbit Play
 
-> The new **Start helper on PS5** option is part of 0.3.0, which is not yet published. In 0.2.0-beta.1, save the helper with **Get PS5 helper**, run it through your payload loader, then choose **Find console**.
-
 [All guides](../README.md#guides) · [First connection](getting-started.md) · [PS5 helper](ps5-helper.md)
 
-Download the computer app. It includes its streaming engine, libraries and the
-matching PS5 helper, which it can start on your PS5 for you.
+**You only need to download the desktop app.** It includes its streaming engine,
+libraries and the matching PS5 helper, which it can start on your jailbroken PS5
+through Payload Manager or an ELF loader. No separate ELF download is needed.
 Python, Homebrew and a separate Chiaki-ng installation are not required.
 
 > [Download the latest Orbit Play release](https://github.com/saawant12/orbit-play-ps5/releases/latest)
@@ -21,7 +20,6 @@ Python, Homebrew and a separate Chiaki-ng installation are not required.
 | Windows on ARM | `OrbitPlay-<version>-windows-x64.zip` | Windows 11; runs through x64 emulation |
 | Linux PC | `OrbitPlay-<version>-linux-x64.AppImage` | x64; Ubuntu 24.04 or a compatible distribution |
 | Linux on ARM | `OrbitPlay-<version>-linux-arm64.AppImage` | arm64; Ubuntu 24.04 or a compatible distribution |
-| PS5 (optional) | `orbit-play-<version>-ps5.elf` | Only to run the helper yourself; tested on 13.60 with Relapse and Payload Manager v0.5.2 |
 
 Intel Macs and macOS versions before 26 are not supported in this beta.
 Other PS5 firmware is untested; see
@@ -119,6 +117,7 @@ app, so replacing the app keeps them. Do not choose
 
 | File | Purpose |
 | --- | --- |
+| `orbit-play-<version>-ps5.elf` | Optional standalone helper, only if you prefer to load it yourself |
 | `INSTALL-macos.txt`, `INSTALL-windows.txt`, `INSTALL-linux.txt` | Instructions for that release |
 | `orbit-play-<version>-source.tar.gz` | Matching project source, build instructions, licences and notices for both components |
 | `orbit-play-<version>-third-party-source.tar` | Source for the GPL, LGPL and AGPL libraries shipped in the apps |

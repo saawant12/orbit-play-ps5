@@ -22,7 +22,7 @@ Describe the problem and include the exact error message, if shown.
 - PS5 firmware:
 - Jailbreak and payload loader:
 - Controller: keyboard / DualSense (USB) / DualSense (Bluetooth) / other
-- Where it happens: finding the console / trust code / account setup / pairing / playing / reconnecting
+- Where it happens: starting the helper / finding the console / trust code / account setup / pairing / playing / reconnecting
 
 ## Diagnostics
 

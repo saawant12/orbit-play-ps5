@@ -3,12 +3,12 @@
   "payloads": [
     {
       "name": "Orbit Play",
-      "filename": "orbit-play-0.2.0-beta.1-ps5.elf",
-      "url": "https://github.com/saawant12/orbit-play-ps5/releases/download/v0.2.0-beta.1/orbit-play-0.2.0-beta.1-ps5.elf",
-      "description": "PS5 helper for Orbit Play Remote Play on Mac, Windows and Linux. Pair and stream over your local network without PSN sign-in. Use the computer app from the same release.",
-      "version": "v0.2.0-beta.1",
+      "filename": "orbit-play-0.3.0-ps5.elf",
+      "url": "https://github.com/saawant12/orbit-play-ps5/releases/download/v0.3.0/orbit-play-0.3.0-ps5.elf",
+      "description": "Optional standalone PS5 helper for Orbit Play. The desktop app already includes this helper and can start it for you. Pair and stream over your local network without PSN sign-in. Use the desktop app from the same release.",
+      "version": "v0.3.0",
       "category": "Utilities",
-      "checksum": "bf9f92c8ff44f78860a6018eaa58fa1ef5f1d689f30bcf53becb5d90cac2f47e"
+      "checksum": "c6e9746f8b8c4f812e1f772439b896f5787b8052784156bc390663e0330c0980"
     }
   ]
 }

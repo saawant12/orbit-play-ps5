@@ -1,7 +1,5 @@
 # Get started with Orbit Play
 
-> The new **Start helper on PS5** option is part of 0.3.0, which is not yet published. In 0.2.0-beta.1, save the helper with **Get PS5 helper**, run it through your payload loader, then choose **Find console**.
-
 [All guides](../README.md#guides) · [Install the app](installation.md) · [Troubleshooting](troubleshooting.md)
 
 This walkthrough takes you from starting the helper on your PS5 to your first
@@ -17,8 +15,8 @@ If account setup is needed, **we recommend a separate new PS5 profile with no
 saves**. Creating a new local account ID may make existing saves on that profile
 inaccessible. Read [account setup and recovery](account-setup.md) before continuing.
 
-- Install the [computer app](installation.md). It includes the matching PS5
-  helper and starts it for you.
+- Download and install just the [desktop app](installation.md). It includes the
+  PS5 helper and starts it for you; a separate ELF download is not needed.
 - Keep the computer and PS5 on the same trusted local network. Keep the PS5 awake.
 - Load your jailbreak, open Payload Manager (or enable an ELF loader) and log
   into the PS5 profile you want to play as.
@@ -62,7 +60,7 @@ it shows and choose **Find console** instead. Enter only the address, without
 
 ![Console setup with an example address entered and Find console beside it](../assets/screenshots/0.2.0-beta.1/03-console-address.jpg)
 
-*Find console checks the running helper. If the app reports a version mismatch, update the app and helper together.*
+*Find console checks the running helper. If the app reports a version mismatch, install the latest desktop app, stop the old helper and start the included helper.*
 
 ## 4. Trust this computer
 

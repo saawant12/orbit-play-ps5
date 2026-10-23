@@ -1,13 +1,11 @@
 # Start the PS5 helper
 
-> The new **Start helper on PS5** option is part of 0.3.0, which is not yet published. In 0.2.0-beta.1, save the helper with **Get PS5 helper**, run it through your payload loader, then choose **Find console**.
-
 [All guides](../README.md#guides) · [First connection](getting-started.md) · [Troubleshooting](troubleshooting.md)
 
 The helper shows the code used to trust your computer and handles the Remote
 Play PIN automatically, so you don't need a separate PIN tool. Keep it running
-while you use Orbit Play. The computer app includes the matching helper and can
-start it for you.
+while you use Orbit Play. **The desktop app includes the helper and can start it
+for you.** You do not need a separate ELF download.
 
 The tested PS5 setup is **firmware 13.60, Relapse and Payload Manager v0.5.2**.
 See [beta status](../README.md#beta-status) for the limits on other firmware.
@@ -25,7 +23,7 @@ options**. If an Orbit Play helper is already running, the app uses it instead
 of starting another; if it is a different version, stop it first (see
 [restarts](#the-media-icon-and-restarts)).
 
-## Get the ELF
+## Optional: get the ELF
 
 You only need the ELF to run the helper yourself. Choose either copy from the
 same version:
@@ -35,7 +33,7 @@ same version:
 - **From a release:** download `orbit-play-<version>-ps5.elf` and
   [check its checksum](installation.md#check-your-downloads).
 
-## Run it on the console
+## Optional: run the ELF yourself
 
 1. Turn on the PS5 and log into the profile you want to play as.
 2. Load your jailbreak, then run the Orbit Play ELF with Payload Manager or
@@ -62,8 +60,8 @@ the app.
 ## The Media icon and restarts
 
 The Media icon opens a page served by the running helper. It **does not start the
-payload**. After a PS5 reboot, load the jailbreak and start the helper again
-before opening the icon or connecting the computer app.
+payload**. After a PS5 reboot, load the jailbreak, open Payload Manager or enable
+your ELF loader, then choose **Start helper on PS5** in the desktop app.
 
 Replacing or deleting the ELF does not stop an older copy already running in
 memory. If the app reports the wrong helper version, or the PS5 says the helper's port is
@@ -81,7 +79,10 @@ the helper again. Orbit Play does not wake a PS5 from Rest Mode in this beta.
 
 ## Add the Payload Manager source
 
-The [Payload Manager source](../payloads.json) includes the **0.2.0-beta.1** helper.
+This source is optional: use it if you prefer to download and run the helper
+through Payload Manager yourself. The [Payload Manager source](../payloads.json)
+includes the **0.3.0** helper. Starting the included helper from the desktop app
+does not require adding a source.
 
 1. Copy the source URL below.
 2. In Payload Manager, open **Settings → Manage Sources → Add Source**.
