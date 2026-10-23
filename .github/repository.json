@@ -6,16 +6,9 @@
     "ps5",
     "playstation5",
     "remote-play",
-    "macos",
-    "apple-silicon",
     "chiaki",
     "homebrew",
-    "payload",
-    "local-network",
-    "open-source",
-    "windows",
-    "linux",
-    "desktop-app"
+    "payload"
   ],
   "socialPreview": "assets/social-preview.png"
 }
