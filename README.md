@@ -28,11 +28,12 @@ over your local network without PSN sign-in or an internet connection.
   profile's account ID and exchanges the Remote Play PIN for you. There is no
   manual ID lookup or conversion, and no separate PIN generator to run.
 - **Setup, pairing and streaming in one app.** The computer app includes the
-  streaming player and PS5 helper. You can set up the profile, pair and play
-  without installing a separate Chiaki app.
+  streaming player and PS5 helper, and starts the helper on your PS5 for you. You
+  can set up the profile, pair and play without a separate download or Chiaki app.
 
-Run the helper on your jailbroken PS5, enter its address and six-digit trust code
-in the computer app, then pair and play. The trust code authorizes your computer;
+Load your PS5's jailbreak, enter its address in the computer app and choose
+**Start helper on PS5**. Enter the six-digit trust code it shows, then pair and
+play. The trust code authorizes your computer;
 it is separate from the Remote Play PIN that Orbit Play handles automatically.
 
 **Platforms:** Apple Silicon Macs, Windows PCs (including Windows 11 on ARM),
@@ -63,10 +64,13 @@ the x64 download through emulation. Intel Macs are not supported in this beta.
 - **Set up Remote Play when needed.** Review the changes before confirming them.
   Account setup is experimental; read the save warning if your profile needs a
   new local account ID.
-- **PS5 helper included.** Choose **Get PS5 helper** in the app's main menu to
-  save the file, then run it on your PS5 using your payload loader.
+- **Starts its own PS5 helper.** Choose **Start helper on PS5** in Console setup:
+  Orbit Play sends the helper through Payload Manager or your ELF loader and
+  starts it. To run it yourself, save it with **Get PS5 helper**.
 
 ## Beta status
+
+**Orbit Play 0.3.0 (Beta) is prepared for release.** The helper-start instructions on this page apply to 0.3.0. See [what’s new](release-notes/0.3.0.md).
 
 **Version 0.2.0-beta.1 is available.** [Download the app and PS5 helper](https://github.com/saawant12/orbit-play-ps5/releases/latest).
 See the [release notes](release-notes/0.2.0-beta.1.md) for features, downloads and
@@ -100,14 +104,14 @@ code-signed, so SmartScreen may ask you to choose **More info → Run anyway**.
 
 ## Get started
 
-Download the **app and PS5 helper from the [same release](https://github.com/saawant12/orbit-play-ps5/releases/latest)**.
-The app includes the player and a copy of the matching helper.
+Download the **[app](https://github.com/saawant12/orbit-play-ps5/releases/latest)** for your computer. It includes the player and
+the matching PS5 helper, which it starts for you.
 
 1. **Install the app** for [Mac, Windows or Linux](guides/installation.md).
-2. **Run the PS5 helper** through your payload loader and stay logged into the
-   PS5 profile you want to play as.
-3. **Open Console setup** on your computer. Enter the PS5's local address, then
-   the helper's six-digit trust code.
+2. **Load your jailbreak** on the PS5 and open Payload Manager (or enable an ELF
+   loader). Stay logged into the PS5 profile you want to play as.
+3. **Start the helper.** In **Console setup**, enter the PS5's local address and
+   choose **Start helper on PS5**, then enter the six-digit trust code it shows.
 4. **Check the profile and pair.** Choose **Pair locally**. If Orbit Play offers
    account setup first, [review what it changes](guides/account-setup.md).
 5. **Start playing.** Connect your controller to the computer, or click the video
@@ -165,7 +169,8 @@ before using this feature.
 
 ## Payload Manager
 
-[payloads.json](payloads.json) is the Orbit Play custom repository feed. It
+Adding this source is optional. To download the helper from Payload Manager, [payloads.json](payloads.json) is the Orbit Play custom
+repository feed. It
 includes the **0.2.0-beta.1** PS5 helper.
 
 Open **Settings → Manage Sources → Add Source** in Payload Manager and paste
@@ -200,9 +205,10 @@ a new trust code. An IP-address change needs a new pairing.
 same user while streaming. Orbit Play rechecks the active user before connecting.
 
 **I reinstalled, but the old version or error is still there.** Replacing or
-deleting the ELF does not stop the running helper. Fully restart the PS5 (not
-Rest Mode), reload the jailbreak, then run the helper from the same release as
-your app. Enter the new trust code. **Console setup → Profile & connection
+deleting the ELF does not stop the running helper, and Orbit Play won't start a
+second copy. Stop the old helper in Payload Manager, or fully restart the PS5
+(not Rest Mode) and reload the jailbreak, then choose **Start helper on PS5**.
+Enter the new trust code. **Console setup → Profile & connection
 options** shows both running versions and the PS5 firmware; the app blocks a
 mismatched helper before account setup. If you run the helper twice, the PS5
 says its port is in use and the first copy keeps running.

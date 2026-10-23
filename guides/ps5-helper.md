@@ -1,18 +1,34 @@
 # Start the PS5 helper
 
+> The new **Start helper on PS5** option is part of 0.3.0, which is not yet published. In 0.2.0-beta.1, save the helper with **Get PS5 helper**, run it through your payload loader, then choose **Find console**.
+
 [All guides](../README.md#guides) · [First connection](getting-started.md) · [Troubleshooting](troubleshooting.md)
 
 The helper shows the code used to trust your computer and handles the Remote
 Play PIN automatically, so you don't need a separate PIN tool. Keep it running
-while you use Orbit Play. The computer app and helper must come from the
-**same release**.
+while you use Orbit Play. The computer app includes the matching helper and can
+start it for you.
 
 The tested PS5 setup is **firmware 13.60, Relapse and Payload Manager v0.5.2**.
 See [beta status](../README.md#beta-status) for the limits on other firmware.
 
+## Start it from the computer app
+
+1. Turn on the PS5, load your jailbreak and log into the profile you want to play as.
+2. Open Payload Manager on the PS5, or enable an ELF loader.
+3. In the computer app's **Console setup**, enter the PS5's IP address and choose
+   **Start helper on PS5**.
+
+Orbit Play tries Payload Manager on port 8084 first. If it is unavailable, it
+uses an ELF loader on port 9021. If yours use other ports, change them under **Profile & connection
+options**. If an Orbit Play helper is already running, the app uses it instead
+of starting another; if it is a different version, stop it first (see
+[restarts](#the-media-icon-and-restarts)).
+
 ## Get the ELF
 
-Choose either copy from the same version:
+You only need the ELF to run the helper yourself. Choose either copy from the
+same version:
 
 - **In the app:** choose **Get PS5 helper**. Save `orbit-play.elf`, then upload
   or send it through your payload loader.
@@ -46,8 +62,8 @@ the app.
 ## The Media icon and restarts
 
 The Media icon opens a page served by the running helper. It **does not start the
-payload**. After a PS5 reboot, load the jailbreak and run the helper again before
-opening the icon or connecting the computer app.
+payload**. After a PS5 reboot, load the jailbreak and start the helper again
+before opening the icon or connecting the computer app.
 
 Replacing or deleting the ELF does not stop an older copy already running in
 memory. If the app reports the wrong helper version, or the PS5 says the helper's port is

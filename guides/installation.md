@@ -1,9 +1,11 @@
 # Install and update Orbit Play
 
+> The new **Start helper on PS5** option is part of 0.3.0, which is not yet published. In 0.2.0-beta.1, save the helper with **Get PS5 helper**, run it through your payload loader, then choose **Find console**.
+
 [All guides](../README.md#guides) · [First connection](getting-started.md) · [PS5 helper](ps5-helper.md)
 
-Download the computer app and PS5 helper from the **same release**.
-The app includes its streaming engine, libraries and a copy of that helper.
+Download the computer app. It includes its streaming engine, libraries and the
+matching PS5 helper, which it can start on your PS5 for you.
 Python, Homebrew and a separate Chiaki-ng installation are not required.
 
 > [Download the latest Orbit Play release](https://github.com/saawant12/orbit-play-ps5/releases/latest)
@@ -19,7 +21,7 @@ Python, Homebrew and a separate Chiaki-ng installation are not required.
 | Windows on ARM | `OrbitPlay-<version>-windows-x64.zip` | Windows 11; runs through x64 emulation |
 | Linux PC | `OrbitPlay-<version>-linux-x64.AppImage` | x64; Ubuntu 24.04 or a compatible distribution |
 | Linux on ARM | `OrbitPlay-<version>-linux-arm64.AppImage` | arm64; Ubuntu 24.04 or a compatible distribution |
-| PS5 | `orbit-play-<version>-ps5.elf` | Tested on 13.60 with Relapse and Payload Manager v0.5.2 |
+| PS5 (optional) | `orbit-play-<version>-ps5.elf` | Only to run the helper yourself; tested on 13.60 with Relapse and Payload Manager v0.5.2 |
 
 Intel Macs and macOS versions before 26 are not supported in this beta.
 Other PS5 firmware is untested; see
@@ -86,23 +88,24 @@ Replace `FILE` below with the exact filename, including its extension:
 | Windows PowerShell | `Get-FileHash -LiteralPath "FILE" -Algorithm SHA256` |
 | Linux terminal | `sha256sum "FILE"` |
 
-All 64 characters must match; letter case does not matter. Check the PS5 ELF as
-well as the app download. A mismatch means you should download that file again
+All 64 characters must match; letter case does not matter. If you also
+downloaded the PS5 ELF, check it too. A mismatch means you should download that file again
 before running it. A match only proves the file is the one published here, so
 download the file and `SHA256SUMS` from this repository's release page.
 
 ## Update the app and helper together
 
 1. Stop the stream and quit Orbit Play.
-2. Download and check both components from the new release.
+2. Download and check the new app.
 3. On **Mac**, replace the app in Applications. On **Windows**, extract the new
    ZIP into a fresh folder and use that copy. On **Linux**, make the new AppImage
    executable and launch it.
-4. Stop the old PS5 helper before running the new ELF. Replacing the file does
-   not replace a running process. If you cannot stop that instance through your
-   loader, fully restart the PS5, reload the jailbreak and run the new helper.
-5. Open **Console setup**, find the console and enter the new trust code. Check
-   the app and running helper versions in **Profile & connection options**.
+4. Stop the old PS5 helper in Payload Manager. If you can't, fully restart the
+   PS5 and reload the jailbreak. Orbit Play checks for a running helper before
+   sending the replacement.
+5. Open **Console setup**, choose **Start helper on PS5** and enter the new trust
+   code. Check the app and running helper versions in **Profile & connection
+   options**.
 
 Saved connections and playback settings are stored separately from the computer
 app, so replacing the app keeps them. Do not choose

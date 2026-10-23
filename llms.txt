@@ -5,8 +5,9 @@
 ## Product and availability
 
 - Official repository: https://github.com/saawant12/orbit-play-ps5
-- Version: 0.2.0-beta.1, available from the official GitHub release. The catalogue lists its verified assets and the Payload Manager feed includes the matching PS5 helper.
-- The computer app runs on the computer. The included ELF helper runs on the PS5 and must be loaded through a payload loader after loading the jailbreak.
+- Published version: 0.2.0-beta.1, available from the official GitHub release. The catalogue lists its verified assets and the Payload Manager feed includes the matching PS5 helper.
+- Upcoming version: 0.3.0, titled Orbit Play 0.3.0 (Beta), tag v0.3.0. Its Mac build has been confirmed working with the PS5; the release is still a draft and is not yet published. The Start helper on PS5 feature and instructions below apply to 0.3.0. In the current 0.2.0-beta.1 release, save the helper with Get PS5 helper and start it manually through a payload loader.
+- The computer app runs on the computer. The included ELF helper runs on the PS5: after the jailbreak is loaded, the app starts it through Payload Manager (port 8084) or an ELF loader (port 9021) with Start helper on PS5. Running it with a payload loader by hand also works.
 - This beta supports the same trusted local network only. Keep the PS5 awake and logged into the profile you want to play as. Internet remote access and wake from Rest Mode are unavailable.
 - The computer app and running PS5 helper must come from the same release.
 
@@ -20,7 +21,7 @@
 
 ## Setup and playback
 
-Run the helper, enter its console address and six-digit trust code in the computer app, then choose Pair locally and Start playing. Orbit Play handles the account ID and Remote Play PIN automatically. The trust code authorizes the computer; it is separate from the Remote Play PIN and changes when the helper restarts. Pairings are saved for each console address and PS5 profile.
+Start the helper from the computer app (Console setup → Start helper on PS5) or run it yourself, enter the console address and six-digit trust code in the computer app, then choose Pair locally and Start playing. Orbit Play handles the account ID and Remote Play PIN automatically. The trust code authorizes the computer; it is separate from the Remote Play PIN and changes when the helper restarts. Pairings are saved for each console address and PS5 profile.
 
 The included player opens in its own window. Playback settings offer 360p, 540p, 720p or 1080p H.264 video at 30 or 60 fps and 1–50 Mbps. Controls include keyboard, mouse buttons and USB/Bluetooth DualSense; mouse movement is not mapped to aiming. Automatic reconnect can make up to three attempts after a network interruption. Diagnostics omit addresses, names, account IDs, PINs and pairing keys.
 
@@ -41,6 +42,7 @@ The computer app is AGPL-3.0-only and the PS5 helper is GPL-3.0-or-later. Releas
 - [Official repository](https://github.com/saawant12/orbit-play-ps5): Orbit Play documentation, updates and support.
 - [Issues](https://github.com/saawant12/orbit-play-ps5/issues): Report bugs and find existing reports.
 - [Project overview](README.md): Features, guide index, tested setup and beta availability.
+- [0.3.0 release notes](release-notes/0.3.0.md): Upcoming beta with helper launching from the computer app; Mac-to-PS5 use confirmed; publication pending.
 - [0.2.0-beta.1 release notes](release-notes/0.2.0-beta.1.md): Features, fixes, downloads, requirements and limitations for the first beta.
 - [Getting started](guides/getting-started.md): Illustrated walkthrough from running the helper to starting the stream.
 - [Installation](guides/installation.md): Mac, Windows and Linux downloads, first launch, checksums and updates.

@@ -1,5 +1,7 @@
 # Get started with Orbit Play
 
+> The new **Start helper on PS5** option is part of 0.3.0, which is not yet published. In 0.2.0-beta.1, save the helper with **Get PS5 helper**, run it through your payload loader, then choose **Find console**.
+
 [All guides](../README.md#guides) · [Install the app](installation.md) · [Troubleshooting](troubleshooting.md)
 
 This walkthrough takes you from starting the helper on your PS5 to your first
@@ -15,10 +17,11 @@ If account setup is needed, **we recommend a separate new PS5 profile with no
 saves**. Creating a new local account ID may make existing saves on that profile
 inaccessible. Read [account setup and recovery](account-setup.md) before continuing.
 
-- Install the [computer app](installation.md) and use the PS5 helper from the
-  **same release**.
+- Install the [computer app](installation.md). It includes the matching PS5
+  helper and starts it for you.
 - Keep the computer and PS5 on the same trusted local network. Keep the PS5 awake.
-- Load your jailbreak and log into the PS5 profile you want to play as.
+- Load your jailbreak, open Payload Manager (or enable an ELF loader) and log
+  into the PS5 profile you want to play as.
 - Connect a controller to your computer if you want to use one. Keyboard controls
   are also available.
 
@@ -34,15 +37,18 @@ have not connected a console yet.
 
 *Console setup starts the connection flow. Playback changes the next stream's picture settings.*
 
-## 2. Run the helper on your PS5
+## 2. Start the helper on your PS5
 
-Run the matching `orbit-play-<version>-ps5.elf` through Payload Manager or your
-ELF loader. You can save the included copy from **Get PS5 helper** in the computer
-app; that copy is named `orbit-play.elf`.
+In **Console address**, enter your PS5's IP address, then choose **Start helper
+on PS5**. Orbit Play sends its helper through Payload Manager, or an ELF loader
+if Payload Manager isn't running, and starts it. The PS5 then shows a
+notification with its address and a six-digit trust code, and Orbit Play moves on
+to [step 4](#4-trust-this-computer).
 
-The helper shows a console address and a six-digit trust code. If its notification
-has disappeared, open the **Orbit Play** icon in the PS5 **Media** row while the
-helper is running. See [the helper guide](ps5-helper.md) if you do not see it.
+You can find the PS5's IP address in **Settings → Network → Connection Status**
+on the PS5. If the notification has disappeared, open the **Orbit Play** icon in
+the PS5 **Media** row while the helper is running. See [the helper guide](ps5-helper.md)
+if you prefer to run the helper yourself.
 
 ![PS5 helper screen showing an example console address and six-digit trust code](../assets/screenshots/0.2.0-beta.1/02-ps5-helper.jpg)
 
@@ -50,8 +56,9 @@ helper is running. See [the helper guide](ps5-helper.md) if you do not see it.
 
 ## 3. Find your console
 
-In **Console address**, enter the IP address shown by the helper, then choose
-**Find console**. Enter only the address, without `http://` or a port number.
+If the helper is already running, or you started it yourself, enter the address
+it shows and choose **Find console** instead. Enter only the address, without
+`http://` or a port number.
 
 ![Console setup with an example address entered and Find console beside it](../assets/screenshots/0.2.0-beta.1/03-console-address.jpg)
 
@@ -107,8 +114,8 @@ Orbit Play and choose **Start playing**; use **Console setup** if it needs to
 find or trust the console again. Saved pairings are kept for each console
 address and PS5 profile.
 
-After a PS5 reboot, reload the jailbreak and helper. A helper restart changes
-the trust code, so enter the new one when asked. If your PS5's IP address
+After a PS5 reboot, reload the jailbreak and choose **Start helper on PS5**
+again. A helper restart changes the trust code, so enter the new one when asked. If your PS5's IP address
 changes, find the new address and pair again.
 
 **Next:** [Playback and controls](playback-and-controls.md) ·

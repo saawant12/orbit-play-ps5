@@ -73,7 +73,7 @@
     "Local trust-code pairing without PSN sign-in in Orbit Play",
     "Automatic account-ID and Remote Play PIN exchange; no manual lookup, conversion or separate PIN tool",
     "Separate pairing per console address and active user",
-    "360p, 540p, 720p or 1080p H.264; 30/60 fps; 1–50 Mbps",
+    "360p, 540p, 720p or 1080p H.264; 30/60 fps; 1\u201350 Mbps",
     "Up to three reconnect attempts after network interruptions",
     "Account-settings recovery with review before confirmation",
     "Diagnostics that omit connection secrets"
@@ -189,5 +189,18 @@
         }
       ]
     }
-  ]
+  ],
+  "upcomingRelease": {
+    "version": "0.3.0",
+    "title": "Orbit Play 0.3.0 (Beta)",
+    "tag": "v0.3.0",
+    "status": "draft",
+    "publicReleaseAvailable": false,
+    "hardwareVerified": false,
+    "releaseNotes": "release-notes/0.3.0.md",
+    "features": [
+      "Starts its PS5 helper through Payload Manager or an ELF loader; no separate ELF download needed"
+    ],
+    "validation": "Installed Mac 0.3.0 confirmed working with the PS5; other platforms and the raw ELF-loader fallback have not been separately revalidated on hardware for this version."
+  }
 }

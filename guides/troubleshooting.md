@@ -1,5 +1,7 @@
 # Troubleshooting Orbit Play
 
+> The new **Start helper on PS5** option is part of 0.3.0, which is not yet published. In 0.2.0-beta.1, save the helper with **Get PS5 helper**, run it through your payload loader, then choose **Find console**.
+
 [All guides](../README.md#guides) · [First connection](getting-started.md) · [Account setup and recovery](account-setup.md)
 
 Start with the message shown in Orbit Play. Keep the PS5 awake and logged into
@@ -9,6 +11,7 @@ diagnostics after a repeated failure, before making more changes.
 | Where you are stuck | Go to |
 | --- | --- |
 | The computer app will not open | [First launch](#the-computer-app-will-not-open) |
+| Start helper on PS5 fails | [Starting the helper](#start-helper-on-ps5-does-not-work) |
 | Find console cannot reach the PS5 | [Finding the console](#find-console-does-not-connect) |
 | The code is rejected | [Trust code](#the-trust-code-does-not-work) |
 | Pair locally fails | [Pairing](#the-ps5-rejects-pairing) |
@@ -30,9 +33,25 @@ the platform's first-launch steps in [installation](installation.md). On Linux,
 make the AppImage executable; use the documented extraction mode if FUSE is
 unavailable. A managed computer may restrict running the app.
 
+## Start helper on PS5 does not work
+
+Orbit Play tries Payload Manager on port 8084. If it is unavailable, it uses an ELF loader on port 9021.
+
+- Load the jailbreak and open Payload Manager on the PS5, or enable your ELF
+  loader, before choosing **Start helper on PS5**.
+- If your loader uses other ports, enter them under **Profile & connection
+  options**.
+- If a launch could not be confirmed, Orbit Play checks whether the helper
+  started. If it still cannot connect, check the PS5 and choose **Find console**
+  before attempting another launch.
+- If the app reports a different helper version, stop that helper in Payload
+  Manager or fully restart the PS5 first; see
+  [the old helper version is still running](#the-old-helper-version-is-still-running).
+
 ## Find console does not connect
 
-1. Confirm the helper is running. The Media icon alone does not start it.
+1. Confirm the helper is running, or choose **Start helper on PS5**. The Media
+   icon alone does not start it.
 2. Read the current PS5 address from the helper. Enter just that address in the
    app, without `http://` or a port.
 3. Keep both devices on the same trusted local network. Guest networks, Wi-Fi
@@ -104,10 +123,10 @@ and test whether the computer app can still find the helper.
 
 ## The old helper version is still running
 
-Replacing or reinstalling the ELF does not stop the old process. Stop that
-instance through your loader before launching the new file. If that is not
-available, fully restart the PS5 (**not Rest Mode**), reload the jailbreak and
-run the matching helper.
+Replacing or reinstalling the ELF does not stop the old process, and Orbit Play
+checks for a running helper before sending another. Stop the old one in Payload Manager. If that is not
+available, fully restart the PS5 (**not Rest Mode**) and reload the jailbreak.
+Then choose **Start helper on PS5**.
 
 Check **Console setup → Profile & connection options** for the running app and
 helper versions. Follow [the update guide](installation.md#update-the-app-and-helper-together).
