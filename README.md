@@ -15,8 +15,8 @@ Play on your Mac, Windows or Linux computer over your local network, without PSN
 [Report a bug](https://github.com/saawant12/orbit-play-ps5/issues/new?template=bug_report.md)
 
 **Orbit Play is a Remote Play app for jailbroken PS5s**, available on Mac,
-Windows and Linux. It is an alternative to Sony's PS Remote Play app for playing
-over your local network without PSN sign-in or an internet connection.
+Windows and Linux. Play over your local network without PSN sign-in or an
+internet connection.
 
 **You only need to download the desktop app.** It includes the player and PS5
 helper, and can start the helper on your jailbroken PS5 through Payload Manager

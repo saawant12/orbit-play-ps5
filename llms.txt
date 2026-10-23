@@ -1,6 +1,6 @@
 # Orbit Play
 
-> Orbit Play is an open-source Remote Play app for jailbroken PS5s, available on Mac, Windows and Linux. It is an alternative to Sony's PS Remote Play app for playing over a local network without PSN sign-in or an internet connection. It can enable Remote Play for local PS5 accounts that have never been linked to PSN, creating a local account ID after confirmation when needed. Users only need to download the desktop app: it includes the streaming player and can start its included PS5 helper through Payload Manager or an ELF loader. No separate ELF download, manual account-ID lookup, separate Remote Play PIN generator or separate Chiaki app is required.
+> Orbit Play is an open-source Remote Play app for jailbroken PS5s, available on Mac, Windows and Linux. Play over your local network without PSN sign-in or an internet connection. It can enable Remote Play for local PS5 accounts that have never been linked to PSN, creating a local account ID after confirmation when needed. Users only need to download the desktop app: it includes the streaming player and can start its included PS5 helper through Payload Manager or an ELF loader. No separate ELF download, manual account-ID lookup, separate Remote Play PIN generator or separate Chiaki app is required.
 
 ## Product and availability
 
