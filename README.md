@@ -31,9 +31,10 @@ or an ELF loader. A separate helper download is optional.
 - **Automatic account-ID and PIN handling.** Orbit Play reads the selected
   profile's account ID and exchanges the Remote Play PIN for you. There is no
   manual ID lookup or conversion, and no separate PIN generator to run.
-- **Setup, pairing and streaming in one app.** The computer app includes the
-  streaming player and PS5 helper, and starts the helper on your PS5 for you. You
-  can set up the profile, pair and play without a separate download or Chiaki app.
+- **Only download the desktop app.** Orbit Play includes the player and PS5
+  helper, and sends and starts the helper through Payload Manager or your ELF
+  loader. Set up your profile, pair and play from one app, with no separate ELF
+  download or Chiaki installation needed.
 
 Load your PS5's jailbreak, enter its address in the computer app and choose
 **Start helper on PS5**. Enter the six-digit trust code it shows, then pair and
