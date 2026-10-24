@@ -34,16 +34,8 @@ Play on your Mac, Windows or Linux computer over your local network, with no PSN
 - **Only download the desktop app.** Orbit Play includes the player and PS5
   helper, and sends and starts the helper through Payload Manager or your ELF
   loader. Set up your profile, pair and play from one app, with no separate ELF
-  download or Chiaki installation needed.
-
-Load your PS5's jailbreak, enter its address in the computer app and choose
-**Start helper on PS5**. Enter the six-digit trust code it shows, then pair and
-play. The trust code authorizes your computer;
-it is separate from the Remote Play PIN that Orbit Play handles automatically.
-
-**Platforms:** Apple Silicon Macs, Windows PCs (including Windows 11 on ARM),
-and Linux x64/arm64 computers have been tested with a PS5. Windows on ARM uses
-the x64 download through emulation. Intel Macs are not supported in this beta.
+  download or Chiaki installation needed. To run the helper yourself instead,
+  save it with **Get PS5 helper**.
 
 > **Official source:** [saawant12/orbit-play-ps5](https://github.com/saawant12/orbit-play-ps5)
 > is the only official place for Orbit Play releases, updates and support.
@@ -56,22 +48,12 @@ the x64 download through emulation. Intel Macs are not supported in this beta.
 
 ## Made for playing locally
 
-- **Pair with a code.** Trust your computer using the six-digit code shown by the PS5
-  helper. Orbit Play handles the account ID and Remote Play PIN exchange.
-- **Keep it on your network.** Pairing and playing happen on your home network.
-  Orbit Play never needs a PSN login or an internet connection.
 - **Choose your picture.** Select 360p, 540p, 720p or 1080p, 30 or 60 fps, and
   your bitrate. Start with the default 720p60 at 10 Mbps.
 - **Keep users separate.** Each console address and PS5 user has its own saved
   pairing. Orbit Play checks the selected user before connecting again.
 - **Recover from interruptions.** Enable up to three reconnect attempts after
   a network interruption, or press Stop to end the session.
-- **Set up Remote Play when needed.** Review the changes before confirming them.
-  Account setup is experimental; read the save warning if your profile needs a
-  new local account ID.
-- **Starts its own PS5 helper.** Choose **Start helper on PS5** in Console setup:
-  Orbit Play sends the helper through Payload Manager or your ELF loader and
-  starts it. To run it yourself, save it with **Get PS5 helper**.
 
 ## Beta status
 
@@ -89,6 +71,10 @@ the same trusted network, with the console awake and the intended user logged in
 | PS5 | Firmware 13.60 (tested), Relapse, Payload Manager v0.5.2 |
 | Network | Computer and awake PS5 on the same trusted local network |
 | Console user | Logged into the user you intend to play as |
+
+Apple Silicon Macs, Windows PCs including Windows 11 on ARM, and Linux x64 and
+arm64 computers have been tested with a PS5. Intel Macs are not supported in
+this beta.
 
 Only PS5 firmware **13.60** has been tested. On 13.60, you can pair after initial
 account setup without restarting the console. Other firmware may work but is
@@ -114,6 +100,8 @@ matching PS5 helper; you do not need to download or send the ELF yourself.
    loader). Stay logged into the PS5 profile you want to play as.
 3. **Start the helper.** In **Console setup**, enter the PS5's local address and
    choose **Start helper on PS5**, then enter the six-digit trust code it shows.
+   The code authorizes your computer; it isn't the Remote Play PIN, which Orbit
+   Play handles for you.
 4. **Check the profile and pair.** Choose **Pair locally**. If Orbit Play offers
    account setup first, [review what it changes](guides/account-setup.md).
 5. **Start playing.** Connect your controller to the computer, or click the video
@@ -192,15 +180,6 @@ for the steps.
 
 For step-by-step fixes, use the [troubleshooting guide](guides/troubleshooting.md).
 
-**Do I need to download the PS5 ELF?** No. The desktop app includes the helper
-and can start it through Payload Manager or an ELF loader on your jailbroken PS5.
-The standalone ELF is available if you prefer to run it yourself.
-
-**Do I need another Remote Play tool?** No. Orbit Play includes the player and
-PS5 helper, handles the account ID and Remote Play PIN, and offers account setup
-when needed. You still need a jailbroken PS5 and a payload loader to run the
-helper. Orbit Play does not require a PSN sign-in or provide online PSN services.
-
 **Can I play away from home?** Not in this beta. Your computer and PS5 must be on
 the same trusted local network. Wake from Rest Mode is also unavailable.
 
@@ -221,8 +200,9 @@ mismatched helper before account setup. If you run the helper twice, the PS5
 says its port is in use and the first copy keeps running.
 
 **Which features are unavailable?** This beta does not support HDR, microphone,
-haptics, PS5 login-passcode prompts, wake from Rest Mode or account migration.
-PS5 firmware other than 13.60 is untested.
+haptics, PS5 login-passcode prompts, wake from Rest Mode or account migration,
+and Orbit Play doesn't provide online PSN services. PS5 firmware other than
+13.60 is untested.
 
 We're working on support for waking the PS5 from Rest Mode, HDR, microphone
 input and haptics.
