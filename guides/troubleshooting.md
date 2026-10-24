@@ -135,8 +135,10 @@ helper versions. Follow [the update guide](installation.md#update-the-app-and-he
 ## Video works but controls do not
 
 Click the player window to give it focus. Arrow keys navigate, Enter confirms
-and Esc/Backspace goes back. Press F1 for [the full mapping](playback-and-controls.md#keyboard-and-mouse).
-Mouse movement is not mapped to aiming.
+and Esc/Backspace goes back. Press F1 for [your current keys](playback-and-controls.md#keyboard-and-mouse).
+If you changed keys under **Controls**, choose **Reset to defaults** there to go
+back to the standard layout. With mouse aiming on, click the video to capture
+the mouse and press F2 to release it.
 
 Connect a controller to the **computer**, then start the stream. If a controller
 disconnects, stops responding or leaves an input held, stop the stream, reconnect
@@ -145,7 +147,10 @@ the controller and start again. Report repeated input problems with diagnostics.
 ## The picture stutters or reconnect does not finish
 
 Check that both devices and the helper are still awake and connected. Stop the
-stream, lower the bitrate or resolution in **Playback**, save and try again.
+stream, lower the bitrate or resolution in **Playback**, save and try again. If
+you chose HEVC, try H.264; if the picture shows glitches, try turning off
+**Use hardware video decoding**. Press F in the player to see which decoder is
+in use.
 Reconnect can make up to three attempts when enabled, but cannot start a stopped
 helper or wake the console. If it does not retry or restore the stream, connect
 manually and export diagnostics.

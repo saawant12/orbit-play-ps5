@@ -19,26 +19,56 @@ playing, stop first, save the changes and start again.
 | --- | --- | --- |
 | Resolution | 360p, 540p, 720p, 1080p | Start at 720p. Try 1080p for a sharper picture; reduce it if playback is unstable. |
 | Frame rate | 30 or 60 fps | 60 fps gives smoother movement; 30 fps halves the work for the PS5, the network and your computer. |
+| Video codec | H.264 or HEVC | H.264 is the default. HEVC (H.265) gives a sharper picture at the same bitrate; it suits computers that decode it in hardware. |
 | Bitrate | 1–50 Mbps in 0.5 Mbps steps | Start at 10 Mbps. A higher value uses more network capacity; lower it if the network struggles. |
+| Hardware video decoding | On or off | Leave it on. Orbit Play decodes on your graphics hardware when it can and on the processor when it can't. Turn it off only if the picture shows glitches. |
 | Reconnect | On or off | When on, Orbit Play can make up to three attempts after a network interruption. |
 
-Video uses H.264. Picture quality also depends on the game, the computer and the
-local connection. Change one setting at a time so you can judge the difference.
+Hardware decoding uses VideoToolbox on a Mac, D3D11VA on Windows and Vulkan on
+Linux. Press **F** in the player to see the codec and whether decoding uses the
+hardware. Picture quality also depends on the game, the computer and the local
+connection. Change one setting at a time so you can judge the difference.
 
 ## Use a controller
 
 Connect a DualSense to the **computer** through USB or Bluetooth before starting
 the stream. Both connection methods have been tested on the 13.60 setup.
-Other controllers are untested.
+Other controllers are untested. Touchpad swipes reach the PS5 as well as the
+touchpad click, and the DualSense mute button turns the
+[microphone](#use-the-microphone) on and off.
 
 Keep the PS5 logged into the profile shown in Orbit Play. If you want another
 profile, stop the stream and [switch profiles](troubleshooting.md#switch-ps5-profiles)
-before reconnecting. Haptics are not supported in this beta.
+before reconnecting.
+
+### Rumble, triggers and haptics
+
+Under **Playback → Controller feedback**:
+
+| Setting | Choices | What it does |
+| --- | --- | --- |
+| Rumble | Off, Weak, Normal, Strong | How strongly the controller rumbles. Normal is the default. |
+| Adaptive triggers | On or off | The game's trigger resistance on a DualSense. |
+| DualSense haptics over USB | On or off | With a USB cable, haptics play on the DualSense itself. Over Bluetooth, or with this off, they become rumble. |
+
+Your PS5's own vibration and trigger-effect settings still apply. **On a Mac**,
+haptics over USB need the DualSense's audio device set to 4 channels: open
+**Audio MIDI Setup** (Applications → Utilities), select the DualSense, choose
+**Configure Speakers** and pick **Quadraphonic**. Otherwise haptics play as rumble.
+
+## Use the microphone
+
+Press **M**, choose **Mic** in the player bar, or press the DualSense mute button
+to turn the microphone on or off. It starts muted in every stream and uses your
+computer's default input; choose a different one in your computer's sound
+settings before you start the stream. On a Mac, macOS asks for microphone access
+the first time.
 
 ## Keyboard and mouse
 
 Click inside the video window first. **F1** or **Controls** opens the in-player
-guide. In that guide, choose **Back to game** or press **Esc** to return.
+guide, which shows your current keys. In that guide, choose **Back to game** or
+press **Esc** to return. These are the default keys:
 
 | Computer input | PS5 control |
 | --- | --- |
@@ -55,12 +85,29 @@ guide. In that guide, choose **Back to game** or press **Esc** to return.
 | P / Tab | PS button / touchpad click |
 | Left / right mouse click | Cross / Circle |
 | Middle mouse click | Touchpad click |
+| M | Microphone on/off |
 | F | Stream statistics |
 | F1 | Controls guide |
+| F2 | Release the mouse when aiming |
 
-Mouse **movement** does not aim or move a PS5 pointer. Use I, J, K, L for right-stick
-movement. Switching focus away from the player releases held keyboard and mouse
-inputs. Keyboard mappings are fixed in this beta.
+Switching focus away from the player releases held keyboard and mouse inputs.
+
+### Change your keys
+
+Open **Controls** from the main menu. Choose a key next to an action, then press
+the new key or click a mouse button on it. Each action takes up to three keys or
+mouse buttons, and choosing a key that another action uses moves it. Select
+**Save controls**; the new keys apply to the next stream. **Reset to defaults**
+brings back the table above. F1 and F2 can't be changed.
+
+### Aim with the mouse
+
+Turn on **Aim with the mouse** under **Controls**. In the player, click the video
+to start: the pointer disappears and moving the mouse moves the right stick, and
+moving it faster turns further. Press **F2** to release the mouse, or switch to
+another window. **Mouse sensitivity** (1–10) sets how fast a movement turns
+fully. On Linux under Wayland, the player opens through XWayland so it can keep
+the pointer in place.
 
 ## Stop and reconnect
 
@@ -82,7 +129,12 @@ or switch profiles.
   in your computer's settings, then start again.
 - **An input stays held:** stop the stream and reconnect the controller before
   starting again. Export diagnostics if it repeats.
+- **No haptics on a Mac:** set the DualSense to 4 channels in Audio MIDI Setup as
+  described [above](#rumble-triggers-and-haptics), and connect it by USB.
+- **The microphone doesn't turn on:** allow Orbit Play under your computer's
+  microphone privacy settings and check its default input device.
 - **Stutter or breakup:** stop, lower the bitrate or resolution in Playback,
-  save, and retry. Check the local connection as well as picture settings.
+  save, and retry. If you chose HEVC, try H.264. Check the local connection as
+  well as picture settings.
 
 For repeated failures, follow [troubleshooting](troubleshooting.md#export-diagnostics).

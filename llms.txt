@@ -6,7 +6,7 @@
 
 - Website: https://orbitplay.dev/
 - Official repository: https://github.com/saawant12/orbit-play-ps5
-- Published version: 0.3.0, titled Orbit Play 0.3.0 (Beta), tag v0.3.0. The catalogue lists its release assets and the optional Payload Manager feed includes the matching PS5 helper.
+- Published version: 0.4.0, titled Orbit Play 0.4.0 (Beta), tag v0.4.0. The catalogue lists its release assets and the optional Payload Manager feed includes the matching PS5 helper.
 - The computer app runs on the computer. The included ELF helper runs on the PS5: after the jailbreak is loaded, the app starts it through Payload Manager (port 8084) or an ELF loader (port 9021) with Start helper on PS5. Running it with a payload loader by hand also works.
 - This beta supports the same trusted local network only. Keep the PS5 awake and logged into the profile you want to play as. Internet remote access and wake from Rest Mode are unavailable.
 - The computer app and running PS5 helper must come from the same release.
@@ -23,7 +23,7 @@
 
 Download the desktop app for your computer; no separate PS5 ELF download is needed. Load the jailbreak and open Payload Manager or enable an ELF loader on the PS5. In Console setup, enter the PS5's address and choose Start helper on PS5. Enter its six-digit trust code, then choose Pair locally and Start playing. Running the helper yourself is an optional alternative. Orbit Play handles the account ID and Remote Play PIN automatically. The trust code authorizes the computer; it is separate from the Remote Play PIN and changes when the helper restarts. Pairings are saved for each console address and PS5 profile.
 
-The included player opens in its own window. Playback settings offer 360p, 540p, 720p or 1080p H.264 video at 30 or 60 fps and 1–50 Mbps. Controls include keyboard, mouse buttons and USB/Bluetooth DualSense; mouse movement is not mapped to aiming. Automatic reconnect can make up to three attempts after a network interruption. Diagnostics omit addresses, names, account IDs, PINs and pairing keys.
+The included player opens in its own window. Playback settings offer 360p, 540p, 720p or 1080p H.264 or HEVC video at 30 or 60 fps and 1–50 Mbps, decoded on the computer's graphics hardware when possible (VideoToolbox, D3D11VA or Vulkan). A USB or Bluetooth DualSense gets rumble and adaptive triggers, haptics over USB, and touchpad swipes. The computer's microphone can be turned on in the player. Keyboard and mouse keys can be changed under Controls, with optional mouse aiming on the right stick. If a PS5 profile has a login passcode, the app asks for it. Automatic reconnect can make up to three attempts after a network interruption. Diagnostics omit addresses, names, account IDs, PINs and pairing keys.
 
 ## Account setup and limits
 
@@ -31,7 +31,7 @@ Account setup is experimental and only appears when needed. It can create a loca
 
 Backups cover account settings and related account files, not games or saves. Recovery keeps an assigned ID to protect newer saves and may stop if account settings changed after the backup. Setup does not migrate accounts, remove parental restrictions or provide online PSN services.
 
-HDR, microphone, haptics and PS5 login-passcode prompts are unavailable in this beta. Mac builds are not Apple-notarized and Windows builds are not code-signed; see the installation guide for first-launch instructions.
+HDR and wake from Rest Mode are unavailable in this beta. Mac builds are not Apple-notarized and Windows builds are not code-signed; see the installation guide for first-launch instructions.
 
 ## Licence and source
 
@@ -42,12 +42,13 @@ The computer app is AGPL-3.0-only and the PS5 helper is GPL-3.0-or-later. Releas
 - [Official repository](https://github.com/saawant12/orbit-play-ps5): Orbit Play documentation, updates and support.
 - [Issues](https://github.com/saawant12/orbit-play-ps5/issues): Report bugs and find existing reports.
 - [Project overview](README.md): Features, guide index, tested setup and beta availability.
+- [0.4.0 release notes](release-notes/0.4.0.md): HEVC and hardware decoding, rumble, adaptive triggers and USB haptics, microphone, touchpad swipes, custom keys and mouse aiming, login passcodes and an update notice, with installation and update steps.
 - [0.3.0 release notes](release-notes/0.3.0.md): Start the included PS5 helper from the desktop app, with installation and update steps.
 - [0.2.0-beta.1 release notes](release-notes/0.2.0-beta.1.md): Features, fixes, downloads, requirements and limitations for the first beta.
 - [Getting started](guides/getting-started.md): Illustrated walkthrough from running the helper to starting the stream.
 - [Installation](guides/installation.md): Mac, Windows and Linux downloads, first launch, checksums and updates.
 - [PS5 helper](guides/ps5-helper.md): Run the helper, read the code, use the Media icon and add the Payload Manager source.
-- [Playback and controls](guides/playback-and-controls.md): Picture settings, controllers, keyboard/mouse mappings, stop and reconnect.
+- [Playback and controls](guides/playback-and-controls.md): Picture settings, codec and hardware decoding, rumble/triggers/haptics, microphone, custom keys and mouse aiming, stop and reconnect.
 - [Troubleshooting](guides/troubleshooting.md): Connection and input problems, profile switching and diagnostic exports.
 - [Screenshot notes](assets/screenshots/0.2.0-beta.1/README.md): Interface previews with example data and links to each setup screen.
 - [Account setup](guides/account-setup.md): When setup is needed, what it changes, save warnings and how to restore settings.
@@ -55,7 +56,7 @@ The computer app is AGPL-3.0-only and the PS5 helper is GPL-3.0-or-later. Releas
 
 ## Downloads
 
-- [Download 0.3.0](https://github.com/saawant12/orbit-play-ps5/releases/tag/v0.3.0): Download the Mac, Windows or Linux desktop app. It includes the player and PS5 helper; the standalone ELF is optional.
+- [Download 0.4.0](https://github.com/saawant12/orbit-play-ps5/releases/tag/v0.4.0): Download the Mac, Windows or Linux desktop app. It includes the player and PS5 helper; the standalone ELF is optional.
 - [Payload Manager feed](https://raw.githubusercontent.com/saawant12/orbit-play-ps5/main/payloads.json): Optional source for users who prefer to download and run the helper themselves. Starting the included helper from the desktop app does not require adding this source.
 - Release files include the Mac arm64 DMG, Windows x64 ZIP, Linux x64/arm64 AppImages, optional standalone PS5 ELF, platform INSTALL notes, `orbit-play-<version>-source.tar.gz` (complete project source, build instructions, licences and notices), `orbit-play-<version>-third-party-source.tar` (source for shipped GPL/LGPL/AGPL libraries), `release.json` and `SHA256SUMS`.
 

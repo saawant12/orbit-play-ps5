@@ -81,7 +81,7 @@ the helper again. Orbit Play does not wake a PS5 from Rest Mode in this beta.
 
 This source is optional: use it if you prefer to download and run the helper
 through Payload Manager yourself. The [Payload Manager source](../payloads.json)
-includes the **0.3.0** helper. Starting the included helper from the desktop app
+includes the **0.4.0** helper. Starting the included helper from the desktop app
 does not require adding a source.
 
 1. Copy the source URL below.

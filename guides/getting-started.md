@@ -96,6 +96,10 @@ separately.
 When you see **Ready when you are**, choose **Start playing**. The player opens
 in a separate window. Click the video to give it keyboard focus.
 
+If the PS5 profile has a login passcode, Orbit Play asks for it in **Console
+setup** before the stream opens. Enter the four digits you use to log in on the
+PS5. Orbit Play keeps them only until you quit, so reconnects don't ask again.
+
 ![Ready when you are screen with Start playing for the fictional Player One profile](../assets/screenshots/0.2.0-beta.1/06-ready-to-play.jpg)
 
 *Your pairing is saved. Choose Start playing to open the player.*

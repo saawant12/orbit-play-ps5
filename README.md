@@ -14,7 +14,7 @@ Play on your Mac, Windows or Linux computer over your local network, with no PSN
   <a href="https://github.com/saawant12/orbit-play-ps5/releases/latest">Download</a> ·
   <a href="#get-started">Get started</a> ·
   <a href="#guides">Guides</a> ·
-  <a href="release-notes/0.3.0.md">Release notes</a> ·
+  <a href="release-notes/0.4.0.md">Release notes</a> ·
   <a href="#beta-status">Beta status</a> ·
   <a href="guides/account-setup.md">Account setup</a> ·
   <a href="#payload-manager">Payload Manager</a> ·
@@ -49,8 +49,14 @@ Play on your Mac, Windows or Linux computer over your local network, with no PSN
 ## Made for playing locally
 
 - **Choose your picture.** In **Playback**, select 360p, 540p, 720p or 1080p,
-  30 or 60 fps, and your bitrate. Start with the default 720p60 at 10 Mbps;
-  your settings are saved for the next stream.
+  30 or 60 fps, your bitrate, and H.264 or HEVC. Start with the default 720p60
+  at 10 Mbps; your settings are saved for the next stream. Video decodes on
+  your graphics hardware when it can.
+- **Feel the game.** Rumble, adaptive triggers and, over USB, DualSense haptics
+  reach your controller; touchpad swipes reach the PS5.
+- **Talk and play your way.** Turn on your computer's microphone with **M** or
+  the DualSense mute button. Change any key under **Controls**, or aim with the
+  mouse.
 - **Keep users separate.** Each console address and PS5 user has its own saved
   pairing. Orbit Play checks the selected user before connecting again.
 - **Recover from interruptions.** Enable up to three reconnect attempts after
@@ -61,8 +67,8 @@ Play on your Mac, Windows or Linux computer over your local network, with no PSN
 
 ## Beta status
 
-**Orbit Play 0.3.0 (Beta) is available.** [Download the desktop app](https://github.com/saawant12/orbit-play-ps5/releases/latest)
-and see [what’s new](release-notes/0.3.0.md).
+**Orbit Play 0.4.0 (Beta) is available.** [Download the desktop app](https://github.com/saawant12/orbit-play-ps5/releases/latest)
+and see [what’s new](release-notes/0.4.0.md).
 
 **This beta works on your local network only.** Your computer and PS5 must be on
 the same trusted network, with the console awake and the intended user logged in.
@@ -133,10 +139,10 @@ the running helper; it does not start the payload.*
 
 Click the player to focus it. Arrow keys navigate, Enter/Space confirms and
 Esc/Backspace goes back. WASD controls the left stick; IJKL controls the right
-stick. Left/right mouse clicks act as confirm/back controller buttons; mouse
-movement is not mapped to aiming or a PS5 pointer. Press **F1** or choose
-**Controls** in the player for the full mapping. Switching away releases held
-keyboard and mouse inputs. See the
+stick. Left/right mouse clicks act as confirm/back controller buttons, and **M**
+turns the microphone on or off. Press **F1** or choose **Controls** in the player
+for the full mapping. Change any key, or turn on mouse aiming, under **Controls**
+in the main menu. Switching away releases held keyboard and mouse inputs. See the
 [complete controls and playback guide](guides/playback-and-controls.md).
 
 ## Accounts and saves
@@ -157,7 +163,7 @@ before using this feature.
 
 **Optional:** if you prefer to install and run the helper yourself, add
 [payloads.json](payloads.json) as a custom source in Payload Manager. It includes
-the **0.3.0** PS5 helper. You do not need to add this source when starting the
+the **0.4.0** PS5 helper. You do not need to add this source when starting the
 included helper from the desktop app.
 
 Open **Settings → Manage Sources → Add Source** in Payload Manager and paste
@@ -195,13 +201,11 @@ options** shows both running versions and the PS5 firmware; the app blocks a
 mismatched helper before account setup. If you run the helper twice, the PS5
 says its port is in use and the first copy keeps running.
 
-**Which features are unavailable?** This beta does not support HDR, microphone,
-haptics, PS5 login-passcode prompts, wake from Rest Mode or account migration,
-and Orbit Play doesn't provide online PSN services. PS5 firmware other than
-13.60 is untested.
+**Which features are unavailable?** This beta does not support HDR, wake from
+Rest Mode, account migration or Intel Macs, and Orbit Play doesn't provide
+online PSN services. PS5 firmware other than 13.60 is untested.
 
-We're working on support for waking the PS5 from Rest Mode, HDR, microphone
-input and haptics.
+We're working on support for waking the PS5 from Rest Mode and HDR.
 
 **How do I report a problem?** Open an issue in this repository. Use **Export
 diagnostics** in **Console setup → Profile & connection options** and include the
