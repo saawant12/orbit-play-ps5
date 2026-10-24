@@ -9,10 +9,18 @@
 <p align="center"><strong>Remote Play for your jailbroken PS5.</strong><br>
 Play on your Mac, Windows or Linux computer over your local network, with no PSN sign-in or internet connection.</p>
 
-[Website](https://orbitplay.dev/) · [Download](https://github.com/saawant12/orbit-play-ps5/releases/latest) · [Get started](#get-started) ·
-[Guides](#guides) · [Release notes](release-notes/0.3.0.md) · [Beta status](#beta-status) · [Account setup](guides/account-setup.md) ·
-[Payload Manager](#payload-manager) · [Troubleshooting](guides/troubleshooting.md) ·
-[Report a bug](https://github.com/saawant12/orbit-play-ps5/issues/new?template=bug_report.md)
+<p align="center">
+  <a href="https://orbitplay.dev/">Website</a> ·
+  <a href="https://github.com/saawant12/orbit-play-ps5/releases/latest">Download</a> ·
+  <a href="#get-started">Get started</a> ·
+  <a href="#guides">Guides</a> ·
+  <a href="release-notes/0.3.0.md">Release notes</a> ·
+  <a href="#beta-status">Beta status</a> ·
+  <a href="guides/account-setup.md">Account setup</a> ·
+  <a href="#payload-manager">Payload Manager</a> ·
+  <a href="guides/troubleshooting.md">Troubleshooting</a> ·
+  <a href="https://github.com/saawant12/orbit-play-ps5/issues/new?template=bug_report.md">Report a bug</a>
+</p>
 
 ## How Orbit Play is different
 
