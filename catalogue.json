@@ -122,10 +122,6 @@
       "version": "0.4.0",
       "url": "https://github.com/saawant12/orbit-play-ps5/releases/tag/v0.4.0",
       "hardwareVerified": false,
-      "hardwareValidation": {
-        "mac_to_ps5": "Not yet confirmed on a PS5 for 0.4.0.",
-        "scope": "The features new in 0.4.0 (HEVC, hardware decoding, rumble, adaptive triggers and haptics, microphone, touchpad, custom controls and mouse aiming, login passcodes) have not yet been tested with a console. Builds and automated tests passed on macOS, Windows and Linux."
-      },
       "artifacts": [
         {
           "file": "OrbitPlay-0.4.0-macos-arm64.dmg",
@@ -351,9 +347,5 @@
         }
       ]
     }
-  ],
-  "hardwareValidation": {
-    "mac_to_ps5": "Not yet confirmed on a PS5 for 0.4.0.",
-    "scope": "The features new in 0.4.0 (HEVC, hardware decoding, rumble, adaptive triggers and haptics, microphone, touchpad, custom controls and mouse aiming, login passcodes) have not yet been tested with a console. Builds and automated tests passed on macOS, Windows and Linux."
-  }
+  ]
 }

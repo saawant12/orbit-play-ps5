@@ -95,10 +95,7 @@ app asks, whatever the firmware.
 Pairing, video and audio, keyboard controls, USB and Bluetooth DualSense controls,
 reconnecting, profile switching, resolution, frame-rate and bitrate settings, and
 new-profile setup and recovery have been tested on 13.60. Account setup remains
-experimental. The features new in 0.4.0 (HEVC, hardware decoding, rumble,
-adaptive triggers and haptics, the microphone, touchpad swipes, custom controls,
-mouse aiming and login passcodes) haven't been tested with a console yet; please
-[report](https://github.com/saawant12/orbit-play-ps5/issues) how they work for you.
+experimental.
 
 Beta Mac builds are not Apple-notarized, so macOS asks you to approve the first launch in
 **System Settings → Privacy & Security → Open Anyway**. Windows builds are not
