@@ -15,7 +15,9 @@ before making more changes.
 | The code is rejected | [Trust code](#the-trust-code-does-not-work) |
 | Pair locally fails | [Pairing](#the-ps5-rejects-pairing) |
 | Setup is interrupted or unavailable | [Account setup](#remote-play-setup-is-interrupted-or-unavailable) |
+| The PS5 asks for a login passcode | [Start playing](getting-started.md#6-start-playing) |
 | Video works but controls do not | [Controls](#video-works-but-controls-do-not) |
+| No haptics, or the microphone doesn't work | [Playback and controls](playback-and-controls.md#if-something-feels-wrong) |
 | The helper still reports an old version | [Updating the helper](#the-old-helper-version-is-still-running) |
 | You need to report a bug | [Diagnostics](#export-diagnostics) |
 

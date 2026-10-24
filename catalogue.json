@@ -113,7 +113,7 @@
     "ps5Helper": "guides/ps5-helper.md",
     "playbackAndControls": "guides/playback-and-controls.md",
     "troubleshooting": "guides/troubleshooting.md",
-    "screenshots": "assets/screenshots/0.2.0-beta.1/README.md",
+    "screenshots": "assets/screenshots/0.4.0/README.md",
     "releaseNotes": "release-notes/0.4.0.md"
   },
   "payloadFeed": "payloads.json",

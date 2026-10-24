@@ -132,7 +132,7 @@ the running helper; it does not start the payload.*
 | Connect for the first time | [Step-by-step screenshot walkthrough](guides/getting-started.md) |
 | Install, check downloads or update | [Mac, Windows and Linux installation](guides/installation.md) |
 | Run the helper or use Payload Manager | [PS5 helper guide](guides/ps5-helper.md) |
-| Change picture settings or learn the controls | [Playback and controls](guides/playback-and-controls.md) |
+| Change picture settings, controller feedback, the microphone or your keys | [Playback and controls](guides/playback-and-controls.md) |
 | Set up a profile or restore account settings | [Account setup and recovery](guides/account-setup.md) |
 | Fix a connection or report a problem | [Troubleshooting and diagnostics](guides/troubleshooting.md) |
 

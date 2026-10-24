@@ -50,9 +50,20 @@ The computer app is AGPL-3.0-only and the PS5 helper is GPL-3.0-or-later. Releas
 - [PS5 helper](guides/ps5-helper.md): Run the helper, read the code, use the Media icon and add the Payload Manager source.
 - [Playback and controls](guides/playback-and-controls.md): Picture settings, codec and hardware decoding, rumble/triggers/haptics, microphone, custom keys and mouse aiming, stop and reconnect.
 - [Troubleshooting](guides/troubleshooting.md): Connection and input problems, profile switching and diagnostic exports.
-- [Screenshot notes](assets/screenshots/0.2.0-beta.1/README.md): Interface previews with example data and links to each setup screen.
+- [Screenshot notes](assets/screenshots/0.4.0/README.md): Interface previews of the current version with example data, linking each setup and settings screen.
 - [Account setup](guides/account-setup.md): When setup is needed, what it changes, save warnings and how to restore settings.
 - [Project catalogue](catalogue.json): Machine-readable component licences, current version, tested setup and published download URLs with checksums.
+
+## Help articles on the website
+
+- [FAQ](https://orbitplay.dev/faq/): PSN, account IDs and PINs, firmware, haptics, microphone, controls and fixes.
+- [Haptics and adaptive triggers](https://orbitplay.dev/guides/ps5-remote-play-haptics-pc-mac/): DualSense feedback in PS5 Remote Play on PC and Mac, by app.
+- [Microphone in Remote Play](https://orbitplay.dev/guides/ps5-remote-play-microphone-pc-mac/): Microphone permissions, muting and echo on PC and Mac.
+- [Keyboard and mouse](https://orbitplay.dev/guides/ps5-remote-play-keyboard-mouse/): Custom keys and mouse aiming compared across Remote Play apps.
+- [PSN account ID to base64](https://orbitplay.dev/guides/psn-account-id-base64/): Convert an account ID for Chiaki and chiaki-ng.
+- [Chiaki registration failed](https://orbitplay.dev/guides/chiaki-registration-failed/): What each registration error means and how to fix it.
+- [Remote Play is disabled (403)](https://orbitplay.dev/guides/remote-play-disabled-403/): Why pairing works but the stream is refused.
+- [Remote Play methods by firmware](https://orbitplay.dev/guides/ps5-remote-play-by-firmware/): Jailbreaks and Remote Play tools for each PS5 firmware.
 
 ## Downloads
 
