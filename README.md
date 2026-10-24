@@ -41,10 +41,10 @@ Play on your Mac, Windows or Linux computer over your local network, with no PSN
 > is the only official place for Orbit Play releases, updates and support.
 
 <p align="center">
-  <img src="assets/screenshots/0.2.0-beta.1/01-main-menu.jpg" alt="Orbit Play main menu" width="49%">
+  <img src="assets/screenshots/0.4.0/01-main-menu.jpg" alt="Orbit Play main menu with Start playing, Playback, Controls, Console setup and Get PS5 helper" width="49%">
   <img src="assets/screenshots/0.2.0-beta.1/06-ready-to-play.jpg" alt="Orbit Play console setup, ready to play" width="49%">
 </p>
-<p align="center"><sub>Orbit Play 0.2.0-beta.1. Screenshots use example profile data.</sub></p>
+<p align="center"><sub>Orbit Play 0.4.0 and 0.2.0-beta.1 screens. Screenshots use example profile data.</sub></p>
 
 ## Made for playing locally
 
@@ -63,7 +63,7 @@ Play on your Mac, Windows or Linux computer over your local network, with no PSN
   a network interruption. Pressing **Stop** or closing the player ends the
   session without reconnecting.
 
-![Orbit Play playback settings](assets/screenshots/0.2.0-beta.1/07-playback-settings.jpg)
+![Orbit Play playback settings with resolution, frame rate, video codec and bitrate](assets/screenshots/0.4.0/07-playback-settings.jpg)
 
 ## Beta status
 
@@ -93,8 +93,12 @@ again before pairing. After restoring account settings, restart the PS5 when the
 app asks, whatever the firmware.
 
 Pairing, video and audio, keyboard controls, USB and Bluetooth DualSense controls,
-reconnecting, profile switching, picture settings, and new-profile setup and
-recovery have been tested on 13.60. Account setup remains experimental.
+reconnecting, profile switching, resolution, frame-rate and bitrate settings, and
+new-profile setup and recovery have been tested on 13.60. Account setup remains
+experimental. The features new in 0.4.0 (HEVC, hardware decoding, rumble,
+adaptive triggers and haptics, the microphone, touchpad swipes, custom controls,
+mouse aiming and login passcodes) haven't been tested with a console yet; please
+[report](https://github.com/saawant12/orbit-play-ps5/issues) how they work for you.
 
 Beta Mac builds are not Apple-notarized, so macOS asks you to approve the first launch in
 **System Settings → Privacy & Security → Open Anyway**. Windows builds are not

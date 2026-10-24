@@ -38,6 +38,11 @@ open **System Settings → Privacy & Security**, find the Orbit Play warning and
 choose **Open Anyway**, then confirm **Open**. A managed Mac may restrict this
 approval. See the included `INSTALL-macos.txt` for the release's instructions.
 
+macOS also asks once to let Orbit Play find devices on your **local network**;
+allow it so the app can reach the PS5. The first time you turn on the
+microphone in the player, macOS asks for **microphone** access. If you declined,
+allow Orbit Play under **System Settings → Privacy & Security → Microphone**.
+
 ## Windows
 
 **Windows 11 on ARM has also been tested with a PS5.** Use the same
@@ -53,6 +58,9 @@ requires Windows 11.
    choose **More info → Run anyway**.
 4. If Windows Firewall asks, allow Orbit Play on your **private network** so it
    can reach the PS5. Continue with [your first connection](getting-started.md).
+
+To use the microphone in the player, **Settings → Privacy & security →
+Microphone** must allow desktop apps to access it.
 
 ## Linux
 
@@ -73,6 +81,9 @@ FUSE error, use its extraction mode:
 
 Then follow [your first connection](getting-started.md). The app still needs a
 working desktop session, audio and controller access on your Linux system.
+Hardware video decoding uses Vulkan, so it needs a GPU driver with Vulkan video
+decoding; without one, Orbit Play decodes on the processor. With mouse aiming
+on, the player opens through XWayland on a Wayland desktop.
 
 ## Check your downloads
 

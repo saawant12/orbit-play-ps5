@@ -22,7 +22,9 @@ Describe the problem and include the exact error message, if shown.
 - PS5 firmware:
 - Jailbreak and payload loader:
 - Controller: keyboard / DualSense (USB) / DualSense (Bluetooth) / other
-- Where it happens: starting the helper / finding the console / trust code / account setup / pairing / playing / reconnecting
+- Playback: resolution, frame rate, H.264 or HEVC, hardware decoding on or off
+- Where it happens: starting the helper / finding the console / trust code / account setup / login passcode / pairing / playing / reconnecting
+- Feature involved, if any: rumble / adaptive triggers / haptics / microphone / touchpad / custom keys / mouse aiming / update notice
 
 ## Diagnostics
 

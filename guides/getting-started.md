@@ -31,7 +31,7 @@ code shown on **your PS5** when following the steps.
 Choose **Console setup**. **Start playing** also takes you to setup when you
 have not connected a console yet.
 
-![Orbit Play main menu with Start playing, Playback, Console setup and Get PS5 helper](../assets/screenshots/0.2.0-beta.1/01-main-menu.jpg)
+![Orbit Play main menu with Start playing, Playback, Controls, Console setup and Get PS5 helper](../assets/screenshots/0.4.0/01-main-menu.jpg)
 
 *Console setup starts the connection flow. Playback changes the next stream's picture settings.*
 
@@ -97,7 +97,7 @@ When you see **Ready when you are**, choose **Start playing**. The player opens
 in a separate window. Click the video to give it keyboard focus.
 
 If the PS5 profile has a login passcode, Orbit Play asks for it in **Console
-setup** before the stream opens. Enter the four digits you use to log in on the
+setup** before the stream opens ([example](../assets/screenshots/0.4.0/14-login-passcode.jpg)). Enter the four digits you use to log in on the
 PS5. Orbit Play keeps them only until you quit, so reconnects don't ask again.
 
 ![Ready when you are screen with Start playing for the fictional Player One profile](../assets/screenshots/0.2.0-beta.1/06-ready-to-play.jpg)

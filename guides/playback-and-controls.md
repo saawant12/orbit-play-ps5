@@ -11,9 +11,9 @@ Open **Playback** from the main menu, choose your settings and select **Save
 playback settings**. They apply to the **next stream**. If you are already
 playing, stop first, save the changes and start again.
 
-![Playback settings with 720p, 60 fps, 10 Mbps and reconnect selected](../assets/screenshots/0.2.0-beta.1/07-playback-settings.jpg)
+![Playback settings with 720p, 60 fps, H.264 and 10 Mbps selected](../assets/screenshots/0.4.0/07-playback-settings.jpg)
 
-*Start with the default 720p at 60 fps and 10 Mbps. Save changes before starting your next stream.*
+*Start with the default 720p at 60 fps, H.264 and 10 Mbps. Save changes before starting your next stream.*
 
 | Setting | Choices | How to choose |
 | --- | --- | --- |
@@ -44,6 +44,8 @@ before reconnecting.
 ### Rumble, triggers and haptics
 
 Under **Playback → Controller feedback**:
+
+![Controller feedback settings: rumble, adaptive triggers and DualSense haptics over USB](../assets/screenshots/0.4.0/12-controller-feedback.jpg)
 
 | Setting | Choices | What it does |
 | --- | --- | --- |
@@ -93,6 +95,8 @@ press **Esc** to return. These are the default keys:
 Switching focus away from the player releases held keyboard and mouse inputs.
 
 ### Change your keys
+
+![Controls screen with mouse aiming, sensitivity and the key for each action](../assets/screenshots/0.4.0/13-controls.jpg)
 
 Open **Controls** from the main menu. Choose a key next to an action, then press
 the new key or click a mouse button on it. Each action takes up to three keys or
