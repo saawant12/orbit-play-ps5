@@ -64,7 +64,8 @@ Press **M**, choose **Mic** in the player bar, or press the DualSense mute butto
 to turn the microphone on or off. It starts muted in every stream and uses your
 computer's default input; choose a different one in your computer's sound
 settings before you start the stream. On a Mac, macOS asks for microphone access
-the first time.
+the first time. Orbit Play doesn't cancel echo, so use headphones or a headset
+if the game's sound plays through speakers.
 
 ## Keyboard and mouse
 
