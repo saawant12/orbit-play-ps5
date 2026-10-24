@@ -213,10 +213,10 @@ post trust codes, account data, pairing keys or PS5 account-settings backups.
 ## Licence
 
 Orbit Play is open source. The app is licensed under the GNU Affero General
-Public License, version 3 only; the PS5 helper under the GNU General Public
-License, version 3 or later. Every release includes `orbit-play-<version>-source.tar.gz`
-with the complete source for both components, build instructions, licences and
-third-party notices.
+Public License, version 3 only ([LICENSE](LICENSE)); the PS5 helper under the GNU
+General Public License, version 3 or later ([GPL-3.0-or-later](LICENSES/GPL-3.0-or-later.txt)).
+Every release includes `orbit-play-<version>-source.tar.gz` with the complete
+source for both components, build instructions, licences and third-party notices.
 
 For tools and agents, [llms.txt](llms.txt) summarises the project and
 [catalogue.json](catalogue.json) describes the components, availability, tested
