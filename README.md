@@ -48,12 +48,16 @@ Play on your Mac, Windows or Linux computer over your local network, with no PSN
 
 ## Made for playing locally
 
-- **Choose your picture.** Select 360p, 540p, 720p or 1080p, 30 or 60 fps, and
-  your bitrate. Start with the default 720p60 at 10 Mbps.
+- **Choose your picture.** In **Playback**, select 360p, 540p, 720p or 1080p,
+  30 or 60 fps, and your bitrate. Start with the default 720p60 at 10 Mbps;
+  your settings are saved for the next stream.
 - **Keep users separate.** Each console address and PS5 user has its own saved
   pairing. Orbit Play checks the selected user before connecting again.
 - **Recover from interruptions.** Enable up to three reconnect attempts after
-  a network interruption, or press Stop to end the session.
+  a network interruption. Pressing **Stop** or closing the player ends the
+  session without reconnecting.
+
+![Orbit Play playback settings](assets/screenshots/0.2.0-beta.1/07-playback-settings.jpg)
 
 ## Beta status
 
@@ -125,11 +129,7 @@ the running helper; it does not start the payload.*
 | Set up a profile or restore account settings | [Account setup and recovery](guides/account-setup.md) |
 | Fix a connection or report a problem | [Troubleshooting and diagnostics](guides/troubleshooting.md) |
 
-## Playback your way
-
-Open **Playback** to change resolution, frame rate, bitrate and reconnect behavior.
-Settings are saved for your next stream. Pressing **Stop** or closing the player
-ends the session without automatically reconnecting.
+## Controls
 
 Click the player to focus it. Arrow keys navigate, Enter/Space confirms and
 Esc/Backspace goes back. WASD controls the left stick; IJKL controls the right
@@ -138,10 +138,6 @@ movement is not mapped to aiming or a PS5 pointer. Press **F1** or choose
 **Controls** in the player for the full mapping. Switching away releases held
 keyboard and mouse inputs. See the
 [complete controls and playback guide](guides/playback-and-controls.md).
-
-![Orbit Play playback settings](assets/screenshots/0.2.0-beta.1/07-playback-settings.jpg)
-
-*Start at 720p, 60 fps and 10 Mbps. Save changes for the next stream.*
 
 ## Accounts and saves
 
