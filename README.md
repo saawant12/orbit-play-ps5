@@ -31,11 +31,11 @@ Play on your Mac, Windows or Linux computer over your local network, with no PSN
 - **Automatic account-ID and PIN handling.** Orbit Play reads the selected
   profile's account ID and exchanges the Remote Play PIN for you. There is no
   manual ID lookup or conversion, and no separate PIN generator to run.
-- **Only download the desktop app.** Orbit Play includes the player and PS5
-  helper, and sends and starts the helper through Payload Manager or your ELF
-  loader. Set up your profile, pair and play from one app, with no separate ELF
-  download or Chiaki installation needed. To run the helper yourself instead,
-  save it with **Get PS5 helper**.
+- **Only download the desktop app.** The PS5 helper is built in. Choose
+  **Start helper on PS5** and Orbit Play sends it to your PS5 and starts it
+  through Payload Manager or your ELF loader. There's no separate ELF to
+  download and no Chiaki to install: set up your profile, pair and play from the
+  same app. To run the helper yourself instead, save it with **Get PS5 helper**.
 
 > **Official source:** [saawant12/orbit-play-ps5](https://github.com/saawant12/orbit-play-ps5)
 > is the only official place for Orbit Play releases, updates and support.
