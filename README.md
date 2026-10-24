@@ -7,15 +7,12 @@
 </h1>
 
 <p align="center"><strong>Remote Play for your jailbroken PS5.</strong><br>
-Play on your Mac, Windows or Linux computer over your local network, without PSN sign-in.</p>
+Play on your Mac, Windows or Linux computer over your local network, with no PSN sign-in or internet connection.</p>
 
 [Website](https://orbitplay.dev/) · [Download](https://github.com/saawant12/orbit-play-ps5/releases/latest) · [Get started](#get-started) ·
 [Guides](#guides) · [Release notes](release-notes/0.3.0.md) · [Beta status](#beta-status) · [Account setup](guides/account-setup.md) ·
 [Payload Manager](#payload-manager) · [Troubleshooting](guides/troubleshooting.md) ·
 [Report a bug](https://github.com/saawant12/orbit-play-ps5/issues/new?template=bug_report.md)
-
-Play your jailbroken PS5 on Mac, Windows or Linux over your local network.
-No PSN sign-in or internet connection required.
 
 ## How Orbit Play is different
 
