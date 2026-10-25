@@ -59,7 +59,7 @@ Orbit Play tries Payload Manager on port 8084. If it is unavailable, it uses an 
 3. Keep both devices on the same trusted local network. Guest networks, Wi-Fi
    client isolation and VPN routing can prevent a connection.
 4. On Windows, check that Orbit Play is allowed on your private network.
-5. Away from home, Find console connects through Orbit Link once
+5. Away from home, Find console connects over the internet once
    [play away from home](play-away-from-home.md) is on; see
    [play away from home does not connect](#play-away-from-home-does-not-connect).
 
@@ -183,15 +183,15 @@ manually and export diagnostics.
 - **"That away code didn’t work."** Get a new code on the PS5 (**Play away from
   home → Get a code**) and enter it within 30 minutes; each code works once.
 - **Turn on fails at home.** The PS5 needs an internet connection to set up
-  Orbit Link. With your own server, check its address and code.
+  play away from home. With your own server, check its address and code.
 
 See [play away from home](play-away-from-home.md) for what the PS5 needs.
 
 ## Forget saved connections
 
 **Console setup → Profile & connection options → Forget saved connections**
-clears the computer's saved connections. It also removes this computer from
-Orbit Link. You will need to trust and pair again.
+clears the computer's saved connections. It also turns off play away from home
+on this computer. You will need to trust and pair again.
 It does not restore PS5 account settings or erase PS5 saves. Use the separate
 recovery flow for account changes; do not use forgetting as a routine update step.
 

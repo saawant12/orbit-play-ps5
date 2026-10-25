@@ -23,13 +23,13 @@ There is no account to create and no port to open on your router.
 1. At home, with your computer on the same network as the PS5, connect and
    pair as usual ([get started](getting-started.md)).
 2. Open **Console setup**. Under **Play away from home**, choose **Turn on**.
-3. Orbit Play sets up Orbit Link on the PS5, adds your computer and connects
-   them. The PS5 shows an Orbit Link notification.
+3. Orbit Play sets it up on the PS5, adds your computer and connects them. The
+   PS5 shows a notification when it's connected.
 
 When it's on, the section shows how your computer reaches the PS5, for example
 **direct connection · 28 ms**.
 
-To use your own Orbit Link server instead of Orbit Play's, open **Use your own
+To use your own server instead of Orbit Play's, open **Use your own
 Orbit Link server** before choosing **Turn on**, and enter its **Server address**
 and, if it gives codes for new devices, a **Code from your server** from its
 dashboard. See
@@ -48,18 +48,18 @@ the PS5, if someone at home can use the console:
    up from anywhere**. Enter the away code and the trust code, and choose
    **Connect through Orbit Link**.
 3. Orbit Play joins the PS5's network, trusts the PS5 and learns its home
-   address. Pair and play as usual: pairing works through Orbit Link too.
+   address. Pair and play as usual: pairing works away from home too.
 
-With your own Orbit Link server, the PS5's page uses the server the PS5 is set up
+With your own server, the PS5's page uses the server the PS5 is set up
 with; enter the same server's address under **Orbit Link server**.
 
 ## Play away from home
 
 Open Orbit Play and choose **Start playing**, or **Find console** with your PS5's
 usual address. When your home address doesn't answer, Orbit Play connects
-through Orbit Link instead; the main menu shows **Away from home**.
+over the internet instead; the main menu shows **Away from home**.
 
-![Console setup connected through Orbit Link](../assets/screenshots/0.5.0/16-connected-away.jpg)
+![Console setup, connected away from home with a direct connection](../assets/screenshots/0.5.0/16-connected-away.jpg)
 
 Before you leave, make sure the PS5 stays ready:
 
@@ -89,13 +89,13 @@ some hotel, school and office networks, especially when both ends are strict.
 Orbit Play's server doesn't relay streams, so Orbit Play then says **"Orbit Link
 sees your PS5 but could not connect to it directly."** Try another network or a
 phone hotspot, or turn on **UPnP** on your home router, which helps most
-connections. See
+connections. We're working on making this better. See
 [troubleshooting](troubleshooting.md#play-away-from-home-does-not-connect).
 
 ## Turn it off
 
-At home, choose **Turn off** under **Play away from home**. That removes both the
-PS5 and your computer from Orbit Link and ends your computer's access from away.
+At home, choose **Turn off** under **Play away from home**. That turns it off for
+both the PS5 and your computer and ends your computer's access from away.
 Away from home, **Turn off** removes only your computer. **Forget saved
 connections** also removes your computer.
 
@@ -106,7 +106,8 @@ connections** also removes your computer.
   local network addresses, and how they're connected to each other, so it can
   introduce them. Nothing about your games or PS5 account is sent.
 - Only devices your PS5 adds can join its network. Your computer's away-from-home
-  access works only through Orbit Link, never from your home network.
+  access works only over its away-from-home connection, never from your home
+  network.
 
 ## Run your own server
 

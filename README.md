@@ -48,9 +48,9 @@ Play on your Mac, Windows or Linux computer with no PSN sign-in: at home over yo
 
 <p align="center">
   <img src="assets/screenshots/0.4.0/01-main-menu.jpg" alt="Orbit Play main menu with Start playing, Playback, Controls, Console setup and Get PS5 helper" width="49%">
-  <img src="assets/screenshots/0.2.0-beta.1/06-ready-to-play.jpg" alt="Orbit Play console setup, ready to play" width="49%">
+  <img src="assets/screenshots/0.5.0/16-connected-away.jpg" alt="Orbit Play ready to play, connected away from home with a direct connection" width="49%">
 </p>
-<p align="center"><sub>Orbit Play 0.4.0 and 0.2.0-beta.1 screens. Screenshots use example profile data.</sub></p>
+<p align="center"><sub>Orbit Play 0.4.0 and 0.5.0 screens. Screenshots use example profile data.</sub></p>
 
 ## Made for playing, at home or away
 
@@ -129,6 +129,9 @@ matching PS5 helper; you do not need to download or send the ELF yourself.
    account setup first, [review what it changes](guides/account-setup.md).
 5. **Start playing.** Connect your controller to the computer, or click the video
    to use the keyboard. Press **F1** for controls.
+6. **Play away from home, if you like.** At home, choose **Console setup → Play
+   away from home → Turn on**. Then **Start playing** works from anywhere with an
+   internet connection ([guide](guides/play-away-from-home.md)).
 
 [**Follow the screenshot walkthrough →**](guides/getting-started.md)
 
@@ -227,7 +230,8 @@ online PSN services. Orbit Play's server doesn't relay streams, so networks that
 block direct connections can't play away from home. PS5 firmware other than
 13.60 is untested.
 
-We're working on support for waking the PS5 from Rest Mode and HDR.
+We're working on support for waking the PS5 from Rest Mode and HDR, and on
+playing away from home through networks that block direct connections.
 
 **How do I report a problem?** Open an issue in this repository. Use **Export
 diagnostics** in **Console setup → Profile & connection options** and include the
