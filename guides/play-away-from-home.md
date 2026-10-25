@@ -41,14 +41,20 @@ A computer that isn't on your home network can set itself up with a code from
 the PS5, if someone at home can use the console:
 
 1. On the PS5, open the **Orbit Play** icon in the **Media** row of the home
-   screen, choose **Play away from home**, then **Get a code**. The PS5 shows an **away code** and its
-   trust code. The away code works once, for 30 minutes. Getting a code also
-   turns on play away from home on the PS5.
+   screen, choose **Play away from home**, then **Get a code**. The PS5 shows an
+   **away code** and its trust code. The away code works once, for 30 minutes.
+   Getting a code also turns on play away from home on the PS5.
 2. In Orbit Play on the computer, open **Console setup**, then **Not at home? Set
    up from anywhere**. Enter the away code and the trust code, and choose
    **Connect through Orbit Link**.
 3. Orbit Play joins the PS5's network, trusts the PS5 and learns its home
    address. Pair and play as usual: pairing works away from home too.
+
+![The PS5's Play away from home page with an example away code and trust code](../assets/screenshots/0.5.0/18-ps5-away-code.jpg)
+
+*Example codes. Use the ones your PS5 shows.*
+
+![Not at home? Set up from anywhere in Console setup, with the away code and trust code entered](../assets/screenshots/0.5.0/17-set-up-from-anywhere.jpg)
 
 With your own server, the PS5's page uses the server the PS5 is set up
 with; enter the same server's address under **Orbit Link server**.

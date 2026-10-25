@@ -28,3 +28,5 @@ For instructions beside each screenshot, follow the
 | [14-login-passcode.jpg](../0.4.0/14-login-passcode.jpg) | Entering a PS5 profile's login passcode |
 | [15-play-away-from-home.jpg](15-play-away-from-home.jpg) | Turning on play away from home in Console setup |
 | [16-connected-away.jpg](16-connected-away.jpg) | Connected to the PS5 through Orbit Link, away from home |
+| [17-set-up-from-anywhere.jpg](17-set-up-from-anywhere.jpg) | Not at home? Set up from anywhere, with an example away code and trust code |
+| [18-ps5-away-code.jpg](18-ps5-away-code.jpg) | The PS5's Play away from home page after Get a code |
