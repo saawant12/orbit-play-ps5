@@ -177,7 +177,7 @@ before using this feature.
 
 **Optional:** if you prefer to install and run the helper yourself, add
 [payloads.json](payloads.json) as a custom source in Payload Manager. It includes
-the **0.4.0** PS5 helper. You do not need to add this source when starting the
+the **0.5.0** PS5 helper. You do not need to add this source when starting the
 included helper from the desktop app.
 
 Open **Settings → Manage Sources → Add Source** in Payload Manager and paste

@@ -1,6 +1,6 @@
 {
   "name": "orbit-play-ps5",
-  "description": "Remote Play for jailbroken PS5s on Mac, Windows and Linux. Play over your local network without PSN sign-in or internet access. Supports local PS5 accounts and sets up Remote Play for you.",
+  "description": "Remote Play for jailbroken PS5s on Mac, Windows and Linux. Play at home without PSN sign-in, or away from home over a direct, encrypted connection. Supports local PS5 accounts and sets up Remote Play for you.",
   "homepage": "https://orbitplay.dev",
   "topics": [
     "ps5",
