@@ -7,14 +7,15 @@
 </h1>
 
 <p align="center"><strong>Remote Play for your jailbroken PS5.</strong><br>
-Play on your Mac, Windows or Linux computer over your local network, with no PSN sign-in or internet connection.</p>
+Play on your Mac, Windows or Linux computer with no PSN sign-in: at home over your local network, or away from home over the internet.</p>
 
 <p align="center">
   <a href="https://orbitplay.dev/">Website</a> ·
   <a href="https://github.com/saawant12/orbit-play-ps5/releases/latest">Download</a> ·
   <a href="#get-started">Get started</a> ·
+  <a href="guides/play-away-from-home.md">Play away from home</a> ·
   <a href="#guides">Guides</a> ·
-  <a href="release-notes/0.4.0.md">Release notes</a> ·
+  <a href="release-notes/0.5.0.md">Release notes</a> ·
   <a href="#beta-status">Beta status</a> ·
   <a href="guides/account-setup.md">Account setup</a> ·
   <a href="#payload-manager">Payload Manager</a> ·
@@ -28,6 +29,11 @@ Play on your Mac, Windows or Linux computer over your local network, with no PSN
   profiles that have never been linked to PSN. If a local account ID is needed,
   it creates one after you review and confirm the changes. Read the
   [account setup and save risks](guides/account-setup.md) before continuing.
+- **Play away from home.** Turn it on once at home and play your PS5 from
+  anywhere with an internet connection. Your computer and PS5 connect directly,
+  encrypted end to end, with no account to create and no router to set up. A
+  computer that has never been home can set up from anywhere with a code from
+  the PS5. See [play away from home](guides/play-away-from-home.md).
 - **Automatic account-ID and PIN handling.** Orbit Play reads the selected
   profile's account ID and exchanges the Remote Play PIN for you. There is no
   manual ID lookup or conversion, and no separate PIN generator to run.
@@ -46,12 +52,13 @@ Play on your Mac, Windows or Linux computer over your local network, with no PSN
 </p>
 <p align="center"><sub>Orbit Play 0.4.0 and 0.2.0-beta.1 screens. Screenshots use example profile data.</sub></p>
 
-## Made for playing locally
+## Made for playing, at home or away
 
 - **Choose your picture.** In **Playback**, select 360p, 540p, 720p or 1080p,
   30 or 60 fps, your bitrate, and H.264 or HEVC. Start with the default 720p60
   at 10 Mbps; your settings are saved for the next stream. Video decodes on
-  your graphics hardware when it can.
+  your graphics hardware when it can. Press **F** in the player for stream
+  statistics, including packet loss.
 - **Feel the game.** Rumble, adaptive triggers and, over USB, DualSense haptics
   reach your controller; touchpad swipes reach the PS5.
 - **Talk and play your way.** Turn on your computer's microphone with **M** or
@@ -67,11 +74,14 @@ Play on your Mac, Windows or Linux computer over your local network, with no PSN
 
 ## Beta status
 
-**Orbit Play 0.4.0 (Beta) is available.** [Download the desktop app](https://github.com/saawant12/orbit-play-ps5/releases/latest)
-and see [what’s new](release-notes/0.4.0.md).
+**Orbit Play 0.5.0 (Beta) is available.** [Download the desktop app](https://github.com/saawant12/orbit-play-ps5/releases/latest)
+and see [what’s new](release-notes/0.5.0.md).
 
-**This beta works on your local network only.** Your computer and PS5 must be on
-the same trusted network, with the console awake and the intended user logged in.
+**Play on your local network, or away from home.** At home, your computer and PS5
+must be on the same trusted network. Away from home, both need an internet
+connection, after you turn it on at home or set up from anywhere with a code from
+the PS5 ([guide](guides/play-away-from-home.md)).
+Either way, keep the console awake and the intended user logged in.
 
 | Device | Requirements and compatibility |
 | --- | --- |
@@ -79,12 +89,14 @@ the same trusted network, with the console awake and the intended user logged in
 | Windows | Windows 10 or 11 on x64; Windows 11 on ARM using the x64 build |
 | Linux | x64 or arm64; Ubuntu 24.04 or a compatible distribution |
 | PS5 | Firmware 13.60 (tested), Relapse, Payload Manager v0.5.2 |
-| Network | Computer and awake PS5 on the same trusted local network |
+| Network | Computer and awake PS5 on the same trusted local network; away from home, both on the internet, with no ports to open ([some networks block direct connections](guides/play-away-from-home.md#when-it-cant-connect)) |
 | Console user | Logged into the user you intend to play as |
 
 Apple Silicon Macs, Windows PCs including Windows 11 on ARM, and Linux x64 and
-arm64 computers have been tested with a PS5. Intel Macs are not supported in
-this beta.
+arm64 computers have been tested with a PS5. Play away from home has been tested
+with an Apple Silicon Mac at 720p, 60 fps, H.264 and 10 Mbps with a DualSense,
+including set up from anywhere and a PS5 on a phone hotspot. Intel Macs are not
+supported in this beta.
 
 Only PS5 firmware **13.60** has been tested. On 13.60, you can pair after initial
 account setup without restarting the console. Other firmware may work but is
@@ -133,6 +145,7 @@ the running helper; it does not start the payload.*
 | Install, check downloads or update | [Mac, Windows and Linux installation](guides/installation.md) |
 | Run the helper or use Payload Manager | [PS5 helper guide](guides/ps5-helper.md) |
 | Change picture settings, controller feedback, the microphone or your keys | [Playback and controls](guides/playback-and-controls.md) |
+| Play from anywhere with an internet connection | [Play away from home](guides/play-away-from-home.md) |
 | Set up a profile or restore account settings | [Account setup and recovery](guides/account-setup.md) |
 | Fix a connection or report a problem | [Troubleshooting and diagnostics](guides/troubleshooting.md) |
 
@@ -183,12 +196,18 @@ for the steps.
 
 For step-by-step fixes, use the [troubleshooting guide](guides/troubleshooting.md).
 
-**Can I play away from home?** Not in this beta. Your computer and PS5 must be on
-the same trusted local network. Wake from Rest Mode is also unavailable.
+**Can I play away from home?** Yes. At home, turn on **Console setup → Play away
+from home** once; away from home, choose **Start playing** as usual. Not at home?
+Choose **Not at home? Set up from anywhere** and enter the away code and trust
+code the PS5 shows under **Play away from home → Get a code**. Keep the PS5
+on with the helper running: wake from Rest Mode is unavailable. See
+[play away from home](guides/play-away-from-home.md).
 
 **The console is not connecting.** Keep it awake, log into the intended user,
 check the local address and rerun the helper if needed. A helper restart needs
-a new trust code. An IP-address change needs a new pairing.
+a new trust code at home; away from home your computer keeps its access. An
+IP-address change needs a new pairing. Away from home, see
+[play away from home does not connect](guides/troubleshooting.md#play-away-from-home-does-not-connect).
 
 **I switched PS5 users.** Pair that user separately and stay logged into the
 same user while streaming. Orbit Play rechecks the active user before connecting.
@@ -204,7 +223,9 @@ says its port is in use and the first copy keeps running.
 
 **Which features are unavailable?** This beta does not support HDR, wake from
 Rest Mode, account migration or Intel Macs, and Orbit Play doesn't provide
-online PSN services. PS5 firmware other than 13.60 is untested.
+online PSN services. Orbit Play's server doesn't relay streams, so networks that
+block direct connections can't play away from home. PS5 firmware other than
+13.60 is untested.
 
 We're working on support for waking the PS5 from Rest Mode and HDR.
 
@@ -213,15 +234,19 @@ diagnostics** in **Console setup → Profile & connection options** and include 
 operating system and architecture, loader, controller connection and steps to
 reproduce. The export already records the app, helper and PS5 firmware versions.
 Diagnostics omit connection secrets. Review attachments before sharing; never
-post trust codes, account data, pairing keys or PS5 account-settings backups.
+post trust codes, away codes, account data, pairing keys or PS5 account-settings
+backups.
 
 ## Licence
 
 Orbit Play is open source. The app is licensed under the GNU Affero General
 Public License, version 3 only ([LICENSE](LICENSE)); the PS5 helper under the GNU
 General Public License, version 3 or later ([GPL-3.0-or-later](LICENSES/GPL-3.0-or-later.txt)).
+Orbit Link, which plays away from home, is in the source's `link/` folder: its
+engine under GPL-3.0-or-later and its server under AGPL-3.0-or-later.
 Every release includes `orbit-play-<version>-source.tar.gz` with the complete
-source for both components, build instructions, licences and third-party notices.
+source for both components, including Orbit Link and its server, build
+instructions, licences and third-party notices.
 
 For tools and agents, [llms.txt](llms.txt) summarises the project and
 [catalogue.json](catalogue.json) describes the components, availability, tested

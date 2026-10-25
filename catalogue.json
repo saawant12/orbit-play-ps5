@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "name": "Orbit Play",
-  "description": "A Remote Play app for jailbroken PS5s, available on Mac, Windows and Linux. Enable Remote Play for local PS5 accounts and stream over your local network without PSN sign-in or an internet connection. Download just the desktop app: the PS5 helper is built in, and the app sends it to the PS5 and starts it through Payload Manager or an ELF loader.",
+  "description": "A Remote Play app for jailbroken PS5s, available on Mac, Windows and Linux. Enable Remote Play for local PS5 accounts and stream over your local network without PSN sign-in or an internet connection, or away from home over the internet once it is set up at home or with a code from the PS5. Download just the desktop app: the PS5 helper is built in, and the app sends it to the PS5 and starts it through Payload Manager or an ELF loader.",
   "version": "0.4.0",
   "repository": "https://github.com/saawant12/orbit-play-ps5",
   "status": "beta",

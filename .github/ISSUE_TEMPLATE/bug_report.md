@@ -23,8 +23,10 @@ Describe the problem and include the exact error message, if shown.
 - Jailbreak and payload loader:
 - Controller: keyboard / DualSense (USB) / DualSense (Bluetooth) / other
 - Playback: resolution, frame rate, H.264 or HEVC, hardware decoding on or off
-- Where it happens: starting the helper / finding the console / trust code / account setup / login passcode / pairing / playing / reconnecting
+- Where it happens: starting the helper / finding the console / trust code / account setup / login passcode / pairing / playing / reconnecting / play away from home / set up from anywhere
+- Away from home: the network you're on (phone hotspot, hotel Wi-Fi, another home…) and Orbit Play's server or your own
 - Feature involved, if any: rumble / adaptive triggers / haptics / microphone / touchpad / custom keys / mouse aiming / update notice
+- Stream statistics (F in the player), if the picture stutters: frame rate and packet loss
 
 ## Diagnostics
 
@@ -32,8 +34,8 @@ In Orbit Play, open **Console setup → Profile & connection options → Export
 diagnostics** right after the problem, then attach the file. It leaves out
 addresses, names, account IDs, PINs and pairing keys; check it before posting.
 
-Never post trust codes, account data, pairing keys or the console-side account
-setup backups.
+Never post trust codes, away codes, account data, pairing keys or the console-side
+account setup backups.
 
 ## Anything else?
 

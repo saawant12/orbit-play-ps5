@@ -19,6 +19,7 @@ before making more changes.
 | Video works but controls do not | [Controls](#video-works-but-controls-do-not) |
 | No haptics, or the microphone doesn't work | [Playback and controls](playback-and-controls.md#if-something-feels-wrong) |
 | The helper still reports an old version | [Updating the helper](#the-old-helper-version-is-still-running) |
+| Play away from home doesn't connect | [Away from home](#play-away-from-home-does-not-connect) |
 | You need to report a bug | [Diagnostics](#export-diagnostics) |
 
 ## The computer app will not open
@@ -58,6 +59,9 @@ Orbit Play tries Payload Manager on port 8084. If it is unavailable, it uses an 
 3. Keep both devices on the same trusted local network. Guest networks, Wi-Fi
    client isolation and VPN routing can prevent a connection.
 4. On Windows, check that Orbit Play is allowed on your private network.
+5. Away from home, Find console connects through Orbit Link once
+   [play away from home](play-away-from-home.md) is on; see
+   [play away from home does not connect](#play-away-from-home-does-not-connect).
 
 The helper control channel uses TCP port 34179. Keep it local; port forwarding
 is not part of Orbit Play setup. After a PS5 reboot, reload the jailbreak and
@@ -152,15 +156,42 @@ Check that both devices and the helper are still awake and connected. Stop the
 stream, lower the bitrate or resolution in **Playback**, save and try again. If
 you chose HEVC, try H.264; if the picture shows glitches, try turning off
 **Use hardware video decoding**. Press F in the player to see which decoder is
-in use.
+in use and the packet loss; packet loss that stays above zero means the network
+drops part of the stream, so lower the bitrate.
 Reconnect can make up to three attempts when enabled, but cannot start a stopped
 helper or wake the console. If it does not retry or restore the stream, connect
 manually and export diagnostics.
 
+## Play away from home does not connect
+
+- **"Your PS5 isn’t online for play away from home."** The PS5 is off, in Rest
+  Mode, offline, or its helper isn't running. Someone at home must load the
+  jailbreak and start the helper; Payload Manager's autostart does that whenever
+  the jailbreak loads.
+- **"Orbit Link sees your PS5 but could not connect to it directly."** The
+  network you're on, or your home router, blocks direct connections. Try another
+  network or a phone hotspot, or turn on UPnP on your home router.
+- **"Orbit Link could not reach its server."** Check this computer's internet
+  connection. With your own server, check its address.
+- **It takes a while to connect.** On strict networks such as phone hotspots,
+  finding a direct connection can take up to about half a minute.
+- **"Another program on this computer is using a Remote Play port."** Quit other
+  Remote Play apps on your computer, then try again. Away from home, Orbit Play
+  uses TCP 34179 and 9295 and UDP 9295, 9296, 9297 and 9302 on this computer.
+- **"This computer is no longer in your PS5’s Orbit Link network."** At home,
+  turn **Play away from home** on again in **Console setup**.
+- **"That away code didn’t work."** Get a new code on the PS5 (**Play away from
+  home → Get a code**) and enter it within 30 minutes; each code works once.
+- **Turn on fails at home.** The PS5 needs an internet connection to set up
+  Orbit Link. With your own server, check its address and code.
+
+See [play away from home](play-away-from-home.md) for what the PS5 needs.
+
 ## Forget saved connections
 
 **Console setup → Profile & connection options → Forget saved connections**
-clears the computer's saved connections. You will need to trust and pair again.
+clears the computer's saved connections. It also removes this computer from
+Orbit Link. You will need to trust and pair again.
 It does not restore PS5 account settings or erase PS5 saves. Use the separate
 recovery flow for account changes; do not use forgetting as a routine update step.
 
@@ -178,6 +209,6 @@ recovery flow for account changes; do not use forgetting as a routine update ste
 *Sample profile and versions. Export diagnostics is in the expanded connection options.*
 
 Diagnostics omit addresses, names, account IDs, PINs and pairing keys. Still
-review attachments before posting. Keep real trust codes, account data and
+review attachments before posting. Keep real trust codes, away codes, account data and
 console-side account-settings backups private. Crop or redact personal details
 from screenshots you attach to a public issue.

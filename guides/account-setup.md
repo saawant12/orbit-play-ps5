@@ -74,7 +74,8 @@ helper restart or profile switch.
 4. If you want to proceed, acknowledge that you have backed up your saves and
    choose **Restore settings**. Otherwise choose **Cancel**.
 5. After a completed restore, follow the app's instruction to restart the PS5,
-   reload the jailbreak and run the helper again.
+   reload the jailbreak and run the helper again. Restore at home: away from home
+   nobody can reload the jailbreak after the restart.
 
 ![Restore account settings review with the identity-retention note and confirmation unchecked](../assets/screenshots/0.2.0-beta.1/11-restore-review.jpg)
 

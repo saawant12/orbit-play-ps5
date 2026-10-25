@@ -3,8 +3,9 @@
 [All guides](../README.md#guides) · [First connection](getting-started.md) · [PS5 helper](ps5-helper.md)
 
 **You only need to download the desktop app.** It includes its streaming engine,
-libraries and the matching PS5 helper, which it can start on your jailbroken PS5
-through Payload Manager or an ELF loader. No separate ELF download is needed.
+libraries, Orbit Link for playing away from home, and the matching PS5 helper,
+which it can start on your jailbroken PS5 through Payload Manager or an ELF
+loader. No separate ELF download is needed.
 Python, Homebrew and a separate Chiaki-ng installation are not required.
 
 > [Download the latest Orbit Play release](https://github.com/saawant12/orbit-play-ps5/releases/latest)
@@ -57,7 +58,9 @@ requires Windows 11.
 3. If SmartScreen warns about the unsigned app and you trust the download,
    choose **More info → Run anyway**.
 4. If Windows Firewall asks, allow Orbit Play on your **private network** so it
-   can reach the PS5. Continue with [your first connection](getting-started.md).
+   can reach the PS5. If it also asks about **orbit-link-node**, allow it too:
+   play away from home uses it to reach your PS5 over the internet. Continue with
+   [your first connection](getting-started.md).
 
 To use the microphone in the player, **Settings → Privacy & security →
 Microphone** must allow desktop apps to access it.
@@ -115,6 +118,8 @@ download the file and `SHA256SUMS` from this repository's release page.
 5. Open **Console setup**, choose **Start helper on PS5** and enter the new trust
    code. Check the app and running helper versions in **Profile & connection
    options**.
+6. To play away from home, turn it on under **Console setup → Play away from
+   home** ([guide](play-away-from-home.md)).
 
 Saved connections and playback settings are stored separately from the computer
 app, so replacing the app keeps them. Do not choose
@@ -130,7 +135,7 @@ app, so replacing the app keeps them. Do not choose
 | --- | --- |
 | `orbit-play-<version>-ps5.elf` | Optional standalone helper, only if you prefer to load it yourself |
 | `INSTALL-macos.txt`, `INSTALL-windows.txt`, `INSTALL-linux.txt` | Instructions for that release |
-| `orbit-play-<version>-source.tar.gz` | Matching project source, build instructions, licences and notices for both components |
+| `orbit-play-<version>-source.tar.gz` | Matching project source, build instructions, licences and notices for both components, including the Orbit Link server (`link/` folder) |
 | `orbit-play-<version>-third-party-source.tar` | Source for the GPL, LGPL and AGPL libraries shipped in the apps |
 | `release.json` | Build and release details |
 | `SHA256SUMS` | Checksums for the release files |

@@ -25,9 +25,10 @@ playing, stop first, save the changes and start again.
 | Reconnect | On or off | When on, Orbit Play can make up to three attempts after a network interruption. |
 
 Hardware decoding uses VideoToolbox on a Mac, D3D11VA on Windows and Vulkan on
-Linux. Press **F** in the player to see the codec and whether decoding uses the
-hardware. Picture quality also depends on the game, the computer and the local
-connection. Change one setting at a time so you can judge the difference.
+Linux. Press **F** in the player for the stream statistics: the frame rate, the
+packet loss over about the last two seconds, the codec and whether decoding uses
+the hardware. Picture quality also depends on the game, the computer and the local
+connection or, away from home, your home upload speed. Change one setting at a time so you can judge the difference.
 
 ## Use a controller
 
@@ -140,6 +141,7 @@ or switch profiles.
   microphone privacy settings and check its default input device.
 - **Stutter or breakup:** stop, lower the bitrate or resolution in Playback,
   save, and retry. If you chose HEVC, try H.264. Check the local connection as
-  well as picture settings.
+  well as picture settings. Press **F**: packet loss above zero means the
+  network is dropping part of the stream.
 
 For repeated failures, follow [troubleshooting](troubleshooting.md#export-diagnostics).

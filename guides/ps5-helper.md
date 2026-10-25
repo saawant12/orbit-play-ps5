@@ -47,20 +47,21 @@ same version:
 
 *Example address and code. Use the values shown on your own PS5.*
 
-## The two codes
+## Your codes
 
 | Code | What you do |
 | --- | --- |
 | Six-digit **Orbit Play trust code** | Enter it in the computer app to trust that computer. Use the new code after the helper restarts. |
 | PS5 **Remote Play PIN** | Nothing to copy. Orbit Play exchanges it automatically when you choose **Pair locally**. |
+| **Away code** | Only to [set up from anywhere](play-away-from-home.md#set-up-from-anywhere): on the PS5's Orbit Play page, choose **Play away from home → Get a code**. Enter it with the trust code under **Not at home? Set up from anywhere**. It works once, for 30 minutes. |
 
-Neither code is a PSN password. Orbit Play does not ask you to sign into PSN in
+None of these codes is a PSN password. Orbit Play does not ask you to sign into PSN in
 the app.
 
 ## The Media icon and restarts
 
 The Media icon opens a page served by the running helper. It **does not start the
-payload**. After a PS5 reboot, load the jailbreak, open Payload Manager or enable
+payload**. Its page also has **Play away from home → Get a code**. After a PS5 reboot, load the jailbreak, open Payload Manager or enable
 your ELF loader, then choose **Start helper on PS5** in the desktop app.
 
 Replacing or deleting the ELF does not stop an older copy already running in
@@ -76,6 +77,11 @@ PS5's IP address, without the port. Do not forward the helper port to the intern
 Guest Wi-Fi, client isolation or a VPN can prevent the devices from reaching
 each other. If the PS5 has no address, connect it to your local network and run
 the helper again. Orbit Play does not wake a PS5 from Rest Mode in this beta.
+
+To play away from home, don't forward ports: the helper includes Orbit Link, and
+**Play away from home** in the app connects your computer and PS5 directly and
+encrypted. See [play away from home](play-away-from-home.md). Its setup is saved
+on the PS5 in `/data/orbit-play/link`, and Orbit Link starts with the helper.
 
 ## Add the Payload Manager source
 

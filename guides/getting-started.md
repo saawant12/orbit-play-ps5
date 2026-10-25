@@ -7,7 +7,10 @@ stream. You don't need a separate Chiaki app, a PSN sign-in, an account ID to
 copy by hand or a tool to generate the Remote Play PIN.
 
 > See [download availability and requirements](../README.md#beta-status) before
-> installing. This beta connects over the same local network only.
+> installing. You usually connect at home first; afterwards you can also
+> [play away from home](play-away-from-home.md). Not at home?
+> [Set up from anywhere](play-away-from-home.md#set-up-from-anywhere) with a code
+> from the PS5.
 
 ## Before you start
 
@@ -23,7 +26,7 @@ inaccessible. Read [account setup and recovery](account-setup.md) before continu
 - Connect a controller to your computer if you want to use one. Keyboard controls
   are also available.
 
-Screenshots show **0.2.0-beta.1** with example profile data. Use the address and
+Screenshots show **0.2.0-beta.1** and **0.4.0** with example profile data. Use the address and
 code shown on **your PS5** when following the steps.
 
 ## 1. Open Orbit Play on your computer
@@ -114,7 +117,8 @@ settings, stopping and reconnecting.
 Keep the PS5 awake, the helper running and the same profile logged in. Open
 Orbit Play and choose **Start playing**; use **Console setup** if it needs to
 find or trust the console again. Saved pairings are kept for each console
-address and PS5 profile.
+address and PS5 profile. Away from home, choose **Start playing** the same way
+once [play away from home](play-away-from-home.md) is on.
 
 After a PS5 reboot, reload the jailbreak and choose **Start helper on PS5**
 again. A helper restart changes the trust code, so enter the new one when asked. If your PS5's IP address
