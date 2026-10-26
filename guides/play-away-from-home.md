@@ -87,15 +87,14 @@ phone hotspot or a metered connection.
 
 ## When it can't connect
 
-Some routers give each connection a different port, as phone hotspots often
-do. Orbit Play then tries many ports at once for a few seconds; this worked in
-our tests with the PS5 on a phone hotspot. Connecting can take up to about half
-a minute. Some networks still block direct connections between devices, such as
-some hotel, school and office networks, especially when both ends are strict.
-Orbit Play's server doesn't relay streams, so Orbit Play then says **"Orbit Link
-sees your PS5 but could not connect to it directly."** Try another network or a
-phone hotspot, or turn on **UPnP** on your home router, which helps most
-connections. We're working on making this better. See
+Some routers give each connection a different port, as phone hotspots often do;
+connecting through them can take up to about half a minute. Some networks still
+block direct connections between devices, such as some hotel, school and office
+networks, especially when both ends are strict. Orbit Play's server doesn't
+relay streams, so Orbit Play then says **"Orbit Link sees your PS5 but could not
+connect to it directly."** Try another network or a phone hotspot, or turn on
+**UPnP** on your home router, which helps most connections. We're working on
+making this better. See
 [troubleshooting](troubleshooting.md#play-away-from-home-does-not-connect).
 
 ## Turn it off
