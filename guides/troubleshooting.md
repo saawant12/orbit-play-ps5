@@ -148,9 +148,10 @@ If you changed keys under **Controls**, choose **Reset to defaults** there to go
 back to the standard layout. With mouse aiming on, click the video to capture
 the mouse and press F2 to release it.
 
-Connect a controller to the **computer**, then start the stream. If a controller
-disconnects, stops responding or leaves an input held, stop the stream, reconnect
-the controller and start again. Report repeated input problems with diagnostics.
+Connect a controller to the **computer**, before or during the stream. If it
+disconnects, reconnect it: the player picks it up again within a second. If it
+stops responding or leaves an input held, stop the stream, reconnect the
+controller and start again. Report repeated input problems with diagnostics.
 
 ## The picture stutters or reconnect does not finish
 

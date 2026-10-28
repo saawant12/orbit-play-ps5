@@ -25,7 +25,7 @@ Describe the problem and include the exact error message, if shown.
 - Playback: resolution, frame rate, H.264 or HEVC, hardware decoding on or off
 - Where it happens: starting the helper / finding the console / trust code / account setup / login passcode / pairing / playing / reconnecting / play away from home / set up from anywhere
 - Away from home: the network you're on (phone hotspot, hotel Wi-Fi, another home…) and Orbit Play's server or your own
-- Feature involved, if any: rumble / adaptive triggers / haptics / microphone / touchpad / custom keys / mouse aiming / update notice
+- Feature involved, if any: rumble / adaptive triggers / haptics / motion / microphone / touchpad / custom keys / mouse aiming / full screen / controller connected during the stream / someone else playing on the PS5 / update notice
 - Stream statistics (F in the player), if the picture stutters: frame rate and packet loss
 
 ## Diagnostics
