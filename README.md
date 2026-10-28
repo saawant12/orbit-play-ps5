@@ -15,7 +15,7 @@ Play on your Mac, Windows or Linux computer with no PSN sign-in: at home over yo
   <a href="#get-started">Get started</a> ·
   <a href="guides/play-away-from-home.md">Play away from home</a> ·
   <a href="#guides">Guides</a> ·
-  <a href="release-notes/0.5.0.md">Release notes</a> ·
+  <a href="release-notes/0.5.5.md">Release notes</a> ·
   <a href="#beta-status">Beta status</a> ·
   <a href="guides/account-setup.md">Account setup</a> ·
   <a href="#payload-manager">Payload Manager</a> ·
@@ -75,8 +75,8 @@ Play on your Mac, Windows or Linux computer with no PSN sign-in: at home over yo
 
 ## Beta status
 
-**Orbit Play 0.5.0 (Beta) is available.** [Download the desktop app](https://github.com/saawant12/orbit-play-ps5/releases/latest)
-and see [what’s new](release-notes/0.5.0.md).
+**Orbit Play 0.5.5 (Beta) is available.** [Download the desktop app](https://github.com/saawant12/orbit-play-ps5/releases/latest)
+and see [what’s new](release-notes/0.5.5.md).
 
 **Play on your local network, or away from home.** At home, your computer and PS5
 must be on the same trusted network. Away from home, both need an internet
@@ -181,7 +181,7 @@ before using this feature.
 
 **Optional:** if you prefer to install and run the helper yourself, add
 [payloads.json](payloads.json) as a custom source in Payload Manager. It includes
-the **0.5.0** PS5 helper. You do not need to add this source when starting the
+the **0.5.5** PS5 helper. You do not need to add this source when starting the
 included helper from the desktop app.
 
 Open **Settings → Manage Sources → Add Source** in Payload Manager and paste

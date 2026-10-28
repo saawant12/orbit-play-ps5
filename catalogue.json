@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "name": "Orbit Play",
   "description": "A Remote Play app for jailbroken PS5s, available on Mac, Windows and Linux. Enable Remote Play for local PS5 accounts and stream over your local network without PSN sign-in or an internet connection, or away from home over the internet once it is set up at home or with a code from the PS5. Download just the desktop app: the PS5 helper is built in, and the app sends it to the PS5 and starts it through Payload Manager or an ELF loader.",
-  "version": "0.5.0",
+  "version": "0.5.5",
   "repository": "https://github.com/saawant12/orbit-play-ps5",
   "status": "beta",
   "publicReleaseAvailable": true,
@@ -120,10 +120,77 @@
     "playbackAndControls": "guides/playback-and-controls.md",
     "troubleshooting": "guides/troubleshooting.md",
     "screenshots": "assets/screenshots/0.5.0/README.md",
-    "releaseNotes": "release-notes/0.5.0.md"
+    "releaseNotes": "release-notes/0.5.5.md"
   },
   "payloadFeed": "payloads.json",
   "releases": [
+    {
+      "version": "0.5.5",
+      "url": "https://github.com/saawant12/orbit-play-ps5/releases/tag/v0.5.5",
+      "hardwareVerified": false,
+      "artifacts": [
+        {
+          "file": "OrbitPlay-0.5.5-macos-arm64.dmg",
+          "bytes": 229737745,
+          "sha256": "fbb8f4a7badea19bf1cc93243c72dca34e5523235987148ee29d617153dc0a49",
+          "url": "https://github.com/saawant12/orbit-play-ps5/releases/download/v0.5.5/OrbitPlay-0.5.5-macos-arm64.dmg"
+        },
+        {
+          "file": "OrbitPlay-0.5.5-windows-x64.zip",
+          "bytes": 248040738,
+          "sha256": "849c08ec0edc26764b5524d2f1ac4c2986418aa67c20fa22d3db807b5600713c",
+          "url": "https://github.com/saawant12/orbit-play-ps5/releases/download/v0.5.5/OrbitPlay-0.5.5-windows-x64.zip"
+        },
+        {
+          "file": "OrbitPlay-0.5.5-linux-x64.AppImage",
+          "bytes": 242620920,
+          "sha256": "0155d93f391f31bdb06753a6a5ae349b0e4dfec3010dcb0af9c8bf9e9cba7de5",
+          "url": "https://github.com/saawant12/orbit-play-ps5/releases/download/v0.5.5/OrbitPlay-0.5.5-linux-x64.AppImage"
+        },
+        {
+          "file": "OrbitPlay-0.5.5-linux-arm64.AppImage",
+          "bytes": 234048008,
+          "sha256": "8cf2b4dcb9b4684d35b0d82b5edf3a993bb85f36360d2085a4dd47e1bdf2b9cd",
+          "url": "https://github.com/saawant12/orbit-play-ps5/releases/download/v0.5.5/OrbitPlay-0.5.5-linux-arm64.AppImage"
+        },
+        {
+          "file": "orbit-play-0.5.5-ps5.elf",
+          "bytes": 6238080,
+          "sha256": "9ee49c3918a3b2381a26bc30cfbb1f6e2d6c14666bf712e4c1b235730d6df4a5",
+          "url": "https://github.com/saawant12/orbit-play-ps5/releases/download/v0.5.5/orbit-play-0.5.5-ps5.elf"
+        },
+        {
+          "file": "orbit-play-0.5.5-source.tar.gz",
+          "bytes": 8471478,
+          "sha256": "608dcd94575734be8395ddc3471aeec6605448f74fa8420eea879e5461c80f28",
+          "url": "https://github.com/saawant12/orbit-play-ps5/releases/download/v0.5.5/orbit-play-0.5.5-source.tar.gz"
+        },
+        {
+          "file": "orbit-play-0.5.5-third-party-source.tar",
+          "bytes": 160501760,
+          "sha256": "eaefb977f7d59e2f2cdc7e2b5b535f423baffed20cbc8d0fd8c1d5df6b00ece1",
+          "url": "https://github.com/saawant12/orbit-play-ps5/releases/download/v0.5.5/orbit-play-0.5.5-third-party-source.tar"
+        },
+        {
+          "file": "INSTALL-macos.txt",
+          "bytes": 3453,
+          "sha256": "b24dfd641fdac4a3ebe56bf6be49ae4d5da7777e63547d7b64a7dee9d20f893a",
+          "url": "https://github.com/saawant12/orbit-play-ps5/releases/download/v0.5.5/INSTALL-macos.txt"
+        },
+        {
+          "file": "INSTALL-windows.txt",
+          "bytes": 1931,
+          "sha256": "97e4d523905d1b9b9707762024bb41d4985b623cf83f4fb5f492bd49183483fb",
+          "url": "https://github.com/saawant12/orbit-play-ps5/releases/download/v0.5.5/INSTALL-windows.txt"
+        },
+        {
+          "file": "INSTALL-linux.txt",
+          "bytes": 1670,
+          "sha256": "42730eb9d713a6a4979975f44c89f7d2be4d7c06704a662cc9069bffb1c37f87",
+          "url": "https://github.com/saawant12/orbit-play-ps5/releases/download/v0.5.5/INSTALL-linux.txt"
+        }
+      ]
+    },
     {
       "version": "0.5.0",
       "url": "https://github.com/saawant12/orbit-play-ps5/releases/tag/v0.5.0",

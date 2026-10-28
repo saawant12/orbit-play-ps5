@@ -87,7 +87,7 @@ on the PS5 in `/data/orbit-play/link`, and Orbit Link starts with the helper.
 
 This source is optional: use it if you prefer to download and run the helper
 through Payload Manager yourself. The [Payload Manager source](../payloads.json)
-includes the **0.5.0** helper. Starting the included helper from the desktop app
+includes the **0.5.5** helper. Starting the included helper from the desktop app
 does not require adding a source.
 
 1. Copy the source URL below.
