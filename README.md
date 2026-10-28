@@ -60,7 +60,8 @@ Play on your Mac, Windows or Linux computer with no PSN sign-in: at home over yo
   your graphics hardware when it can. Press **F** in the player for stream
   statistics, including packet loss.
 - **Feel the game.** Rumble, adaptive triggers and, over USB, DualSense haptics
-  reach your controller; touchpad swipes reach the PS5.
+  reach your controller; the sticks, motion and touchpad swipes reach the PS5.
+  Connect the controller before or during the stream.
 - **Talk and play your way.** Turn on your computer's microphone with **M** or
   the DualSense mute button. Change any key under **Controls**, or aim with the
   mouse.
@@ -157,8 +158,8 @@ the running helper; it does not start the payload.*
 Click the player to focus it. Arrow keys navigate, Enter/Space confirms and
 Esc/Backspace goes back. WASD controls the left stick; IJKL controls the right
 stick. Left/right mouse clicks act as confirm/back controller buttons, and **M**
-turns the microphone on or off. Press **F1** or choose **Controls** in the player
-for the full mapping. Change any key, or turn on mouse aiming, under **Controls**
+turns the microphone on or off. **F11** (**Ctrl+Cmd+F** on a Mac) switches full
+screen. Press **F1** or choose **Controls** in the player for the full mapping. Change any key, or turn on mouse aiming, under **Controls**
 in the main menu. Switching away releases held keyboard and mouse inputs. See the
 [complete controls and playback guide](guides/playback-and-controls.md).
 
@@ -214,6 +215,8 @@ IP-address change needs a new pairing. Away from home, see
 
 **I switched PS5 users.** Pair that user separately and stay logged into the
 same user while streaming. Orbit Play rechecks the active user before connecting.
+Once the stream runs, someone else can play on the PS5 with their own profile;
+see [someone else playing on the PS5](guides/playback-and-controls.md#someone-else-playing-on-the-ps5).
 
 **I reinstalled, but the old version or error is still there.** Replacing or
 deleting the ELF does not stop the running helper. Orbit Play checks for a

@@ -118,7 +118,9 @@ changes.
 
 Pairings are saved per console address and PS5 user. If the PS5 address changes,
 find the new address and pair again. Orbit Play checks the active user before
-connecting; it does not switch the PS5 user for you.
+connecting; it does not switch the PS5 user for you. Once the stream runs,
+someone else can play on the PS5 with their own profile; see
+[someone else playing on the PS5](playback-and-controls.md#someone-else-playing-on-the-ps5).
 
 ## The helper icon does not open
 

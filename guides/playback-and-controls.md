@@ -30,17 +30,37 @@ packet loss over about the last two seconds, the codec and whether decoding uses
 the hardware. Picture quality also depends on the game, the computer and the local
 connection or, away from home, your home upload speed. Change one setting at a time so you can judge the difference.
 
+## Full screen
+
+Choose **Full screen** in the player bar or press **F11** (**Ctrl+Cmd+F** on a
+Mac) to fill the screen, and press it again to return to the window. The player
+bar hides while the stream fills the screen; its keys keep working. On a Mac, the
+window's green button works too.
+
+While the player is open, your computer and its screen stay awake, even when you
+play with only a controller.
+
 ## Use a controller
 
-Connect a DualSense to the **computer** through USB or Bluetooth before starting
-the stream. Both connection methods have been tested on the 13.60 setup.
-Other controllers are untested. Touchpad swipes reach the PS5 as well as the
-touchpad click, and the DualSense mute button turns the
-[microphone](#use-the-microphone) on and off.
+Connect a DualSense to the **computer** through USB or Bluetooth. Both connection
+methods have been tested on the 13.60 setup. You can connect it before or during
+the stream: the player finds a controller within a second, and finds it again if
+its connection drops. With more than one controller connected, it uses the
+DualSense. Other controllers are untested. The sticks, motion sensors and
+touchpad swipes reach the PS5 as well as the buttons, and the DualSense mute
+button turns the [microphone](#use-the-microphone) on and off.
 
 Keep the PS5 logged into the profile shown in Orbit Play. If you want another
 profile, stop the stream and [switch profiles](troubleshooting.md#switch-ps5-profiles)
 before reconnecting.
+
+### Someone else playing on the PS5
+
+You can keep streaming while someone plays at the console, for example to watch
+on your computer or share the stream. Start the stream first; then they log in
+on the PS5 with their own profile and a controller connected to the PS5. Orbit
+Play keeps your stream going while your profile stays logged in, as the PS5's
+own Remote Play does.
 
 ### Rumble, triggers and haptics
 
@@ -93,6 +113,7 @@ press **Esc** to return. These are the default keys:
 | F | Stream statistics |
 | F1 | Controls guide |
 | F2 | Release the mouse when aiming |
+| F11 (Ctrl+Cmd+F on a Mac) | Full screen |
 
 Switching focus away from the player releases held keyboard and mouse inputs.
 
@@ -104,7 +125,8 @@ Open **Controls** from the main menu. Choose a key next to an action, then press
 the new key or click a mouse button on it. Each action takes up to three keys or
 mouse buttons, and choosing a key that another action uses moves it. Select
 **Save controls**; the new keys apply to the next stream. **Reset to defaults**
-brings back the table above. F1 and F2 can't be changed.
+brings back the table above. F1 and F2 can't be changed. If you give F11 to an
+action, press **Alt+Enter** for full screen instead.
 
 ### Aim with the mouse
 
@@ -131,8 +153,9 @@ or switch profiles.
 ## If something feels wrong
 
 - **No keyboard input:** click the video window, then try an arrow key and Enter.
-- **Controller not detected:** stop the stream, check the controller connection
-  in your computer's settings, then start again.
+- **Controller not detected:** check the controller connection in your
+  computer's settings. The player picks up the controller within a second once
+  your computer sees it.
 - **An input stays held:** stop the stream and reconnect the controller before
   starting again. Export diagnostics if it repeats.
 - **No haptics on a Mac:** set the DualSense to 4 channels in Audio MIDI Setup as
