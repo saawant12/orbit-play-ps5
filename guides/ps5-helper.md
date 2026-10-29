@@ -7,7 +7,7 @@ Play PIN automatically, so you don't need a separate PIN tool. Keep it running
 while you use Orbit Play. **The desktop app includes the helper and can start it
 for you.** You do not need a separate ELF download.
 
-The tested PS5 setup is **firmware 13.60, Relapse and Payload Manager v0.5.2**.
+The tested PS5 setup is **firmware 13.60, Relapse and Payload Manager v0.5.2 or v0.6.3**.
 See [beta status](../README.md#beta-status) for the limits on other firmware.
 
 ## Start it from the computer app
@@ -88,7 +88,7 @@ on the PS5 in `/data/orbit-play/link`, and Orbit Link starts with the helper.
 
 This source is optional: use it if you prefer to download and run the helper
 through Payload Manager yourself. The [Payload Manager source](../payloads.json)
-includes the **0.5.5** helper. Starting the included helper from the desktop app
+includes the **0.6.0** helper. Starting the included helper from the desktop app
 does not require adding a source.
 
 1. Copy the source URL below.
