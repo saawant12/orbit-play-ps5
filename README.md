@@ -24,7 +24,7 @@ Play on your Mac, Windows or Linux computer with no PSN sign-in: at home over yo
 </p>
 
 <p align="center">
-  <a href="https://buymeacoffee.com/saawant12"><img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Support%20Orbit-FFDD00?logo=buymeacoffee&logoColor=black" alt="Support Orbit on Buy Me a Coffee"></a>
+  <a href="https://buymeacoffee.com/saawant12"><img src="assets/support-orbit.svg" alt="Support Orbit on Buy Me a Coffee" width="268" height="57"></a>
 </p>
 
 ## How Orbit Play is different
