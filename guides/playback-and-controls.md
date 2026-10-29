@@ -3,6 +3,8 @@
 [All guides](../README.md#guides) · [First connection](getting-started.md) · [Troubleshooting](troubleshooting.md)
 
 Choose **Start playing** after pairing. The stream opens in its own player window.
+On a Mac that window belongs to its own app, **Orbit Play Player**, apart from
+the main Orbit Play window.
 Connect your controller to the computer or click the video to use the keyboard.
 
 ## Choose your picture settings
@@ -22,6 +24,9 @@ playing, stop first, save the changes and start again.
 | Video codec | H.264 or HEVC | H.264 is the default. HEVC (H.265) gives a sharper picture at the same bitrate; it suits computers that decode it in hardware. |
 | Bitrate | 1–50 Mbps in 0.5 Mbps steps | Start at 10 Mbps. A higher value uses more network capacity; lower it if the network struggles. |
 | Hardware video decoding | On or off | Leave it on. Orbit Play decodes on your graphics hardware when it can and on the processor when it can't. Turn it off only if the picture shows glitches. |
+| Picture | Fit, Fill or Stretch | How the picture fills a window or screen of another shape; see [fit, fill or stretch](#fit-fill-or-stretch). |
+| PS5 sound | On or off | Whether the PS5's sound plays on this computer; see [PS5 sound](#ps5-sound). |
+| Type on the PS5 | On or off | Type the text the PS5 asks for with this computer's keyboard; see [type on the PS5](#type-on-the-ps5). |
 | Reconnect | On or off | When on, Orbit Play can make up to three attempts after a network interruption. |
 
 Hardware decoding uses VideoToolbox on a Mac, D3D11VA on Windows and Vulkan on
@@ -39,6 +44,25 @@ window's green button works too.
 
 While the player is open, your computer and its screen stay awake, even when you
 play with only a controller.
+
+## Fit, fill or stretch
+
+When the window or screen is a different shape from the picture, such as a
+16:10 laptop screen, choose how the picture fills it under **Playback → Picture**:
+
+- **Fit** shows all of the picture, with black bars where it doesn't reach.
+- **Fill** fills the window and crops the picture's edges.
+- **Stretch** fills the window and stretches the picture to its shape.
+
+Press **B** in the player to switch between them during a stream; the player
+shows the one you chose. The next stream starts with the one under **Playback**.
+
+## PS5 sound
+
+Press **N** or choose **Sound** in the player bar to stop playing the PS5's sound
+on your computer, for example while you listen on the TV, and again to bring it
+back. To start every stream without it, turn off **Play the PS5's sound on this
+computer** under **Playback**.
 
 ## Use a controller
 
@@ -110,12 +134,25 @@ press **Esc** to return. These are the default keys:
 | Left / right mouse click | Cross / Circle |
 | Middle mouse click | Touchpad click |
 | M | Microphone on/off |
+| N | PS5 sound on/off |
+| B | Picture: fit, fill or stretch |
 | F | Stream statistics |
 | F1 | Controls guide |
 | F2 | Release the mouse when aiming |
 | F11 (Ctrl+Cmd+F on a Mac) | Full screen |
 
 Switching focus away from the player releases held keyboard and mouse inputs.
+
+### Type on the PS5
+
+When the PS5 asks for text, such as a search or a name, a **Type on the PS5**
+box opens in the player instead of the PS5's own keyboard. Type with your
+computer's keyboard: the text appears on the PS5 as you type. Press **Enter** to
+send it. **Esc** switches to the PS5's own keyboard and keeps what you typed, for
+example to finish with the controller. While the box is open, keys type into it
+instead of playing their actions. To use the PS5's own keyboard instead, turn off **Type on
+the PS5 with this computer's keyboard** under **Playback**; it applies to the
+next stream.
 
 ### Change your keys
 

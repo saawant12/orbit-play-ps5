@@ -46,8 +46,8 @@ Orbit Play tries Payload Manager on port 8084. If it is unavailable, it uses an 
 - If a launch could not be confirmed, Orbit Play checks whether the helper
   started. If it still cannot connect, check the PS5 and choose **Find console**
   before attempting another launch.
-- If the app reports a different helper version, stop that helper in Payload
-  Manager or fully restart the PS5 first; see
+- If the app reports a different helper version, choose **Replace helper on
+  PS5**; see
   [the old helper version is still running](#the-old-helper-version-is-still-running).
 
 ## Find console does not connect
@@ -133,9 +133,17 @@ and test whether the computer app can still find the helper.
 ## The old helper version is still running
 
 Replacing or reinstalling the ELF does not stop the old process, and Orbit Play
-checks for a running helper before sending another. Stop the old one in Payload Manager. If that is not
-available, fully restart the PS5 (**not Rest Mode**) and reload the jailbreak.
-Then choose **Start helper on PS5**.
+checks for a running helper before sending another. When the app reports a
+different helper version, the **Start helper on PS5** button becomes **Replace
+helper on PS5**: choose it and confirm, then enter the new trust code.
+
+- **Someone is streaming from this PS5:** the helper doesn't stop during a
+  stream or pairing. End that stream, or wait a minute after it stopped, and try
+  again.
+- **Payload Manager isn't answering:** a helper from before 0.6.0 can only be
+  stopped through Payload Manager. Stop the old helper in Payload Manager
+  yourself, or fully restart the PS5 (**not Rest Mode**) and reload the
+  jailbreak. Then choose **Start helper on PS5**.
 
 Check **Console setup → Profile & connection options** for the running app and
 helper versions. Follow [the update guide](installation.md#update-the-app-and-helper-together).

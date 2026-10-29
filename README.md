@@ -46,6 +46,9 @@ Play on your Mac, Windows or Linux computer with no PSN sign-in: at home over yo
   through Payload Manager or your ELF loader. There's no separate ELF to
   download and no Chiaki to install: set up your profile, pair and play from the
   same app. To run the helper yourself instead, save it with **Get PS5 helper**.
+- **Updates itself.** From 0.6.0 on, choose **Update now** when a new version
+  is out: Orbit Play checks the download, installs it and restarts. **Replace
+  helper on PS5** then swaps the helper on your PS5 for the new one.
 
 > **Official source:** [saawant12/orbit-play-ps5](https://github.com/saawant12/orbit-play-ps5)
 > is the only official place for Orbit Play releases, updates and support.
@@ -61,14 +64,16 @@ Play on your Mac, Windows or Linux computer with no PSN sign-in: at home over yo
 - **Choose your picture.** In **Playback**, select 360p, 540p, 720p or 1080p,
   30 or 60 fps, your bitrate, and H.264 or HEVC. Start with the default 720p60
   at 10 Mbps; your settings are saved for the next stream. Video decodes on
-  your graphics hardware when it can. Press **F** in the player for stream
+  your graphics hardware when it can. Choose whether the picture fits, fills
+  or stretches to your screen. Press **F** in the player for stream
   statistics, including packet loss.
 - **Feel the game.** Rumble, adaptive triggers and, over USB, DualSense haptics
   reach your controller; the sticks, motion and touchpad swipes reach the PS5.
   Connect the controller before or during the stream.
 - **Talk and play your way.** Turn on your computer's microphone with **M** or
   the DualSense mute button. Change any key under **Controls**, or aim with the
-  mouse.
+  mouse. When the PS5 asks for text, type it with your computer's keyboard, and
+  press **N** to turn the PS5's sound off on your computer.
 - **Keep users separate.** Each console address and PS5 user has its own saved
   pairing. Orbit Play checks the selected user before connecting again.
 - **Recover from interruptions.** Enable up to three reconnect attempts after
@@ -224,8 +229,10 @@ see [someone else playing on the PS5](guides/playback-and-controls.md#someone-el
 
 **I reinstalled, but the old version or error is still there.** Replacing or
 deleting the ELF does not stop the running helper. Orbit Play checks for a
-responding helper before starting one. Stop the old helper in Payload Manager, or fully restart the PS5
-(not Rest Mode) and reload the jailbreak, then choose **Start helper on PS5**.
+responding helper before starting one. Choose **Replace helper on PS5** in
+**Console setup**: it stops the old helper and starts the new one. Without
+Payload Manager, stop the old helper yourself, or fully restart the PS5 (not
+Rest Mode) and reload the jailbreak, then choose **Start helper on PS5**.
 Enter the new trust code. **Console setup → Profile & connection
 options** shows both running versions and the PS5 firmware; the app blocks a
 mismatched helper before account setup. If you run the helper twice, the PS5

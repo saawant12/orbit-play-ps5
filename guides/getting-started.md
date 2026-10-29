@@ -63,7 +63,7 @@ it shows and choose **Find console** instead. Enter only the address, without
 
 ![Console setup with an example address entered and Find console beside it](../assets/screenshots/0.2.0-beta.1/03-console-address.jpg)
 
-*Find console checks the running helper. If the app reports a version mismatch, install the latest desktop app, stop the old helper and start the included helper.*
+*Find console checks the running helper. If the app reports a version mismatch, install the latest desktop app and choose **Replace helper on PS5**.*
 
 ## 4. Trust this computer
 

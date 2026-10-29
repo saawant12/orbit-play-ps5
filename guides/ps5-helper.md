@@ -20,7 +20,8 @@ See [beta status](../README.md#beta-status) for the limits on other firmware.
 Orbit Play tries Payload Manager on port 8084 first. If it is unavailable, it
 uses an ELF loader on port 9021. If yours use other ports, change them under **Profile & connection
 options**. If an Orbit Play helper is already running, the app uses it instead
-of starting another; if it is a different version, stop it first (see
+of starting another; if it is a different version, choose **Replace helper on
+PS5** to stop it and start the included one (see
 [restarts](#the-media-icon-and-restarts)).
 
 ## Optional: get the ELF

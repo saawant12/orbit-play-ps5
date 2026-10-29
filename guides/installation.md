@@ -107,19 +107,40 @@ download the file and `SHA256SUMS` from this repository's release page.
 
 ## Update the app and helper together
 
+From 0.6.0 on, Orbit Play updates itself:
+
+1. When a new version is out, the bottom of the main menu shows it. Stop your
+   stream and choose **Update now**.
+2. Orbit Play downloads the new version for your computer and checks it against
+   the size and SHA-256 checksum the release lists. It then installs it in place
+   of this copy, quits and opens the new one. Choose **Update now** again while it
+   downloads to stop.
+3. Open **Console setup** and choose **Find console**. When it reports the
+   earlier PS5 helper, choose **Replace helper on PS5** and confirm. Orbit Play
+   stops the running helper and starts the one included with the new app.
+4. Enter the new trust code shown on the PS5. Check the app and running helper
+   versions in **Profile & connection options**.
+
+**Update now** appears only where Orbit Play can replace its own files: the app
+in a folder you can write to on a Mac (such as Applications, not the disk image
+or a copy macOS runs from Downloads), the folder you extracted on Windows, and
+the AppImage on Linux. Otherwise, choose **See what's new** and update by hand:
+
 1. Stop the stream and quit Orbit Play.
 2. Download and check the new app.
 3. On **Mac**, replace the app in Applications. On **Windows**, extract the new
    ZIP into a fresh folder and use that copy. On **Linux**, make the new AppImage
    executable and launch it.
-4. Stop the old PS5 helper in Payload Manager. If you can't, fully restart the
-   PS5 and reload the jailbreak. Orbit Play checks for a running helper before
-   sending the replacement.
-5. Open **Console setup**, choose **Start helper on PS5** and enter the new trust
-   code. Check the app and running helper versions in **Profile & connection
-   options**.
-6. To play away from home, turn it on under **Console setup → Play away from
-   home** ([guide](play-away-from-home.md)).
+4. In **Console setup**, choose **Find console**, then **Replace helper on PS5**,
+   and enter the new trust code.
+
+**Replace helper on PS5** never stops a helper during a stream or pairing. A
+helper from before 0.6.0 is stopped through Payload Manager. Without Payload
+Manager, stop the old helper yourself, or fully restart the PS5 and reload the
+jailbreak, then choose **Start helper on PS5**.
+
+To play away from home, turn it on under **Console setup → Play away from home**
+([guide](play-away-from-home.md)).
 
 Saved connections and playback settings are stored separately from the computer
 app, so replacing the app keeps them. Do not choose

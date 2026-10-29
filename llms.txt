@@ -53,7 +53,7 @@ The computer app is AGPL-3.0-only and the PS5 helper is GPL-3.0-or-later. Orbit 
 - [Installation](guides/installation.md): Mac, Windows and Linux downloads, first launch, checksums and updates.
 - [PS5 helper](guides/ps5-helper.md): Run the helper, read the code, use the Media icon and add the Payload Manager source.
 - [Play away from home](guides/play-away-from-home.md): Turn it on at home, set up from anywhere with a code from the PS5, play from anywhere, what the PS5 needs, data use and packet loss, strict networks and your own server.
-- [Playback and controls](guides/playback-and-controls.md): Picture settings, codec and hardware decoding, rumble/triggers/haptics, microphone, custom keys and mouse aiming, stop and reconnect.
+- [Playback and controls](guides/playback-and-controls.md): Picture settings, codec and hardware decoding, fit/fill/stretch, PS5 sound on or off, rumble/triggers/haptics, microphone, typing on the PS5, custom keys and mouse aiming, stop and reconnect.
 - [Troubleshooting](guides/troubleshooting.md): Connection and input problems, profile switching and diagnostic exports.
 - [Screenshot notes](assets/screenshots/0.5.5/README.md): Interface previews of the current version with example data, linking each setup and settings screen.
 - [Account setup](guides/account-setup.md): When setup is needed, what it changes, save warnings and how to restore settings.
