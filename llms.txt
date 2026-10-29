@@ -6,6 +6,7 @@
 
 - Website: https://orbitplay.dev/
 - Official repository: https://github.com/saawant12/orbit-play-ps5
+- Free to use; nothing is locked behind a payment. Optional support is accepted only at https://buymeacoffee.com/saawant12.
 - Published version: 0.5.5, titled Orbit Play 0.5.5 (Beta), tag v0.5.5. The catalogue lists its release assets and the optional Payload Manager feed includes the matching PS5 helper.
 - The computer app runs on the computer. The included ELF helper runs on the PS5: after the jailbreak is loaded, the app starts it through Payload Manager (port 8084) or an ELF loader (port 9021) with Start helper on PS5. Running it with a payload loader by hand also works.
 - Play on the same trusted local network, or away from home: turn on Console setup → Play away from home once at home, then Start playing from anywhere with an internet connection. A computer that has never been home can use Console setup → Not at home? Set up from anywhere with a one-time away code and the trust code from the PS5's Orbit Play page (Play away from home → Get a code). The computer and PS5 connect directly and encrypted through Orbit Link; Orbit Play's server only introduces them and relays nothing. Keep the PS5 awake and logged into the profile you want to play as, with the helper running. Wake from Rest Mode is unavailable.
