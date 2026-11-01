@@ -275,6 +275,6 @@ Orbit Play is an independent project, unaffiliated with Sony or PlayStation.
 
 > **Free, with optional support.** Orbit Store, Orbit Zero, Orbit Play and our upcoming apps are free and will stay free.
 >
-> If you’d like to support development, you can contribute through [GitHub Sponsors](https://github.com/sponsors/saawant12) or [Buy Me a Coffee](https://buymeacoffee.com/saawant12). Contributions help cover development tools, test hardware and servers, including Orbit Play for playing away from home. It’s entirely optional.
+> If you’d like to support development, you can contribute through [GitHub Sponsors](https://github.com/sponsors/saawant12) or [Buy Me a Coffee](https://buymeacoffee.com/saawant12). Contributions help cover the costs of AI tools, test consoles, hardware and servers, including Orbit Play for playing away from home. It’s entirely optional.
 >
 > These are our only official donation pages.
