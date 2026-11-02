@@ -24,8 +24,8 @@ Play on your Mac, Windows or Linux computer with no PSN sign-in: at home over yo
 </p>
 
 <p align="center">
-  <a href="https://github.com/sponsors/saawant12"><img src="assets/sponsor-orbit.svg" alt="Sponsor Orbit on GitHub" width="317" height="57"></a>
   <a href="https://buymeacoffee.com/saawant12"><img src="assets/support-orbit.svg" alt="Support Orbit on Buy Me a Coffee" width="268" height="57"></a>
+  <a href="https://github.com/sponsors/saawant12"><img src="assets/sponsor-orbit.svg" alt="Sponsor Orbit on GitHub" width="317" height="57"></a>
 </p>
 
 ## How Orbit Play is different
