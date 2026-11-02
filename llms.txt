@@ -27,6 +27,8 @@ Download the desktop app for your computer; no separate PS5 ELF download is need
 
 The included player opens in its own window; F11 (Ctrl+Cmd+F on a Mac) switches it to full screen, and the computer and its screen stay awake while it is open. Playback settings offer 360p, 540p, 720p or 1080p H.264 or HEVC video at 30 or 60 fps and 1–50 Mbps, decoded on the computer's graphics hardware when possible (VideoToolbox, D3D11VA or Vulkan). Press F in the player for stream statistics, including packet loss. A USB or Bluetooth DualSense gets rumble and adaptive triggers, haptics over USB, and touchpad swipes; its sticks and motion reach the PS5, and it can connect before or during the stream. Someone else can play on the PS5 with their own profile while the stream continues. The computer's microphone can be turned on in the player. Keyboard and mouse keys can be changed under Controls, with optional mouse aiming on the right stick. If a PS5 profile has a login passcode, the app asks for it. Automatic reconnect can make up to three attempts after a network interruption. Diagnostics omit addresses, names, account IDs, PINs and pairing keys.
 
+Press T for a mini player in the corner of the screen that stays above other apps. For a PS5 without a screen, the helper also saves its trust code in /data/orbit-play/trust-code.txt on the PS5, readable with a file or FTP app. On a Mac or Linux, Playback → Let other apps on this computer control the player lets scripts and AI agents press the stream's controller buttons and move its sticks with the app's control command (for example `OrbitPlay control press cross`), while another app is in front; Windows doesn't support it.
+
 ## Account setup and limits
 
 Account setup is experimental and only appears when needed. It can create a local account ID or enable Remote Play after review and confirmation. Existing account IDs are kept. Creating a new ID requires accepting the risk that existing saves may become inaccessible. We recommend a separate new PS5 profile with no saves for account setup.
@@ -44,7 +46,7 @@ The computer app is AGPL-3.0-only and the PS5 helper is GPL-3.0-or-later. Orbit 
 - [Official repository](https://github.com/saawant12/orbit-play-ps5): Orbit Play documentation, updates and support.
 - [Issues](https://github.com/saawant12/orbit-play-ps5/issues): Report bugs and find existing reports.
 - [Project overview](README.md): Features, guide index, tested setup and beta availability.
-- [0.7.0 release notes](release-notes/0.7.0.md): Mini player that stays on top, the trust code in a file on the PS5 for a console without a screen, and player control for scripts on Mac and Linux.
+- [0.7.0 release notes](release-notes/0.7.0.md): Mini player that stays on top, the trust code saved on the PS5 for a console without a screen, and player control for scripts and AI agents.
 - [0.6.0 release notes](release-notes/0.6.0.md): Update from the app, Replace helper on PS5, typing on the PS5 with the computer's keyboard, fit, fill or stretch, PS5 sound on or off, and Start helper on PS5 with Payload Manager 0.6.
 - [0.5.5 release notes](release-notes/0.5.5.md): Controller sticks and motion fixed, controllers connected during the stream, full screen, keeping the computer awake and streaming while someone else plays on the PS5.
 - [0.5.0 release notes](release-notes/0.5.0.md): Play away from home through Orbit Link, with installation and update steps.
@@ -56,7 +58,7 @@ The computer app is AGPL-3.0-only and the PS5 helper is GPL-3.0-or-later. Orbit 
 - [PS5 helper](guides/ps5-helper.md): Run the helper, read the code, use the Media icon and add the Payload Manager source.
 - [Play away from home](guides/play-away-from-home.md): Turn it on at home, set up from anywhere with a code from the PS5, play from anywhere, what the PS5 needs, data use and packet loss, strict networks and your own server.
 - [Playback and controls](guides/playback-and-controls.md): Picture settings, codec and hardware decoding, fit/fill/stretch, the mini player, PS5 sound on or off, rumble/triggers/haptics, microphone, typing on the PS5, custom keys and mouse aiming, stop and reconnect.
-- [Control the player from other apps](guides/player-control.md): Let scripts on a Mac or Linux computer press the stream's controller buttons, with the control command, choosing the PS5 and replies.
+- [Control the player from other apps](guides/player-control.md): Let scripts and AI agents on a Mac or Linux computer press the stream's controller buttons, with the control command, choosing the PS5 and replies.
 - [Troubleshooting](guides/troubleshooting.md): Connection and input problems, profile switching and diagnostic exports.
 - [Screenshot notes](assets/screenshots/0.7.0/README.md): Interface previews of the current version with example data, linking each setup and settings screen.
 - [Account setup](guides/account-setup.md): When setup is needed, what it changes, save warnings and how to restore settings.
@@ -69,6 +71,7 @@ The computer app is AGPL-3.0-only and the PS5 helper is GPL-3.0-or-later. Orbit 
 - [chiaki-ng alternatives](https://orbitplay.dev/guides/chiaki-ng-alternative/): Orbit Play, chiaki-ng and Sony's PS Remote Play compared ([Spanish](https://orbitplay.dev/es/guides/chiaki-ng-alternative/)).
 - [Remote Play outside your home network](https://orbitplay.dev/guides/ps5-remote-play-outside-home-network/): How Sony's app, chiaki-ng, PXPlay and Orbit Play connect from another network.
 - [Lag and stutter](https://orbitplay.dev/guides/ps5-remote-play-lag-stutter/): Speed, packet loss, Wi-Fi, bitrate and decoding checks for PS5 Remote Play.
+- [Orbit Play en español](https://orbitplay.dev/es/): The home page in Spanish, with the [Spanish FAQ](https://orbitplay.dev/es/faq/).
 - [Juega con tu PS5 fuera de casa](https://orbitplay.dev/es/guides/play-away-from-home/): The play away from home guide in Spanish.
 - [Haptics and adaptive triggers](https://orbitplay.dev/guides/ps5-remote-play-haptics-pc-mac/): DualSense feedback in PS5 Remote Play on PC and Mac, by app.
 - [Microphone in Remote Play](https://orbitplay.dev/guides/ps5-remote-play-microphone-pc-mac/): Microphone permissions, muting and echo on PC and Mac.
