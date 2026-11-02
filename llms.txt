@@ -44,6 +44,7 @@ The computer app is AGPL-3.0-only and the PS5 helper is GPL-3.0-or-later. Orbit 
 - [Official repository](https://github.com/saawant12/orbit-play-ps5): Orbit Play documentation, updates and support.
 - [Issues](https://github.com/saawant12/orbit-play-ps5/issues): Report bugs and find existing reports.
 - [Project overview](README.md): Features, guide index, tested setup and beta availability.
+- [0.7.0 release notes](release-notes/0.7.0.md): Mini player that stays on top, the trust code in a file on the PS5 for a console without a screen, and player control for scripts on Mac and Linux.
 - [0.6.0 release notes](release-notes/0.6.0.md): Update from the app, Replace helper on PS5, typing on the PS5 with the computer's keyboard, fit, fill or stretch, PS5 sound on or off, and Start helper on PS5 with Payload Manager 0.6.
 - [0.5.5 release notes](release-notes/0.5.5.md): Controller sticks and motion fixed, controllers connected during the stream, full screen, keeping the computer awake and streaming while someone else plays on the PS5.
 - [0.5.0 release notes](release-notes/0.5.0.md): Play away from home through Orbit Link, with installation and update steps.
@@ -54,9 +55,10 @@ The computer app is AGPL-3.0-only and the PS5 helper is GPL-3.0-or-later. Orbit 
 - [Installation](guides/installation.md): Mac, Windows and Linux downloads, first launch, checksums and updates.
 - [PS5 helper](guides/ps5-helper.md): Run the helper, read the code, use the Media icon and add the Payload Manager source.
 - [Play away from home](guides/play-away-from-home.md): Turn it on at home, set up from anywhere with a code from the PS5, play from anywhere, what the PS5 needs, data use and packet loss, strict networks and your own server.
-- [Playback and controls](guides/playback-and-controls.md): Picture settings, codec and hardware decoding, fit/fill/stretch, PS5 sound on or off, rumble/triggers/haptics, microphone, typing on the PS5, custom keys and mouse aiming, stop and reconnect.
+- [Playback and controls](guides/playback-and-controls.md): Picture settings, codec and hardware decoding, fit/fill/stretch, the mini player, PS5 sound on or off, rumble/triggers/haptics, microphone, typing on the PS5, custom keys and mouse aiming, stop and reconnect.
+- [Control the player from other apps](guides/player-control.md): Let scripts on a Mac or Linux computer press the stream's controller buttons, with the control command, choosing the PS5 and replies.
 - [Troubleshooting](guides/troubleshooting.md): Connection and input problems, profile switching and diagnostic exports.
-- [Screenshot notes](assets/screenshots/0.5.5/README.md): Interface previews of the current version with example data, linking each setup and settings screen.
+- [Screenshot notes](assets/screenshots/0.7.0/README.md): Interface previews of the current version with example data, linking each setup and settings screen.
 - [Account setup](guides/account-setup.md): When setup is needed, what it changes, save warnings and how to restore settings.
 - [Project catalogue](catalogue.json): Machine-readable component licences, current version, tested setup and published download URLs with checksums.
 

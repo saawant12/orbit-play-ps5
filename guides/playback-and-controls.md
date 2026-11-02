@@ -27,6 +27,7 @@ playing, stop first, save the changes and start again.
 | Picture | Fit, Fill or Stretch | How the picture fills a window or screen of another shape; see [fit, fill or stretch](#fit-fill-or-stretch). |
 | PS5 sound | On or off | Whether the PS5's sound plays on this computer; see [PS5 sound](#ps5-sound). |
 | Type on the PS5 | On or off | Type the text the PS5 asks for with this computer's keyboard; see [type on the PS5](#type-on-the-ps5). |
+| Let other apps control the player | On or off | Off by default. On a Mac or Linux, scripts and automation tools on this computer can press the controller's buttons; see [control the player from other apps](player-control.md). |
 | Reconnect | On or off | When on, Orbit Play can make up to three attempts after a network interruption. |
 
 Hardware decoding uses VideoToolbox on a Mac, D3D11VA on Windows and Vulkan on
@@ -44,6 +45,22 @@ window's green button works too.
 
 While the player is open, your computer and its screen stay awake, even when you
 play with only a controller.
+
+## Mini player
+
+Press **T** or choose **Mini player** in the player bar to shrink the stream to
+a small window in the bottom-right corner of the screen. It stays above your
+other apps, so you can keep an eye on the game while you work or chat. On a Mac
+it also follows you to your other desktops. Press **T** again to bring back the
+full window; **Full screen** works from the mini player too.
+
+![The mini player in the corner of the screen, above other apps](../assets/screenshots/0.7.0/19-mini-player.jpg)
+
+*The mini player stays on top in the corner of the screen. Press T again for the full window.*
+
+Your keyboard and mouse control the PS5 only while the mini player is the active
+window; a controller keeps working. Some Linux desktops on Wayland don't let an
+app stay on top.
 
 ## Fit, fill or stretch
 
@@ -136,6 +153,7 @@ press **Esc** to return. These are the default keys:
 | M | Microphone on/off |
 | N | PS5 sound on/off |
 | B | Picture: fit, fill or stretch |
+| T | Mini player |
 | F | Stream statistics |
 | F1 | Controls guide |
 | F2 | Release the mouse when aiming |
@@ -190,6 +208,8 @@ or switch profiles.
 ## If something feels wrong
 
 - **No keyboard input:** click the video window, then try an arrow key and Enter.
+- **The mini player doesn't stay on top:** some Linux desktops on Wayland don't
+  let an app stay above others; use the full window or full screen there.
 - **Controller not detected:** check the controller connection in your
   computer's settings. The player picks up the controller within a second once
   your computer sees it.

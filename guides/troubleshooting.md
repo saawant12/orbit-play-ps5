@@ -18,6 +18,7 @@ before making more changes.
 | The PS5 asks for a login passcode | [Start playing](getting-started.md#6-start-playing) |
 | Video works but controls do not | [Controls](#video-works-but-controls-do-not) |
 | No haptics, or the microphone doesn't work | [Playback and controls](playback-and-controls.md#if-something-feels-wrong) |
+| Scripts or an agent can't control the player | [Player control replies](player-control.md#replies) |
 | The helper still reports an old version | [Updating the helper](#the-old-helper-version-is-still-running) |
 | Play away from home doesn't connect | [Away from home](#play-away-from-home-does-not-connect) |
 | You need to report a bug | [Diagnostics](#export-diagnostics) |
@@ -72,6 +73,10 @@ helper before trying again.
 Use the **six-digit Orbit Play code** currently shown by the helper, not a
 Remote Play PIN or a code from an older screenshot. Restarting the helper creates
 a new code. Find the console again and enter the new code when asked.
+
+If you can't see the PS5's screen, read the current code from
+`/data/orbit-play/trust-code.txt` on the PS5 with a file or FTP app, such as
+**Files** in Orbit Store (helper 0.7.0 and newer).
 
 ## The PS5 rejects pairing
 

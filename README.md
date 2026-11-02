@@ -58,7 +58,11 @@ Play on your Mac, Windows or Linux computer with no PSN sign-in: at home over yo
   <img src="assets/screenshots/0.4.0/01-main-menu.jpg" alt="Orbit Play main menu with Start playing, Playback, Controls, Console setup and Get PS5 helper" width="49%">
   <img src="assets/screenshots/0.5.0/16-connected-away.jpg" alt="Orbit Play ready to play, connected away from home with a direct connection" width="49%">
 </p>
-<p align="center"><sub>Orbit Play 0.4.0 and 0.5.0 screens. Screenshots use example profile data.</sub></p>
+<p align="center">
+  <img src="assets/screenshots/0.7.0/20-player-bar.jpg" alt="The Orbit Play player streaming the PS5's Settings screen, with the player bar" width="49%">
+  <img src="assets/screenshots/0.7.0/19-mini-player.jpg" alt="The mini player in the corner of the screen, above other apps" width="49%">
+</p>
+<p align="center"><sub>Orbit Play 0.4.0, 0.5.0 and 0.7.0 screens. Screenshots use example profile data; the player shows the PS5's own Settings screen.</sub></p>
 
 ## Made for playing, at home or away
 
@@ -75,6 +79,12 @@ Play on your Mac, Windows or Linux computer with no PSN sign-in: at home over yo
   the DualSense mute button. Change any key under **Controls**, or aim with the
   mouse. When the PS5 asks for text, type it with your computer's keyboard, and
   press **N** to turn the PS5's sound off on your computer.
+- **Keep it in the corner.** Press **T** for a mini player that stays above
+  your other apps, and again for the full window.
+- **Let your scripts and agents play.** On a Mac or Linux, turn on player
+  control and automation tools or AI agents on your computer can press the
+  controller's buttons while you use another app. See
+  [control the player from other apps](guides/player-control.md).
 - **Keep users separate.** Each console address and PS5 user has its own saved
   pairing. Orbit Play checks the selected user before connecting again.
 - **Recover from interruptions.** Enable up to three reconnect attempts after
@@ -159,6 +169,7 @@ the running helper; it does not start the payload.*
 | Install, check downloads or update | [Mac, Windows and Linux installation](guides/installation.md) |
 | Run the helper or use Payload Manager | [PS5 helper guide](guides/ps5-helper.md) |
 | Change picture settings, controller feedback, the microphone or your keys | [Playback and controls](guides/playback-and-controls.md) |
+| Let scripts press the controller's buttons (Mac and Linux) | [Control the player from other apps](guides/player-control.md) |
 | Play from anywhere with an internet connection | [Play away from home](guides/play-away-from-home.md) |
 | Set up a profile or restore account settings | [Account setup and recovery](guides/account-setup.md) |
 | Fix a connection or report a problem | [Troubleshooting and diagnostics](guides/troubleshooting.md) |
@@ -169,7 +180,7 @@ Click the player to focus it. Arrow keys navigate, Enter/Space confirms and
 Esc/Backspace goes back. WASD controls the left stick; IJKL controls the right
 stick. Left/right mouse clicks act as confirm/back controller buttons, and **M**
 turns the microphone on or off. **F11** (**Ctrl+Cmd+F** on a Mac) switches full
-screen. Press **F1** or choose **Controls** in the player for the full mapping. Change any key, or turn on mouse aiming, under **Controls**
+screen, and **T** switches to the mini player. Press **F1** or choose **Controls** in the player for the full mapping. Change any key, or turn on mouse aiming, under **Controls**
 in the main menu. Switching away releases held keyboard and mouse inputs. See the
 [complete controls and playback guide](guides/playback-and-controls.md).
 

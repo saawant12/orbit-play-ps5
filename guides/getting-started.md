@@ -75,6 +75,14 @@ this computer.
 
 *This is Orbit Play's trust code. You do not need to retrieve or type the PS5's Remote Play PIN.*
 
+**No screen on the PS5?** From 0.7.0 the helper also saves the current code in
+`/data/orbit-play/trust-code.txt` on the PS5. Open that file with a file or FTP
+app connected to the PS5, such as **Files** in Orbit Store (**Internal storage →
+orbit-play → trust-code.txt**), and enter its six digits. The file changes each
+time the helper starts.
+
+![Trust screen naming the trust-code.txt file for a PS5 without a screen](../assets/screenshots/0.7.0/21-trust-code-file.jpg)
+
 ## 5. Check the profile and pair
 
 Make sure **PS5 profile** names the user you want to play as. Choose **Pair locally**

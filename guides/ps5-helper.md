@@ -52,7 +52,7 @@ same version:
 
 | Code | What you do |
 | --- | --- |
-| Six-digit **Orbit Play trust code** | Enter it in the computer app to trust that computer. Use the new code after the helper restarts. |
+| Six-digit **Orbit Play trust code** | Enter it in the computer app to trust that computer. Use the new code after the helper restarts. Without a screen, read it from `/data/orbit-play/trust-code.txt` on the PS5 with a file or FTP app, such as **Files** in Orbit Store. |
 | PS5 **Remote Play PIN** | Nothing to copy. Orbit Play exchanges it automatically when you choose **Pair locally**. |
 | **Away code** | Only to [set up from anywhere](play-away-from-home.md#set-up-from-anywhere): on the PS5's Orbit Play page, choose **Play away from home → Get a code**. Enter it with the trust code under **Not at home? Set up from anywhere**. It works once, for 30 minutes. |
 
