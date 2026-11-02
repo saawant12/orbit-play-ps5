@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "name": "Orbit Play",
   "description": "A Remote Play app for jailbroken PS5s, available on Mac, Windows and Linux. Enable Remote Play for local PS5 accounts and stream over your local network without PSN sign-in or an internet connection, or away from home over the internet once it is set up at home or with a code from the PS5. Download just the desktop app: the PS5 helper is built in, and the app sends it to the PS5 and starts it through Payload Manager or an ELF loader.",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "repository": "https://github.com/saawant12/orbit-play-ps5",
   "status": "beta",
   "publicReleaseAvailable": true,
@@ -97,7 +97,10 @@
     "Account-settings recovery with review before confirmation",
     "Diagnostics that omit connection secrets",
     "Optional daily update check against GitHub releases; sends no console or account data",
-    "Updates itself from 0.6.0 on: Update now downloads the new version, checks it against the release's checksums, installs it and restarts"
+    "Updates itself from 0.6.0 on: Update now downloads the new version, checks it against the release's checksums, installs it and restarts",
+    "Mini player: T or the player bar shrinks the stream to a corner window that stays above other apps",
+    "Trust code also saved in /data/orbit-play/trust-code.txt on the PS5, for a console without a screen",
+    "Player control for scripts and AI agents on Mac and Linux: the app's control command presses the stream's controller buttons and moves its sticks while another app is in front"
   ],
   "limitations": [
     "At home the computer and awake PS5 must be on the same trusted network; away from home, both need the internet and the PS5 must stay on with the helper running",
@@ -127,11 +130,79 @@
     "playAwayFromHome": "guides/play-away-from-home.md",
     "playbackAndControls": "guides/playback-and-controls.md",
     "troubleshooting": "guides/troubleshooting.md",
-    "screenshots": "assets/screenshots/0.5.5/README.md",
-    "releaseNotes": "release-notes/0.6.0.md"
+    "screenshots": "assets/screenshots/0.7.0/README.md",
+    "releaseNotes": "release-notes/0.7.0.md",
+    "playerControl": "guides/player-control.md"
   },
   "payloadFeed": "payloads.json",
   "releases": [
+    {
+      "version": "0.7.0",
+      "url": "https://github.com/saawant12/orbit-play-ps5/releases/tag/v0.7.0",
+      "hardwareVerified": false,
+      "artifacts": [
+        {
+          "file": "OrbitPlay-0.7.0-macos-arm64.dmg",
+          "bytes": 238024646,
+          "sha256": "1e5fb9fb08b49f3b78c369cf0a345255dc2a06b76e89db32b4a53925a150068c",
+          "url": "https://github.com/saawant12/orbit-play-ps5/releases/download/v0.7.0/OrbitPlay-0.7.0-macos-arm64.dmg"
+        },
+        {
+          "file": "OrbitPlay-0.7.0-windows-x64.zip",
+          "bytes": 248105787,
+          "sha256": "996a24c2b2e7044ed15b68fb341dd389b20972af3e64902e55ba1ff4eb816ca1",
+          "url": "https://github.com/saawant12/orbit-play-ps5/releases/download/v0.7.0/OrbitPlay-0.7.0-windows-x64.zip"
+        },
+        {
+          "file": "OrbitPlay-0.7.0-linux-x64.AppImage",
+          "bytes": 242706936,
+          "sha256": "9d8f3c4141b72711ea8cf0d68af74e4253351f186f94dd9aa5d834092a041ecd",
+          "url": "https://github.com/saawant12/orbit-play-ps5/releases/download/v0.7.0/OrbitPlay-0.7.0-linux-x64.AppImage"
+        },
+        {
+          "file": "OrbitPlay-0.7.0-linux-arm64.AppImage",
+          "bytes": 234129928,
+          "sha256": "61459e57e99bd4e62a1158a8f27e4debfe49a25cef77b1fce62a7ad109499e79",
+          "url": "https://github.com/saawant12/orbit-play-ps5/releases/download/v0.7.0/OrbitPlay-0.7.0-linux-arm64.AppImage"
+        },
+        {
+          "file": "orbit-play-0.7.0-ps5.elf",
+          "bytes": 6238104,
+          "sha256": "c567f2514d83cdaecf4a111bb887b77ac4f10c1bea6dcc2a357aedf2c7898879",
+          "url": "https://github.com/saawant12/orbit-play-ps5/releases/download/v0.7.0/orbit-play-0.7.0-ps5.elf"
+        },
+        {
+          "file": "orbit-play-0.7.0-source.tar.gz",
+          "bytes": 8513165,
+          "sha256": "4bc6855cee5ca93d6275ed78b7adcb7ac6292e89a69fc70ab35768dae79577a3",
+          "url": "https://github.com/saawant12/orbit-play-ps5/releases/download/v0.7.0/orbit-play-0.7.0-source.tar.gz"
+        },
+        {
+          "file": "orbit-play-0.7.0-third-party-source.tar",
+          "bytes": 160512000,
+          "sha256": "0a8177880135f85f8c113fef37007835953e9540d6ff7980bf43fa9d401a1d76",
+          "url": "https://github.com/saawant12/orbit-play-ps5/releases/download/v0.7.0/orbit-play-0.7.0-third-party-source.tar"
+        },
+        {
+          "file": "INSTALL-macos.txt",
+          "bytes": 3453,
+          "sha256": "5ce511a15ceec7c0fc040a420e59c492951b4fb0aa7c91b454f81c89bc755f03",
+          "url": "https://github.com/saawant12/orbit-play-ps5/releases/download/v0.7.0/INSTALL-macos.txt"
+        },
+        {
+          "file": "INSTALL-windows.txt",
+          "bytes": 1931,
+          "sha256": "bceccef9ea2863991986d30b37a0407595e84a843ab46925e0894cff3a7374b4",
+          "url": "https://github.com/saawant12/orbit-play-ps5/releases/download/v0.7.0/INSTALL-windows.txt"
+        },
+        {
+          "file": "INSTALL-linux.txt",
+          "bytes": 1670,
+          "sha256": "7fe45af38e61738aae3c07b315a2406599ea583f38bf856af6b9a3ec270367f9",
+          "url": "https://github.com/saawant12/orbit-play-ps5/releases/download/v0.7.0/INSTALL-linux.txt"
+        }
+      ]
+    },
     {
       "version": "0.6.0",
       "url": "https://github.com/saawant12/orbit-play-ps5/releases/tag/v0.6.0",

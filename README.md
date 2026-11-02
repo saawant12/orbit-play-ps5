@@ -95,8 +95,8 @@ Play on your Mac, Windows or Linux computer with no PSN sign-in: at home over yo
 
 ## Beta status
 
-**Orbit Play 0.6.0 (Beta) is available.** [Download the desktop app](https://github.com/saawant12/orbit-play-ps5/releases/latest)
-and see [what’s new](release-notes/0.6.0.md).
+**Orbit Play 0.7.0 (Beta) is available.** [Download the desktop app](https://github.com/saawant12/orbit-play-ps5/releases/latest)
+and see [what’s new](release-notes/0.7.0.md).
 
 **Play on your local network, or away from home.** At home, your computer and PS5
 must be on the same trusted network. Away from home, both need an internet
