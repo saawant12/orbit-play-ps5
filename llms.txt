@@ -65,6 +65,8 @@ The computer app is AGPL-3.0-only and the PS5 helper is GPL-3.0-or-later. Orbit 
 ## Help articles on the website
 
 - [FAQ](https://orbitplay.dev/faq/): PSN, account IDs and PINs, firmware, haptics, microphone, controls, playing away from home and fixes.
+- [Remote Play without PSN](https://orbitplay.dev/guides/ps5-remote-play-without-psn/): What Sony's app, chiaki-ng and Orbit Play need for offline accounts and jailbroken PS5s ([Spanish](https://orbitplay.dev/es/guides/ps5-remote-play-without-psn/)).
+- [chiaki-ng alternatives](https://orbitplay.dev/guides/chiaki-ng-alternative/): Orbit Play, chiaki-ng and Sony's PS Remote Play compared ([Spanish](https://orbitplay.dev/es/guides/chiaki-ng-alternative/)).
 - [Remote Play outside your home network](https://orbitplay.dev/guides/ps5-remote-play-outside-home-network/): How Sony's app, chiaki-ng, PXPlay and Orbit Play connect from another network.
 - [Lag and stutter](https://orbitplay.dev/guides/ps5-remote-play-lag-stutter/): Speed, packet loss, Wi-Fi, bitrate and decoding checks for PS5 Remote Play.
 - [Juega con tu PS5 fuera de casa](https://orbitplay.dev/es/guides/play-away-from-home/): The play away from home guide in Spanish.

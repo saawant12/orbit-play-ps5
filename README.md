@@ -15,7 +15,7 @@ Play on your Mac, Windows or Linux computer with no PSN sign-in: at home over yo
   <a href="#get-started">Get started</a> ·
   <a href="guides/play-away-from-home.md">Play away from home</a> ·
   <a href="#guides">Guides</a> ·
-  <a href="release-notes/0.6.0.md">Release notes</a> ·
+  <a href="release-notes/0.7.0.md">Release notes</a> ·
   <a href="#beta-status">Beta status</a> ·
   <a href="guides/account-setup.md">Account setup</a> ·
   <a href="#payload-manager">Payload Manager</a> ·
