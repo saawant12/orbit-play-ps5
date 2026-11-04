@@ -24,7 +24,6 @@ Play on your Mac, Windows or Linux computer with no PSN sign-in: at home over yo
 </p>
 
 <p align="center">
-  <a href="https://github.com/sponsors/saawant12"><img src="assets/sponsor-orbit.svg" alt="Sponsor Orbit on GitHub" width="317" height="57"></a>
   <a href="https://github.com/saawant12/orbit-play-ps5/issues/6#user-content-support-with-crypto"><img src="assets/support-crypto.svg" alt="Support Orbit with crypto" width="353" height="57"></a>
 </p>
 
@@ -286,6 +285,6 @@ Orbit Play is an independent project, unaffiliated with Sony or PlayStation.
 
 > **Free, with optional support.** Orbit Store, Orbit Zero, Orbit Play and our upcoming apps are free and will stay free.
 >
-> If you’d like to support development, you can contribute through [GitHub Sponsors](https://github.com/sponsors/saawant12). You can also [support via crypto](https://github.com/saawant12/orbit-play-ps5/issues/6#user-content-support-with-crypto). Contributions help cover the costs of AI tools, test consoles, hardware and servers, including Orbit Play for playing away from home. It’s entirely optional.
+> If you’d like to support development, you can [contribute via crypto](https://github.com/saawant12/orbit-play-ps5/issues/6#user-content-support-with-crypto). Contributions help cover the costs of AI tools, test consoles, hardware and servers, including Orbit Play for playing away from home. It’s entirely optional.
 >
-> GitHub Sponsors and the [crypto addresses in our support issue](https://github.com/saawant12/orbit-play-ps5/issues/6#user-content-support-with-crypto) are our official support options.
+> The [crypto addresses in our support issue](https://github.com/saawant12/orbit-play-ps5/issues/6#user-content-support-with-crypto) are our only official support option for now.
