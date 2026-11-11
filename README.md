@@ -15,7 +15,7 @@ Play on your Mac, Windows or Linux computer with no PSN sign-in: at home over yo
   <a href="#get-started">Get started</a> ·
   <a href="guides/play-away-from-home.md">Play away from home</a> ·
   <a href="#guides">Guides</a> ·
-  <a href="release-notes/0.7.0.md">Release notes</a> ·
+  <a href="release-notes/0.8.0.md">Release notes</a> ·
   <a href="#beta-status">Beta status</a> ·
   <a href="guides/account-setup.md">Account setup</a> ·
   <a href="#payload-manager">Payload Manager</a> ·
@@ -46,6 +46,9 @@ Play on your Mac, Windows or Linux computer with no PSN sign-in: at home over yo
   through Payload Manager or your ELF loader. There's no separate ELF to
   download and no Chiaki to install: set up your profile, pair and play from the
   same app. To run the helper yourself instead, save it with **Get PS5 helper**.
+- **Set up once.** Enter the PS5's trust code once per computer: from 0.8.0
+  the PS5 remembers your computer after restarts. With Payload Manager, the
+  helper can also start by itself each time the jailbreak loads.
 - **Updates itself.** From 0.6.0 on, choose **Update now** when a new version
   is out: Orbit Play checks the download, installs it and restarts. **Replace
   helper on PS5** then swaps the helper on your PS5 for the new one.
@@ -54,14 +57,14 @@ Play on your Mac, Windows or Linux computer with no PSN sign-in: at home over yo
 > is the only official place for Orbit Play releases, updates and support.
 
 <p align="center">
-  <img src="assets/screenshots/0.4.0/01-main-menu.jpg" alt="Orbit Play main menu with Start playing, Playback, Controls, Console setup and Get PS5 helper" width="49%">
+  <img src="assets/screenshots/0.8.0/24-ready.jpg" alt="Orbit Play ready to play, with Start in, Start playing, and the Play away from home and options lines" width="49%">
   <img src="assets/screenshots/0.5.0/16-connected-away.jpg" alt="Orbit Play ready to play, connected away from home with a direct connection" width="49%">
 </p>
 <p align="center">
   <img src="assets/screenshots/0.7.0/20-player-bar.jpg" alt="The Orbit Play player streaming the PS5's Settings screen, with the player bar" width="49%">
-  <img src="assets/screenshots/0.7.0/19-mini-player.jpg" alt="The mini player in the corner of the screen, above other apps" width="49%">
+  <img src="assets/screenshots/0.8.0/26-saved-consoles.jpg" alt="Console setup with two saved consoles, Living room and Bedroom" width="49%">
 </p>
-<p align="center"><sub>Orbit Play 0.4.0, 0.5.0 and 0.7.0 screens. Screenshots use example profile data; the player shows the PS5's own Settings screen.</sub></p>
+<p align="center"><sub>Orbit Play 0.5.0, 0.7.0 and 0.8.0 screens. Screenshots use example profile data; the player shows the PS5's own Settings screen.</sub></p>
 
 ## Made for playing, at home or away
 
@@ -78,14 +81,22 @@ Play on your Mac, Windows or Linux computer with no PSN sign-in: at home over yo
   the DualSense mute button. Change any key under **Controls**, or aim with the
   mouse. When the PS5 asks for text, type it with your computer's keyboard, and
   press **N** to turn the PS5's sound off on your computer.
+- **Start in a game.** Choose a game under **Start in** and Orbit Play starts
+  it as soon as your stream opens. It can also turn the PS5 off when you stop.
+- **Check and change your controller.** **Controls → Controller** shows your
+  controller live and lets you choose what each button sends to the PS5.
 - **Keep it in the corner.** Press **T** for a mini player that stays above
   your other apps, and again for the full window.
-- **Let your scripts and agents play.** On a Mac or Linux, turn on player
-  control and automation tools or AI agents on your computer can press the
-  controller's buttons while you use another app. See
+- **In your language.** Orbit Play and the PS5 helper's pages come in 25 more
+  languages; choose one under **Settings**. The translations were made by
+  machine.
+- **Let your scripts and agents play.** On a Mac, Windows or Linux, turn on
+  player control and automation tools or AI agents on your computer can press
+  the controller's buttons while you use another app. See
   [control the player from other apps](guides/player-control.md).
-- **Keep users separate.** Each console address and PS5 user has its own saved
-  pairing. Orbit Play checks the selected user before connecting again.
+- **Several PS5s, one app.** Every PS5 you connect to is saved; switch between
+  them under **Console setup**. Each PS5 user has its own saved pairing, and
+  Orbit Play checks the selected user before connecting again.
 - **Recover from interruptions.** Enable up to three reconnect attempts after
   a network interruption. Pressing **Stop** or closing the player ends the
   session without reconnecting.
@@ -94,8 +105,8 @@ Play on your Mac, Windows or Linux computer with no PSN sign-in: at home over yo
 
 ## Beta status
 
-**Orbit Play 0.7.0 (Beta) is available.** [Download the desktop app](https://github.com/saawant12/orbit-play-ps5/releases/latest)
-and see [what’s new](release-notes/0.7.0.md).
+**Orbit Play 0.8.0 (Beta) is available.** [Download the desktop app](https://github.com/saawant12/orbit-play-ps5/releases/latest)
+and see [what’s new](release-notes/0.8.0.md).
 
 **Play on your local network, or away from home.** At home, your computer and PS5
 must be on the same trusted network. Away from home, both need an internet
@@ -128,6 +139,14 @@ Pairing, video and audio, keyboard controls, USB and Bluetooth DualSense control
 reconnecting, profile switching, resolution, frame-rate and bitrate settings, and
 new-profile setup and recovery have been tested on 13.60. Account setup remains
 experimental.
+
+In 0.8.0, replacing the helper, trusting a computer, pairing and streaming have
+been tested on 13.60 with a Mac. Not yet tested on a PS5 or with real
+controllers: the helper starting by itself, a computer staying trusted after a
+helper or PS5 restart, several saved PS5s, starting a game, turning the PS5 off,
+Xbox and Switch controllers, changed controller buttons, the `--play` shortcut on
+a Steam Deck, player control on Windows, and the helper's Remote Play permission
+step on firmware other than 13.60.
 
 Beta Mac builds are not Apple-notarized, so macOS asks you to approve the first launch in
 **System Settings → Privacy & Security → Open Anyway**. Windows builds are not
@@ -201,7 +220,7 @@ before using this feature.
 
 **Optional:** if you prefer to install and run the helper yourself, add
 [payloads.json](payloads.json) as a custom source in Payload Manager. It includes
-the **0.6.0** PS5 helper. You do not need to add this source when starting the
+the **0.8.0** PS5 helper. You do not need to add this source when starting the
 included helper from the desktop app.
 
 Open **Settings → Manage Sources → Add Source** in Payload Manager and paste
