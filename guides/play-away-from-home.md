@@ -22,12 +22,18 @@ There is no account to create and no port to open on your router.
 
 1. At home, with your computer on the same network as the PS5, connect and
    pair as usual ([get started](getting-started.md)).
-2. Open **Console setup**. Under **Play away from home**, choose **Turn on**.
+2. Open **Console setup**. On the **Ready when you are** screen, open **Play away
+   from home** (from 0.8.0 it is one line that says whether it's on or off) and
+   choose **Turn on**.
 3. Orbit Play sets it up on the PS5, adds your computer and connects them. The
    PS5 shows a notification when it's connected.
 
-When it's on, the section shows how your computer reaches the PS5, for example
-**direct connection · 28 ms**.
+When it's on, the line reads **Play away from home · on**; open it to see how
+your computer reaches the PS5, for example **direct connection · 28 ms**.
+
+Play away from home works with one PS5 at a time. If you have
+[several PS5s saved](getting-started.md#next-time-you-play), turning it on for
+one moves it there from the other, and the app tells you so first.
 
 To use your own server instead of Orbit Play's, open **Use your own
 Orbit Link server** before choosing **Turn on**, and enter its **Server address**
@@ -70,8 +76,10 @@ over the internet instead; the main menu shows **Away from home**.
 Before you leave, make sure the PS5 stays ready:
 
 - **On, not in Rest Mode,** and connected to the internet.
-- **Jailbreak loaded and the Orbit Play helper running.** Payload Manager's
-  autostart starts the helper whenever the jailbreak loads. A full PS5 restart
+- **Jailbreak loaded and the Orbit Play helper running.** Turn on **Start the
+  helper by itself on the PS5** at home (under **Console setup → Profile &
+  connection options**), and Payload Manager starts the helper whenever the
+  jailbreak loads. A full PS5 restart
   (a power cut, an update) needs the jailbreak loaded again at the console, which
   you can't do from away.
 - The helper can restart while you're away: your computer keeps its access.

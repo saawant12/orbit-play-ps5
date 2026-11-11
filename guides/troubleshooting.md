@@ -74,6 +74,11 @@ Use the **six-digit Orbit Play code** currently shown by the helper, not a
 Remote Play PIN or a code from an older screenshot. Restarting the helper creates
 a new code. Find the console again and enter the new code when asked.
 
+From 0.8.0 the PS5 remembers each computer it trusted, so the code is needed
+once. If Orbit Play asks again, someone may have chosen **Forget computers** on
+the PS5's Orbit Play page, or the PS5 could not save this computer; the app says
+when that happens.
+
 If you can't see the PS5's screen, read the current code from
 `/data/orbit-play/trust-code.txt` on the PS5 with a file or FTP app, such as
 **Files** in Orbit Store (helper 0.7.0 and newer).
@@ -142,23 +147,26 @@ checks for a running helper before sending another. When the app reports a
 different helper version, the **Start helper on PS5** button becomes **Replace
 helper on PS5**: choose it and confirm, then enter the new trust code.
 
-- **Someone is streaming from this PS5:** the helper doesn't stop during a
-  stream or pairing. End that stream, or wait a minute after it stopped, and try
-  again.
+- **Someone is streaming from this PS5:** a helper that trusts this computer
+  doesn't stop during a stream or pairing. End that stream, or wait a minute
+  after it stopped, and try again. A helper that doesn't trust this computer yet
+  is stopped through Payload Manager, so check that nobody is streaming first.
 - **Payload Manager isn't answering:** a helper from before 0.6.0 can only be
   stopped through Payload Manager. Stop the old helper in Payload Manager
   yourself, or fully restart the PS5 (**not Rest Mode**) and reload the
   jailbreak. Then choose **Start helper on PS5**.
 
-Check **Console setup → Profile & connection options** for the running app and
-helper versions. Follow [the update guide](installation.md#update-the-app-and-helper-together).
+Check the running app and helper versions under **Settings** on the main
+menu. Follow [the update guide](installation.md#update-the-app-and-helper-together).
 
 ## Video works but controls do not
 
 Click the player window to give it focus. Arrow keys navigate, Enter confirms
 and Esc/Backspace goes back. Press F1 for [your current keys](playback-and-controls.md#keyboard-and-mouse).
-If you changed keys under **Controls**, choose **Reset to defaults** there to go
-back to the standard layout. With mouse aiming on, click the video to capture
+If you changed keys under **Controls**, choose **Reset keys** there to go back
+to the standard layout; for changed controller buttons, choose **Reset controller
+buttons**. **Controls → Controller** shows whether your controller's presses
+arrive at all. With mouse aiming on, click the video to capture
 the mouse and press F2 to release it.
 
 Connect a controller to the **computer**, before or during the stream. If it
@@ -182,8 +190,8 @@ manually and export diagnostics.
 
 - **"Your PS5 isn’t online for play away from home."** The PS5 is off, in Rest
   Mode, offline, or its helper isn't running. Someone at home must load the
-  jailbreak and start the helper; Payload Manager's autostart does that whenever
-  the jailbreak loads.
+  jailbreak and start the helper. With **Start the helper by itself on the PS5**
+  turned on at home, Payload Manager starts it whenever the jailbreak loads.
 - **"Orbit Link sees your PS5 but could not connect to it directly."** The
   network you're on, or your home router, blocks direct connections. Try another
   network or a phone hotspot, or turn on UPnP on your home router.
@@ -206,8 +214,10 @@ See [play away from home](play-away-from-home.md) for what the PS5 needs.
 ## Forget saved connections
 
 **Console setup → Profile & connection options → Forget saved connections**
-clears the computer's saved connections. It also turns off play away from home
-on this computer. You will need to trust and pair again.
+clears the computer's saved connections, for every saved PS5, and asks each PS5
+that answers at home to forget this computer. It also turns off play away from
+home on this computer. You will need to trust and pair again. To remove just one
+PS5, use **Remove** beside it under **Saved consoles** instead.
 It does not restore PS5 account settings or erase PS5 saves. Use the separate
 recovery flow for account changes; do not use forgetting as a routine update step.
 
@@ -218,11 +228,15 @@ recovery flow for account changes; do not use forgetting as a routine update ste
 3. Open **Report a bug** from the [project README](../README.md). Include your operating system and architecture,
    jailbreak/loader, controller connection, exact error and steps to reproduce.
 4. Review the export, then attach it. App, helper and PS5 firmware versions are
-   recorded in the export and shown in the connection options.
+   recorded in the export and shown under **Settings** on the main menu.
 
-![Connection options with Export diagnostics and the running version information](../assets/screenshots/0.2.0-beta.1/08-connection-options.jpg)
+From 0.8.0 the export also holds what happened in earlier runs of the app and
+the PS5 helper's own log, so a problem that happened before a restart still
+shows up.
 
-*Sample profile and versions. Export diagnostics is in the expanded connection options.*
+![Profile and connection options, opened, with Export diagnostics](../assets/screenshots/0.8.0/29-connection-options.jpg)
+
+*Export diagnostics is in the opened connection options.*
 
 Diagnostics omit addresses, names, account IDs, PINs and pairing keys. Still
 review attachments before posting. Keep real trust codes, away codes, account data and

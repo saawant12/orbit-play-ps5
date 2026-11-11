@@ -52,7 +52,7 @@ same version:
 
 | Code | What you do |
 | --- | --- |
-| Six-digit **Orbit Play trust code** | Enter it in the computer app to trust that computer. Use the new code after the helper restarts. Without a screen, read it from `/data/orbit-play/trust-code.txt` on the PS5 with a file or FTP app, such as **Files** in Orbit Store. |
+| Six-digit **Orbit Play trust code** | Enter it in the computer app to trust that computer. From 0.8.0 you enter it once per computer: the PS5 remembers that computer after the helper or the PS5 restarts. Without a screen, read it from `/data/orbit-play/trust-code.txt` on the PS5 with a file or FTP app, such as **Files** in Orbit Store. |
 | PS5 **Remote Play PIN** | Nothing to copy. Orbit Play exchanges it automatically when you choose **Pair locally**. |
 | **Away code** | Only to [set up from anywhere](play-away-from-home.md#set-up-from-anywhere): on the PS5's Orbit Play page, choose **Play away from home → Get a code**. Enter it with the trust code under **Not at home? Set up from anywhere**. It works once, for 30 minutes. |
 
@@ -62,8 +62,32 @@ the app.
 ## The Media icon and restarts
 
 The Media icon opens a page served by the running helper. It **does not start the
-payload**. Its page also has **Play away from home → Get a code**. After a PS5 reboot, load the jailbreak, open Payload Manager or enable
-your ELF loader, then choose **Start helper on PS5** in the desktop app.
+payload**. Its page also has **Play away from home → Get a code** and **Trusted
+computers**. The page follows the language of the PS5's browser. After a PS5
+reboot, load the jailbreak, open Payload Manager or enable your ELF loader, then
+choose **Start helper on PS5** in the desktop app, or let Payload Manager
+[start it by itself](#start-the-helper-by-itself).
+
+**Trusted computers** shows how many computers the PS5 remembers. **Forget
+computers** removes them all and makes a new trust code; each computer then needs
+that code once, and a running stream ends.
+
+## Start the helper by itself
+
+With Payload Manager, nothing needs sending after a PS5 restart. In the desktop
+app, open **Console setup → Profile & connection options** while connected to the
+PS5 and turn on **Start the helper by itself on the PS5**. Orbit Play adds its
+helper to Payload Manager's **Autoload** list and leaves the rest of that list as
+it is; Payload Manager then starts the helper each time the jailbreak loads it.
+Turn the option off to take the helper off the list. It needs Payload Manager;
+an ELF loader has no such list.
+
+## The helper's log
+
+The helper keeps a short log in `/data/orbit-play/helper.log`: when it started,
+and each pairing and stream with how it ended. It holds no addresses, names,
+account IDs or codes. **Export diagnostics** in the desktop app includes it, so
+you can attach one file to a bug report.
 
 Replacing or deleting the ELF does not stop an older copy already running in
 memory. If the app reports the wrong helper version, or the PS5 says the helper's port is

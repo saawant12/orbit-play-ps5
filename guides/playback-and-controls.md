@@ -27,14 +27,55 @@ playing, stop first, save the changes and start again.
 | Picture | Fit, Fill or Stretch | How the picture fills a window or screen of another shape; see [fit, fill or stretch](#fit-fill-or-stretch). |
 | PS5 sound | On or off | Whether the PS5's sound plays on this computer; see [PS5 sound](#ps5-sound). |
 | Type on the PS5 | On or off | Type the text the PS5 asks for with this computer's keyboard; see [type on the PS5](#type-on-the-ps5). |
-| Let other apps control the player | On or off | Off by default. On a Mac or Linux, scripts and automation tools on this computer can press the controller's buttons; see [control the player from other apps](player-control.md). |
+| Let other apps control the player | On or off | Off by default. Scripts and automation tools on this computer can press the controller's buttons; see [control the player from other apps](player-control.md). |
 | Reconnect | On or off | When on, Orbit Play can make up to three attempts after a network interruption. |
+| Turn the PS5 off when I stop playing | On or off | Off by default. When on, Orbit Play turns the PS5 off after you close the player or choose **Stop**; see [start in a game](#start-in-a-game-and-turn-the-ps5-off). |
 
 Hardware decoding uses VideoToolbox on a Mac, D3D11VA on Windows and Vulkan on
 Linux. Press **F** in the player for the stream statistics: the frame rate, the
 packet loss over about the last two seconds, the codec and whether decoding uses
 the hardware. Picture quality also depends on the game, the computer and the local
 connection or, away from home, your home upload speed. Change one setting at a time so you can judge the difference.
+
+## Start in a game and turn the PS5 off
+
+On the **Ready when you are** screen, **Start in** lists the games and apps
+installed on the PS5. Choose one and Orbit Play asks the PS5 to start it as soon
+as your stream opens; choose **The PS5's home screen** to start there as before.
+Orbit Play remembers the choice for each console. If the PS5 can't start the
+game, the stream stays open on whatever the PS5 shows.
+
+![The Start in list open on the Ready screen, with example games](../assets/screenshots/0.8.0/25-start-in.jpg)
+
+To end your session with the PS5 off, turn on **Turn the PS5 off when I stop
+playing** under **Playback**. After you close the player or choose **Stop**,
+Orbit Play asks the PS5 to turn off. It stays on when a stream didn't open. The
+next time you turn it on, load the jailbreak again.
+
+## Go straight into a stream
+
+Start Orbit Play with `--play` to connect to your last PS5 and open the stream
+with no clicks, for a desktop shortcut or a Steam Deck library entry. Orbit Play
+quits when you close the player.
+
+| Computer | Command |
+| --- | --- |
+| Mac | `"/Applications/Orbit Play.app/Contents/MacOS/OrbitPlay" --play` |
+| Windows | `"%LOCALAPPDATA%\Programs\Orbit Play\Orbit Play\OrbitPlay.exe" --play` (installed with the setup program) |
+| Linux | `/path/to/OrbitPlay-0.8.0-linux-x64.AppImage --play` (or the arm64 AppImage) |
+
+Add a saved PS5's name or address after `--play` to choose one, `--game` and a
+title ID to start in that game instead of the saved choice, and `--power-off` to
+turn the PS5 off afterwards, for that run only:
+
+```sh
+OrbitPlay --play "Living room" --game PPSA01234 --power-off
+```
+
+If the PS5 needs pairing or its trust code, or the stream fails, the window
+stays open and says why. On a Steam Deck, add the AppImage as a non-Steam game
+and put `--play` in its launch options; this hasn't been tried on a Steam Deck
+yet.
 
 ## Full screen
 
@@ -87,9 +128,26 @@ Connect a DualSense to the **computer** through USB or Bluetooth. Both connectio
 methods have been tested on the 13.60 setup. You can connect it before or during
 the stream: the player finds a controller within a second, and finds it again if
 its connection drops. With more than one controller connected, it uses the
-DualSense. Other controllers are untested. The sticks, motion sensors and
-touchpad swipes reach the PS5 as well as the buttons, and the DualSense mute
-button turns the [microphone](#use-the-microphone) on and off.
+DualSense. The sticks, motion sensors and touchpad swipes reach the PS5 as well
+as the buttons, and the DualSense mute button turns the
+[microphone](#use-the-microphone) on and off. The player reads Xbox and Switch
+controllers by where their buttons sit; those are untested so far.
+
+### Check your controller and change its buttons
+
+Open **Controls** from the main menu. Under **Controller**, Orbit Play shows the
+controller it would use: its name, cable or wireless, battery, and its sticks,
+triggers and buttons live, so you can see that each press arrives. **Test
+rumble** rumbles it briefly.
+
+![Controls, Controller: a DualSense shown live, and each of its buttons with the PS5 button it sends](../assets/screenshots/0.8.0/27-controller.jpg)
+
+Below that, each of your controller's buttons is listed by where it sits, with
+the PS5 button it sends. Change one to swap buttons, give a paddle a PS5 button,
+or make a button send nothing; a row lights up while you hold its button. Select
+**Save controls**; the change applies to the next stream. **Reset controller
+buttons** brings back the usual layout. The check runs only while the screen is
+open, never during a stream.
 
 Keep the PS5 logged into the profile shown in Orbit Play. If you want another
 profile, stop the stream and [switch profiles](troubleshooting.md#switch-ps5-profiles)
@@ -176,10 +234,10 @@ next stream.
 
 ![Controls screen with mouse aiming, sensitivity and the key for each action](../assets/screenshots/0.4.0/13-controls.jpg)
 
-Open **Controls** from the main menu. Choose a key next to an action, then press
+Open **Controls** from the main menu. Under **Keys**, choose a key next to an action, then press
 the new key or click a mouse button on it. Each action takes up to three keys or
 mouse buttons, and choosing a key that another action uses moves it. Select
-**Save controls**; the new keys apply to the next stream. **Reset to defaults**
+**Save controls**; the new keys apply to the next stream. **Reset keys**
 brings back the table above. F1 and F2 can't be changed. If you give F11 to an
 action, press **Alt+Enter** for full screen instead.
 

@@ -17,8 +17,8 @@ Python, Homebrew and a separate Chiaki-ng installation are not required.
 | Computer | Download | Beta requirement |
 | --- | --- | --- |
 | Mac with Apple Silicon | `OrbitPlay-<version>-macos-arm64.dmg` | macOS 26 or later |
-| Windows PC (x64) | `OrbitPlay-<version>-windows-x64.zip` | Windows 10 or 11 |
-| Windows on ARM | `OrbitPlay-<version>-windows-x64.zip` | Windows 11; runs through x64 emulation |
+| Windows PC (x64) | `OrbitPlay-<version>-windows-x64-setup.exe` or `OrbitPlay-<version>-windows-x64.zip` | Windows 10 or 11 |
+| Windows on ARM | The same x64 setup program or ZIP | Windows 11; runs through x64 emulation |
 | Linux PC | `OrbitPlay-<version>-linux-x64.AppImage` | x64; Ubuntu 24.04 or a compatible distribution |
 | Linux on ARM | `OrbitPlay-<version>-linux-arm64.AppImage` | arm64; Ubuntu 24.04 or a compatible distribution |
 
@@ -46,11 +46,28 @@ allow Orbit Play under **System Settings → Privacy & Security → Microphone**
 
 ## Windows
 
-**Windows 11 on ARM has also been tested with a PS5.** Use the same
-`windows-x64.zip` download. Windows runs it through its built-in
+**Windows 11 on ARM has also been tested with a PS5.** Use the same x64
+downloads. Windows runs them through its built-in
 [x64 emulation](https://learn.microsoft.com/en-us/windows/arm/apps-on-arm-x86-emulation),
-with no extra setup required. The download is an x64 build; Windows on ARM
-requires Windows 11.
+with no extra setup required. Windows on ARM requires Windows 11.
+
+From 0.8.0 there are two ways to install. Both update themselves and keep the
+same pairings and settings, so you can switch from one to the other.
+
+**The setup program** (`OrbitPlay-<version>-windows-x64-setup.exe`) installs
+Orbit Play for your user account, without administrator rights, with a Start
+menu entry and an entry under **Settings → Apps → Installed apps** to remove it.
+
+1. Run the setup program. If SmartScreen warns about the unsigned program and
+   you trust the download, choose **More info → Run anyway**.
+2. Follow its pages, then open **Orbit Play** from the Start menu.
+3. If Windows Firewall asks, allow Orbit Play and **orbit-link-node** on your
+   **private network**, as in step 4 of the ZIP steps below.
+
+Removing Orbit Play keeps your pairings and settings, in case you install it
+again.
+
+**The ZIP** runs from any folder you choose:
 
 1. Extract the **whole ZIP** to a folder you will keep.
 2. Open **OrbitPlay.exe** inside the extracted Orbit Play folder. Keep its
@@ -118,24 +135,27 @@ From 0.6.0 on, Orbit Play updates itself:
 3. Open **Console setup** and choose **Find console**. When it reports the
    earlier PS5 helper, choose **Replace helper on PS5** and confirm. Orbit Play
    stops the running helper and starts the one included with the new app.
-4. Enter the new trust code shown on the PS5. Check the app and running helper
-   versions in **Profile & connection options**.
+4. Enter the new trust code shown on the PS5. From 0.8.0 the PS5 then remembers
+   this computer, even after restarts. Check the app and running helper
+   versions under **Settings** on the main menu.
 
 **Update now** appears only where Orbit Play can replace its own files: the app
 in a folder you can write to on a Mac (such as Applications, not the disk image
-or a copy macOS runs from Downloads), the folder you extracted on Windows, and
-the AppImage on Linux. Otherwise, choose **See what's new** and update by hand:
+or a copy macOS runs from Downloads), the copy the setup program installed or
+the folder you extracted on Windows, and the AppImage on Linux. Otherwise, choose **See what's new** and update by hand:
 
 1. Stop the stream and quit Orbit Play.
 2. Download and check the new app.
-3. On **Mac**, replace the app in Applications. On **Windows**, extract the new
-   ZIP into a fresh folder and use that copy. On **Linux**, make the new AppImage
-   executable and launch it.
+3. On **Mac**, replace the app in Applications. On **Windows**, run the new
+   setup program, or extract the new ZIP into a fresh folder and use that copy.
+   On **Linux**, make the new AppImage executable and launch it.
 4. In **Console setup**, choose **Find console**, then **Replace helper on PS5**,
    and enter the new trust code.
 
-**Replace helper on PS5** never stops a helper during a stream or pairing. A
-helper from before 0.6.0 is stopped through Payload Manager. Without Payload
+When the running helper trusts this computer, **Replace helper on PS5** never
+stops it during a stream or pairing. A helper from before 0.6.0, or one that
+doesn't trust this computer yet, is stopped through Payload Manager, so make sure
+nobody is streaming first. Without Payload
 Manager, stop the old helper yourself, or fully restart the PS5 and reload the
 jailbreak, then choose **Start helper on PS5**.
 
@@ -146,9 +166,9 @@ Saved connections and playback settings are stored separately from the computer
 app, so replacing the app keeps them. Do not choose
 **Forget saved connections** just to update.
 
-![Profile and connection options showing the app version, helper version and PS5 firmware](../assets/screenshots/0.2.0-beta.1/08-connection-options.jpg)
+![Settings with the language, Check for updates and the app, helper and PS5 firmware versions](../assets/screenshots/0.8.0/28-settings.jpg)
 
-*Sample profile. The version line identifies the helper that is actually running, not just the ELF stored on the PS5.*
+*The version line identifies the helper that is actually running, not just the ELF stored on the PS5.*
 
 ## Other files in a release
 

@@ -26,7 +26,7 @@ inaccessible. Read [account setup and recovery](account-setup.md) before continu
 - Connect a controller to your computer if you want to use one. Keyboard controls
   are also available.
 
-Screenshots show **0.2.0-beta.1** and **0.4.0** with example profile data. Use the address and
+Screenshots show **0.2.0-beta.1**, **0.4.0** and **0.8.0** with example profile data. Use the address and
 code shown on **your PS5** when following the steps.
 
 ## 1. Open Orbit Play on your computer
@@ -34,9 +34,9 @@ code shown on **your PS5** when following the steps.
 Choose **Console setup**. **Start playing** also takes you to setup when you
 have not connected a console yet.
 
-![Orbit Play main menu with Start playing, Playback, Controls, Console setup and Get PS5 helper](../assets/screenshots/0.4.0/01-main-menu.jpg)
+![Orbit Play main menu with Start playing, Playback, Controls, Console setup, Settings and Get PS5 helper](../assets/screenshots/0.8.0/23-main-menu.jpg)
 
-*Console setup starts the connection flow. Playback changes the next stream's picture settings.*
+*Console setup starts the connection flow. Playback changes the next stream's picture settings; Settings holds the language and the update check.*
 
 ## 2. Start the helper on your PS5
 
@@ -68,8 +68,10 @@ it shows and choose **Find console** instead. Enter only the address, without
 ## 4. Trust this computer
 
 Enter the six-digit code currently shown by the helper, then choose **Trust this
-computer**. This step may be skipped when the running helper already trusts
-this computer.
+computer**. From 0.8.0 you do this once per computer: the PS5 remembers it, even
+after the helper or the PS5 restarts. The Orbit Play page on the PS5 lists
+**Trusted computers**, where **Forget computers** removes them all; each one then
+needs the new code.
 
 ![Trust screen with a sample six-digit code and Trust this computer button](../assets/screenshots/0.2.0-beta.1/04-trust-code.jpg)
 
@@ -107,11 +109,17 @@ separately.
 When you see **Ready when you are**, choose **Start playing**. The player opens
 in a separate window. Click the video to give it keyboard focus.
 
+To go straight into a game, choose it under **Start in** first: Orbit Play asks
+the PS5 to start it as soon as your stream opens, and remembers the choice for
+that console. Below the buttons, **Play away from home** shows whether it is on
+(open it to [set it up](play-away-from-home.md)), and **Profile & connection
+options** holds the console's own settings.
+
 If the PS5 profile has a login passcode, Orbit Play asks for it in **Console
 setup** before the stream opens ([example](../assets/screenshots/0.4.0/14-login-passcode.jpg)). Enter the four digits you use to log in on the
 PS5. Orbit Play keeps them only until you quit, so reconnects don't ask again.
 
-![Ready when you are screen with Start playing for the fictional Player One profile](../assets/screenshots/0.2.0-beta.1/06-ready-to-play.jpg)
+![Ready when you are screen with Start in, Start playing, and the Play away from home and Profile & connection options lines, for the fictional Player One profile](../assets/screenshots/0.8.0/24-ready.jpg)
 
 *Your pairing is saved. Choose Start playing to open the player.*
 
@@ -124,13 +132,22 @@ settings, stopping and reconnecting.
 
 Keep the PS5 awake, the helper running and the same profile logged in. Open
 Orbit Play and choose **Start playing**; use **Console setup** if it needs to
-find or trust the console again. Saved pairings are kept for each console
-address and PS5 profile. Away from home, choose **Start playing** the same way
-once [play away from home](play-away-from-home.md) is on.
+find the console again. Saved pairings are kept for each console address and PS5
+profile. Away from home, choose **Start playing** the same way once
+[play away from home](play-away-from-home.md) is on.
+
+**More than one PS5?** Every PS5 you connect to is saved. **Console setup** lists
+them under **Saved consoles**: choose one to connect to it, or rename or remove
+it. A second copy of Orbit Play is no longer needed.
+
+![Console setup listing two saved consoles, Living room and Bedroom, with Rename and Remove](../assets/screenshots/0.8.0/26-saved-consoles.jpg)
 
 After a PS5 reboot, reload the jailbreak and choose **Start helper on PS5**
-again. A helper restart changes the trust code, so enter the new one when asked. If your PS5's IP address
-changes, find the new address and pair again.
+again; this computer stays trusted, so no code is needed. To skip that step, turn
+on **Start the helper by itself on the PS5** under **Console setup → Profile &
+connection options**: Payload Manager then starts the helper each time the
+jailbreak loads ([how it works](ps5-helper.md#start-the-helper-by-itself)). If
+your PS5's IP address changes, find the new address and pair again.
 
 **Next:** [Playback and controls](playback-and-controls.md) ·
 [Switch profiles or recover a connection](troubleshooting.md)

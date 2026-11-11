@@ -6,8 +6,8 @@ From 0.7.0, scripts, automation tools and AI agents on your computer can press
 the controller's buttons and move its sticks on the stream, while you keep
 using another app. An agent can, for example, find its way around the PS5's
 menus or test a game, and take a picture of the stream window to see what
-happened. The player window doesn't need to be in front. This works on a Mac
-and on Linux; on Windows the setting is greyed out.
+happened. The player window doesn't need to be in front. This works on a Mac,
+on Linux and, from 0.8.0, on Windows.
 
 Only your own user account on this computer can send these commands. Nothing
 reaches the PS5 from another computer, and the commands you send are never
@@ -31,7 +31,8 @@ install is needed.
 | Computer | Command |
 | --- | --- |
 | Mac | `"/Applications/Orbit Play.app/Contents/MacOS/OrbitPlay" control` |
-| Linux | `/path/to/OrbitPlay-0.7.0-linux-x64.AppImage control` (or the arm64 AppImage) |
+| Windows | `& "$env:LOCALAPPDATA\Programs\Orbit Play\Orbit Play\OrbitPlay.exe" control` in PowerShell (installed with the setup program; from the ZIP, use `OrbitPlay.exe` in its folder) |
+| Linux | `/path/to/OrbitPlay-0.8.0-linux-x64.AppImage control` (or the arm64 AppImage) |
 
 The examples below call it `orbit-player-control`. To use that name on a Mac,
 add this line to your shell's settings:
@@ -44,11 +45,17 @@ alias orbit-player-control='"/Applications/Orbit Play.app/Contents/MacOS/OrbitPl
 
 Every command names the folder of the copy of Orbit Play that streams your PS5,
 so a command can never press buttons on the wrong console. For the usual copy
-that's `~/Library/Application Support/Orbit Play` on a Mac and
-`~/.config/orbit-play` on Linux. Set it once in your terminal:
+that's `~/Library/Application Support/Orbit Play` on a Mac, `%APPDATA%\Orbit Play`
+on Windows and `~/.config/orbit-play` on Linux. Set it once in your terminal:
 
 ```sh
 export ORBIT_PLAY_STATE_DIR="$HOME/Library/Application Support/Orbit Play"
+```
+
+In PowerShell on Windows:
+
+```powershell
+$env:ORBIT_PLAY_STATE_DIR = "$env:APPDATA\Orbit Play"
 ```
 
 or put `--state-dir FOLDER` before each command. Without either, the command
@@ -91,15 +98,16 @@ when it was refused, and 2 when no stream is listening.
 | `bad_duration` | Use whole milliseconds from 1 to 10000 |
 | `rate_limited` | Send fewer than 100 commands a second |
 | `stopped` | The stream ended while the command was running |
-| `not_supported` | Player control works on a Mac or Linux |
 
 `status` also gives the stream window's number, so a script can capture just
 that window, for example with `screencapture -l` on a Mac.
 
-## Two PS5s on one computer
+## Two PS5s at once
 
-Start a second copy of Orbit Play with its own folder, pair it with the second
-PS5 once, and turn on the setting in that copy too:
+One copy of Orbit Play saves several PS5s but streams one at a time, and its
+commands go to that stream. To stream two PS5s at the same time, start a second
+copy of Orbit Play with its own folder, pair it with the second PS5 once, and
+turn on the setting in that copy too:
 
 ```sh
 open -n -a "Orbit Play" --args --state-dir ~/OrbitPlay/ps5-b
