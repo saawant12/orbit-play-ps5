@@ -34,6 +34,9 @@ install is needed.
 | Windows | `& "$env:LOCALAPPDATA\Programs\Orbit Play\Orbit Play\OrbitPlay.exe" control` in PowerShell (installed with the setup program; from the ZIP, use `OrbitPlay.exe` in its folder) |
 | Linux | `/path/to/OrbitPlay-0.8.0-linux-x64.AppImage control` (or the arm64 AppImage) |
 
+On Windows the app is a windowed program, so in PowerShell add `| Out-String`
+after a command to see its reply.
+
 The examples below call it `orbit-player-control`. To use that name on a Mac,
 add this line to your shell's settings:
 

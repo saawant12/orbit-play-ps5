@@ -68,6 +68,11 @@ The computer app is AGPL-3.0-only and the PS5 helper is GPL-3.0-or-later. Orbit 
 ## Help articles on the website
 
 - [FAQ](https://orbitplay.dev/faq/): PSN, account IDs and PINs, firmware, haptics, microphone, controls, playing away from home and fixes.
+- [Orbit Play error messages explained](https://orbitplay.dev/guides/orbit-play-error-messages/): What each message in the app means and what to do, from finding the PS5 to play away from home.
+- [PS5 Remote Play on Linux](https://orbitplay.dev/guides/ps5-remote-play-linux/): Sony's app has no Linux version; chiaki-ng and Orbit Play compared, and installing Orbit Play's AppImage.
+- [Control a PS5 with a script or an AI agent](https://orbitplay.dev/guides/control-ps5-script-ai-agent/): Press the PS5's buttons and see its screen from a script or an AI agent during a stream, with a Python example.
+- [Share your PS5 on Discord or record it with OBS](https://orbitplay.dev/guides/ps5-discord-obs-no-capture-card/): Stream or record the PS5 without a capture card by sharing the Remote Play window and its sound.
+- [Jailbroken PS5 Remote Play glossary](https://orbitplay.dev/guides/jailbroken-ps5-remote-play-glossary/): Account IDs, the Remote Play PIN, payloads, ELF loaders, Payload Manager and trust codes in plain words.
 - [Remote Play without PSN](https://orbitplay.dev/guides/ps5-remote-play-without-psn/): What Sony's app, chiaki-ng and Orbit Play need for offline accounts and jailbroken PS5s ([Spanish](https://orbitplay.dev/es/guides/ps5-remote-play-without-psn/)).
 - [chiaki-ng alternatives](https://orbitplay.dev/guides/chiaki-ng-alternative/): Orbit Play, chiaki-ng and Sony's PS Remote Play compared ([Spanish](https://orbitplay.dev/es/guides/chiaki-ng-alternative/)).
 - [Remote Play outside your home network](https://orbitplay.dev/guides/ps5-remote-play-outside-home-network/): How Sony's app, chiaki-ng, PXPlay and Orbit Play connect from another network.
