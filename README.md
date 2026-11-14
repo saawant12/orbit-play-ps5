@@ -15,7 +15,7 @@ Play on your Mac, Windows or Linux computer with no PSN sign-in: at home over yo
   <a href="#get-started">Get started</a> ·
   <a href="guides/play-away-from-home.md">Play away from home</a> ·
   <a href="#guides">Guides</a> ·
-  <a href="release-notes/0.8.0.md">Release notes</a> ·
+  <a href="release-notes/0.8.1.md">Release notes</a> ·
   <a href="#beta-status">Beta status</a> ·
   <a href="guides/account-setup.md">Account setup</a> ·
   <a href="#payload-manager">Payload Manager</a> ·
@@ -105,8 +105,8 @@ Play on your Mac, Windows or Linux computer with no PSN sign-in: at home over yo
 
 ## Beta status
 
-**Orbit Play 0.8.0 (Beta) is available.** [Download the desktop app](https://github.com/saawant12/orbit-play-ps5/releases/latest)
-and see [what’s new](release-notes/0.8.0.md).
+**Orbit Play 0.8.1 (Beta) is available.** [Download the desktop app](https://github.com/saawant12/orbit-play-ps5/releases/latest)
+and see [what’s new](release-notes/0.8.1.md).
 
 **Play on your local network, or away from home.** At home, your computer and PS5
 must be on the same trusted network. Away from home, both need an internet
@@ -116,7 +116,7 @@ Either way, keep the console awake and the intended user logged in.
 
 | Device | Requirements and compatibility |
 | --- | --- |
-| Mac | Apple Silicon, macOS 26 or later |
+| Mac | Apple Silicon, macOS 15 or later |
 | Windows | Windows 10 or 11 on x64; Windows 11 on ARM using the x64 build |
 | Linux | x64 or arm64; Ubuntu 24.04 or a compatible distribution |
 | PS5 | Firmware 13.60 (tested), Relapse, Payload Manager v0.5.2 or v0.6.3 |
@@ -147,6 +147,10 @@ helper or PS5 restart, several saved PS5s, starting a game, turning the PS5 off,
 Xbox and Switch controllers, changed controller buttons, the `--play` shortcut on
 a Steam Deck, player control on Windows, and the helper's Remote Play permission
 step on firmware other than 13.60.
+
+From 0.8.1 the Mac app runs on macOS 15 and later. It is checked against
+macOS 15's system libraries when it is built, but has not yet been confirmed on
+a Mac running macOS 15.
 
 Beta Mac builds are not Apple-notarized, so macOS asks you to approve the first launch in
 **System Settings → Privacy & Security → Open Anyway**. Windows builds are not
@@ -220,7 +224,7 @@ before using this feature.
 
 **Optional:** if you prefer to install and run the helper yourself, add
 [payloads.json](payloads.json) as a custom source in Payload Manager. It includes
-the **0.8.0** PS5 helper. You do not need to add this source when starting the
+the **0.8.1** PS5 helper. You do not need to add this source when starting the
 included helper from the desktop app.
 
 Open **Settings → Manage Sources → Add Source** in Payload Manager and paste

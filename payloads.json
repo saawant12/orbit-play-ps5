@@ -3,12 +3,12 @@
   "payloads": [
     {
       "name": "Orbit Play",
-      "filename": "orbit-play-0.8.0-ps5.elf",
-      "url": "https://github.com/saawant12/orbit-play-ps5/releases/download/v0.8.0/orbit-play-0.8.0-ps5.elf",
+      "filename": "orbit-play-0.8.1-ps5.elf",
+      "url": "https://github.com/saawant12/orbit-play-ps5/releases/download/v0.8.1/orbit-play-0.8.1-ps5.elf",
       "description": "Optional standalone PS5 helper for Orbit Play. The desktop app already includes this helper and can start it for you. Pair and stream over your local network without PSN sign-in, or away from home through Orbit Link. Use the desktop app from the same release.",
-      "version": "v0.8.0",
+      "version": "v0.8.1",
       "category": "Utilities",
-      "checksum": "ec081aaad816e49cfdd66e8a1ae501342939b3c4f627c6032c691d0574d548fa"
+      "checksum": "80147c2c50c68911dd69015785d1096778deefff605b22128a80e5da3213a3f5"
     }
   ]
 }
