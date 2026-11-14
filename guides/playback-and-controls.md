@@ -84,11 +84,11 @@ Mac) to fill the screen, and press it again to return to the window. The player
 bar hides while the stream fills the screen; its keys keep working. On a Mac, the
 window's green button works too.
 
-To open every stream in full screen, turn on **Open the player in full screen**
-under **Playback**. Otherwise the player opens where you left it last time, at
-the same size, and maximised if you maximised it. If that place is no longer on
-a screen, for example after you unplug a display, it opens in the middle of the
-screen.
+The player opens where you left it last time, at the same size, and maximised
+if you left it that way. If that place is no longer on a screen, for example
+after you unplug a display, it opens in the middle of the screen. To open it in
+full screen every time, turn on **Open the player in full screen** under
+**Playback**.
 
 In full screen, the mouse pointer hides after a few seconds without moving and
 comes back as soon as you move the mouse, click or scroll.
