@@ -96,7 +96,7 @@ phone hotspot or a metered connection.
 ## When it can't connect
 
 Some routers give each connection a different port, as phone hotspots often do;
-connecting through them can take up to about half a minute. Some networks still
+connecting through them can take up to about a minute. Some networks still
 block direct connections between devices, such as some hotel, school and office
 networks, especially when both ends are strict. Orbit Play's server doesn't
 relay streams, so Orbit Play then says **"Orbit Link sees your PS5 but could not

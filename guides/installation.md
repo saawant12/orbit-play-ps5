@@ -16,7 +16,7 @@ Python, Homebrew and a separate Chiaki-ng installation are not required.
 
 | Computer | Download | Beta requirement |
 | --- | --- | --- |
-| Mac with Apple Silicon | `OrbitPlay-<version>-macos-arm64.dmg` | macOS 26 or later |
+| Mac with Apple Silicon | `OrbitPlay-<version>-macos-arm64.dmg` | macOS 15 or later |
 | Windows PC (x64) | `OrbitPlay-<version>-windows-x64-setup.exe` or `OrbitPlay-<version>-windows-x64.zip` | Windows 10 or 11 |
 | Windows on ARM | The same x64 setup program or ZIP | Windows 11; runs through x64 emulation |
 | Linux PC | `OrbitPlay-<version>-linux-x64.AppImage` | x64; Ubuntu 24.04 or a compatible distribution |

@@ -26,7 +26,7 @@ before making more changes.
 ## The computer app will not open
 
 Use the build for your operating system and architecture. Apple Silicon Mac
-builds need macOS 26 or later; Intel Macs are outside this beta. Windows requires
+builds need macOS 15 or later; Intel Macs are outside this beta. Windows requires
 the whole ZIP to be extracted, including files beside `OrbitPlay.exe`.
 On Windows 11 on ARM, use the same x64 ZIP; it runs through Windows' built-in
 emulation and has been tested with a PS5.
@@ -96,6 +96,9 @@ On firmware 13.60, you can pair after initial setup without restarting the PS5.
 Other firmware is untested; after account setup, restart the PS5 and reload the
 jailbreak and helper before pairing. After restoring account settings, restart
 the PS5 when the app asks, whatever the firmware.
+
+If Orbit Play says to turn on **Enable Remote Play** under **Settings → System →
+Remote Play**, do that on the PS5, then choose **Pair locally** again.
 
 If pairing still fails, **export diagnostics** and report the exact error before
 changing account settings again.
@@ -198,7 +201,7 @@ manually and export diagnostics.
 - **"Orbit Link could not reach its server."** Check this computer's internet
   connection. With your own server, check its address.
 - **It takes a while to connect.** On strict networks such as phone hotspots,
-  finding a direct connection can take up to about half a minute.
+  finding a direct connection can take up to about a minute.
 - **"Another program on this computer is using a Remote Play port."** Quit other
   Remote Play apps on your computer, then try again. Away from home, Orbit Play
   uses TCP 34179 and 9295 and UDP 9295, 9296, 9297 and 9302 on this computer.
