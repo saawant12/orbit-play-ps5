@@ -22,7 +22,7 @@ Python, Homebrew and a separate Chiaki-ng installation are not required.
 | Linux PC | `OrbitPlay-<version>-linux-x64.AppImage` | x64; Ubuntu 24.04 or a compatible distribution |
 | Linux on ARM | `OrbitPlay-<version>-linux-arm64.AppImage` | arm64; Ubuntu 24.04 or a compatible distribution |
 
-Intel Macs and macOS versions before 26 are not supported in this beta.
+Intel Macs and macOS versions before 15 are not supported in this beta.
 Other PS5 firmware is untested; see
 [the compatibility notes](../README.md#beta-status).
 
